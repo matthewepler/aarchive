@@ -360,9 +360,6 @@ form = ""
   form
 end
 
-__END__
-
-
 
 post '/update_record/:id' do
 thisUpdate = Can.get(params[:id])
@@ -407,6 +404,9 @@ output +="<a href='http://itp.nyu.edu/~mae383/sinatra/final/display_record/#{thi
 output +="</div>"
 output
 end
+
+__END__
+
 
 get '/about' do
 <<-HTML
