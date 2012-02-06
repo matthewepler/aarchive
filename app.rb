@@ -405,8 +405,6 @@ output +="</div>"
 output
 end
 
-__END__
-
 
 get '/about' do
 <<-HTML
@@ -440,14 +438,9 @@ In 2009, over 850 canisters of film were discovered in Amman, Jordan. We are ask
 <li>Documentary footage of Jerusalem in 1968 and its aftermath.
 <li>Unidentified propaganda films from Vietnam made to highlight relations between Vietnam, Russia, and political struggles in the Middle East in the 1960’s and 70’s.
 <li>Russian feature films sent as part of a cultural exchange between Russian and Arab partners, ranging from the 1920’s to the 1980’s. </ul></p>
-
 <p>If we can get these labels translated, we will be in a much better position to assess the collection and plan accordingly how to proceed. Eventually, we hope to digitize as much as we can and make the films available via an interactive database.</p>
-
 <p> We're happy you found us and hope you'll contribute by taking a few moments to explore the collection and translating anything you can. If you can't translate but still want to be involved, please <a href="http://itp.nyu.edu/~mae383/sinatra/final/contact">contact us!</a>
 </div>
-
-
-
 <div class="about-img">
 <img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_1.jpg" width="600"><br />The collection as found in Amman, Jordan in early 2010.
 <p><h2>Supporters</h2><p>
@@ -456,6 +449,10 @@ In 2009, over 850 canisters of film were discovered in Amman, Jordan. We are ask
 </body>
 HTML
 end
+
+__END__
+
+
 
 get '/contact' do
 <<-HTML
