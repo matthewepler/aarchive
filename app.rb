@@ -74,6 +74,8 @@ A crowd-sourced treasure hunt.</p>
 HTML
 end
 
+__END__
+
 get '/start/:page' do
 
   output = ""
