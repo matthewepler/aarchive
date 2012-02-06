@@ -461,7 +461,7 @@ HTML
 end
 
 
-get 'parser' do
+get '/parser' do
   username = "118319050543607777197"
 
 albums = Picasa.albums :google_user => username # goes over the internet
