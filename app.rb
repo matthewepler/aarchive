@@ -65,9 +65,9 @@ Welcome to</br>'A Film Archive' </br>Project.
 A crowd-sourced treasure hunt.</p>
 </div>
 <div id="home-links">
-<a href="http://itp.nyu.edu/~mae383/sinatra/final/start/1">&#62Database</a>
-<a href="http://itp.nyu.edu/~mae383/sinatra/final/about">&#62About</a>
-<a href="http://itp.nyu.edu/~mae383/sinatra/final/contact">&#62Contact</a>
+<a href="/start/1">&#62Database</a>
+<a href="/about">&#62About</a>
+<a href="/contact">&#62Contact</a>
 </div>
 </div>
 </body>
