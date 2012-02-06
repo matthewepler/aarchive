@@ -418,7 +418,8 @@ get '/about' do
 <a href="http://itp.nyu.edu/~mae383/sinatra/final/start/1">&#62Database</a>
 <a href="http://itp.nyu.edu/~mae383/sinatra/final/about">&#62About</a>
 <a href="http://itp.nyu.edu/~mae383/sinatra/final/contact">&#62Contact</a>
-
+HTML
+end
 __END__
 
 </div>
