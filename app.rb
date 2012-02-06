@@ -295,8 +295,6 @@ end
   output
 end
 
-__END__
-
 
 get '/edit_record/:id' do
 thisEdit = Can.get(params[:id])
@@ -361,6 +359,9 @@ form = ""
   form +="</html>"
   form
 end
+
+__END__
+
 
 
 post '/update_record/:id' do
