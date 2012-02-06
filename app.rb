@@ -96,8 +96,8 @@ get '/start/:page' do
   output +="Page #: #{params[:page]}"
   output +="</div>" 
   output +='<div class="thumbs">'
-  CN = Can.all(:limit => 50, :offset => offset)
-  for this in CN
+  cans = Can.all(:limit => 50, :offset => offset)
+  for this in cans
 
     output += "<a href='http://itp.nyu.edu/~mae383/sinatra/final/display_record/#{this.id}'"
     if(this.fullTrans=="yes")
@@ -134,8 +134,8 @@ get '/admin' do
   output += "<a href='http://itp.nyu.edu/~mae383/sinatra/final/createRecord'> Create a New Record </a>"
   output += "</br></br>"
 
-  CN = Can.all
-  for this in CN
+  cans = Can.all
+  for this in cans
 
     output += "<a href='http://itp.nyu.edu/~mae383/sinatra/final/edit_record/#{this.id}'>Can #{this.canNum}</a>"
     output += "</br>"
