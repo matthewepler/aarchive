@@ -409,7 +409,7 @@ end
 get '/about' do
 <<-HTML
 <head>
-<link rel="stylesheet" type="text/css" href="/~mae383/sinatra/final/public/final.css"/>
+<link rel="stylesheet" type="text/css" href="/final.css"/>
 <title>About</title>
 </head>
 <body>
@@ -452,7 +452,7 @@ end
 get '/contact' do
 <<-HTML
 <head>
-<link rel="stylesheet" type="text/css" href="/~mae383/sinatra/final/public/final.css"/>
+<link rel="stylesheet" type="text/css" href="/final.css"/>
 <title>About</title>
 </head>
 <body>
