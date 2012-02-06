@@ -74,8 +74,6 @@ A crowd-sourced treasure hunt.</p>
 HTML
 end
 
-__END__
-
 get '/start/:page' do
 
   output = ""
@@ -128,6 +126,7 @@ get '/start/:page' do
   output
   end
 
+__END__
 
 get '/admin' do
   output = ""
