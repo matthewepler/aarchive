@@ -126,7 +126,6 @@ get '/start/:page' do
   output
   end
 
-__END__
 
 get '/admin' do
   output = ""
@@ -144,6 +143,9 @@ get '/admin' do
   end
   output
 end
+
+__END__
+
 
 
 get '/createRecord' do
