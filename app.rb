@@ -426,18 +426,14 @@ get '/about' do
 <div class='about-text'>
 <p>
 In 2009, over 850 canisters of film were discovered in Amman, Jordan. We are asking for help translating the labels of each canister so we can determine the contents of the collection.</p>
-
-<p>Fusing cutting-edge preservation techniques with Do-It-Yourself inspired crowd-sourcing, this project aims to create a collaborative community of experts, enthusiasts and general public who believe this collection of films is of significant value to Jordan, the region, and the international community. 
-</p>
-
+<p>Fusing cutting-edge preservation techniques with Do-It-Yourself inspired crowd-sourcing, this project aims to create a collaborative community of experts, enthusiasts and general public who believe this collection of films is of significant value to Jordan, the region, and the international community.</p>
 <p>Thus far, we have only been able to digitize 10 of these reels. In this small sample, significant discoveries were made, including: </p>
-
 <p><ul id="about-text-ul">
-<li>A documentary confirmed to be part of the  PLO Film Archive, lost since 1985. 
-<li>Footage of HM King Hussein in 1968 addressing the United Nations in the aftermath of the Six Day War.
+<li>A documentary made in 1968 titled "The Palestinian Right," directed by Mustapha Abu Ali. 
+<li>Footage of His Majesty King Hussein in 1968 addressing the United Nations in the aftermath of the Six Day War.
 <li>Documentary footage of Jerusalem in 1968 and its aftermath.
-<li>Unidentified propaganda films from Vietnam made to highlight relations between Vietnam, Russia, and political struggles in the Middle East in the 1960’s and 70’s.
-<li>Russian feature films sent as part of a cultural exchange between Russian and Arab partners, ranging from the 1920’s to the 1980’s. </ul></p>
+<li>Unidentified agit-prop films from Vietnam from the 1960’s and 70’s.
+<li>Russian feature films sent as part of a cultural exchange between Russian and Arab partners, ranging from the 1920’s to the 1980’s, including at least one Tarkovsky title. </ul></p>
 <p>If we can get these labels translated, we will be in a much better position to assess the collection and plan accordingly how to proceed. Eventually, we hope to digitize as much as we can and make the films available via an interactive database.</p>
 <p> We're happy you found us and hope you'll contribute by taking a few moments to explore the collection and translating anything you can. If you can't translate but still want to be involved, please <a href="http://itp.nyu.edu/~mae383/sinatra/final/contact">contact us!</a>
 </div>
