@@ -424,6 +424,9 @@ get '/about' do
 </div>
 </div>
 <div class='about-text'>
+HTML
+end
+__END__
 <p>
 In 2009, over 850 canisters of film were discovered in Amman, Jordan. We are asking for help translating the labels of each canister so we can determine the contents of the collection.</p>
 <p>Fusing cutting-edge preservation techniques with Do-It-Yourself inspired crowd-sourcing, this project aims to create a collaborative community of experts, enthusiasts and general public who believe this collection of films is of significant value to Jordan, the region, and the international community.</p>
@@ -437,9 +440,6 @@ In 2009, over 850 canisters of film were discovered in Amman, Jordan. We are ask
 <p>If we can get these labels translated, we will be in a much better position to assess the collection and plan accordingly how to proceed. Eventually, we hope to digitize as much as we can and make the films available via an interactive database.</p>
 <p> We're happy you found us and hope you'll contribute by taking a few moments to explore the collection and translating anything you can. If you can't translate but still want to be involved, please <a href="http://itp.nyu.edu/~mae383/sinatra/final/contact">contact us!</a>
 </div>
-HTML
-end
-__END__
 <div class="about-img">
 <img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_1.jpg" width="600"><br />The collection as found in Amman, Jordan in early 2010.
 <p><h2>Supporters</h2><p>
