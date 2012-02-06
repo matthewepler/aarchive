@@ -432,7 +432,7 @@ In 2009, over 850 canisters of film were discovered in Amman, Jordan. We are ask
 <li>A documentary made in 1968 titled "The Palestinian Right," directed by Mustapha Abu Ali. 
 <li>Footage of His Majesty King Hussein in 1968 addressing the United Nations in the aftermath of the Six Day War.
 <li>Documentary footage of Jerusalem in 1968 and its aftermath.
-<li>Unidentified agit-prop films from Vietnam from the 1960’s and 70’s.
+<li>Unidentified agit-prop films from Vietnam estimated to have been made between 1960 and 1970.
 HTML
 end
 __END__
