@@ -424,13 +424,13 @@ get '/about' do
 </div>
 </div>
 <div class='about-text'>
-HTML
-end
-__END__
 <p>
 In 2009, over 850 canisters of film were discovered in Amman, Jordan. We are asking for help translating the labels of each canister so we can determine the contents of the collection.</p>
 <p>Fusing cutting-edge preservation techniques with Do-It-Yourself inspired crowd-sourcing, this project aims to create a collaborative community of experts, enthusiasts and general public who believe this collection of films is of significant value to Jordan, the region, and the international community.</p>
 <p>Thus far, we have only been able to digitize 10 of these reels. In this small sample, significant discoveries were made, including: </p>
+HTML
+end
+__END__
 <p><ul id="about-text-ul">
 <li>A documentary made in 1968 titled "The Palestinian Right," directed by Mustapha Abu Ali. 
 <li>Footage of His Majesty King Hussein in 1968 addressing the United Nations in the aftermath of the Six Day War.
