@@ -144,8 +144,6 @@ get '/admin' do
   output
 end
 
-__END__
-
 
 
 get '/createRecord' do
@@ -185,6 +183,7 @@ get '/createRecord' do
   form +='</html>'
   form
 end
+
 
 post '/create_records' do
 # raise params.inspect
@@ -232,6 +231,7 @@ output +="<a href='http://itp.nyu.edu/~mae383/sinatra/final/display_record/#{c.i
 output +="<a href='http://itp.nyu.edu/~mae383/sinatra/final/admin'>Go to Admin List</a></br>"
 output
 end
+
 
 get '/display_record/:id' do
   thisCan = Can.get(params[:id])
@@ -294,6 +294,9 @@ end
   output +="</html>"
   output
 end
+
+__END__
+
 
 get '/edit_record/:id' do
 thisEdit = Can.get(params[:id])
