@@ -1,6 +1,3 @@
-require 'rubygems'
-require 'dm-core'
-
 DataMapper::setup(:default, ENV['DATABASE_URL'] || {:adapter => 'yaml', :path => 'db'})
 
 class Can
