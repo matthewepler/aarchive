@@ -418,6 +418,9 @@ get '/about' do
 <a href="http://itp.nyu.edu/~mae383/sinatra/final/start/1">&#62Database</a>
 <a href="http://itp.nyu.edu/~mae383/sinatra/final/about">&#62About</a>
 <a href="http://itp.nyu.edu/~mae383/sinatra/final/contact">&#62Contact</a>
+
+__END__
+
 </div>
 <div class='about-header'>
 <div class='green-tab'>About</div>
@@ -445,8 +448,6 @@ In 2009, over 850 canisters of film were discovered in Amman, Jordan. We are ask
 </body>
 HTML
 end
-
-__END__
 
 
 
