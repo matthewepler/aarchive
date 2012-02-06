@@ -432,10 +432,10 @@ In 2009, over 850 canisters of film were discovered in Amman, Jordan. We are ask
 <li>A documentary made in 1968 titled "The Palestinian Right," directed by Mustapha Abu Ali. 
 <li>Footage of His Majesty King Hussein in 1968 addressing the United Nations in the aftermath of the Six Day War.
 <li>Documentary footage of Jerusalem in 1968 and its aftermath.
+<li>Unidentified agit-prop films from Vietnam from the 1960’s and 70’s.
 HTML
 end
 __END__
-<li>Unidentified agit-prop films from Vietnam from the 1960’s and 70’s.
 <li>Russian feature films ranging from the 1920’s to the 1980’s, including at least one Tarkovsky title. 
 </ul></p>
 <p>If we can get these labels translated, we will be in a much better position to assess the collection and plan accordingly how to proceed. Eventually, we hope to digitize as much as we can and make the films available via an interactive database.</p>
