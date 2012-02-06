@@ -4,57 +4,57 @@ require './model.rb'
 
 get '/' do
   <<-HTML
-<link rel="stylesheet" type="text/css" href="http://itp.nyu.edu/~mae383/sinatra/final/public/final.css"/>
+<link rel="stylesheet" type="text/css" href="/final.css"/>
 <body class="black">
 <div id="home-images">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_16.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_2.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_13.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_12.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_17.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_9.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_10.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_7.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_6.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_18.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_3.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_8.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_4.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_5.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_19.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_20.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_21.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_22.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_23.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_24.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_16.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_18.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_4.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_2.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_9.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_10.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_17.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_5.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_7.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_8.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_20.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_4.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_3.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_19.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_8.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_12.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_16.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_17.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_23.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_21.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_7.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_20.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_2.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_13.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_6.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_19.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_9.jpg" width="300" height="200">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_8.jpg" width="300" height="200">
+<img src="/frame_16.jpg" width="300" height="200">
+<img src="/frame_2.jpg" width="300" height="200">
+<img src="/frame_13.jpg" width="300" height="200">
+<img src="/frame_12.jpg" width="300" height="200">
+<img src="/frame_17.jpg" width="300" height="200">
+<img src="/frame_9.jpg" width="300" height="200">
+<img src="/frame_10.jpg" width="300" height="200">
+<img src="/frame_7.jpg" width="300" height="200">
+<img src="/frame_6.jpg" width="300" height="200">
+<img src="/frame_18.jpg" width="300" height="200">
+<img src="/frame_3.jpg" width="300" height="200">
+<img src="/frame_8.jpg" width="300" height="200">
+<img src="/frame_4.jpg" width="300" height="200">
+<img src="/frame_5.jpg" width="300" height="200">
+<img src="/frame_19.jpg" width="300" height="200">
+<img src="/frame_20.jpg" width="300" height="200">
+<img src="/frame_21.jpg" width="300" height="200">
+<img src="/frame_22.jpg" width="300" height="200">
+<img src="/frame_23.jpg" width="300" height="200">
+<img src="/frame_24.jpg" width="300" height="200">
+<img src="/frame_16.jpg" width="300" height="200">
+<img src="/frame_18.jpg" width="300" height="200">
+<img src="/frame_4.jpg" width="300" height="200">
+<img src="/frame_2.jpg" width="300" height="200">
+<img src="/frame_9.jpg" width="300" height="200">
+<img src="/frame_10.jpg" width="300" height="200">
+<img src="/frame_17.jpg" width="300" height="200">
+<img src="/frame_5.jpg" width="300" height="200">
+<img src="/frame_7.jpg" width="300" height="200">
+<img src="/frame_8.jpg" width="300" height="200">
+<img src="/frame_20.jpg" width="300" height="200">
+<img src="/frame_4.jpg" width="300" height="200">
+<img src="/frame_3.jpg" width="300" height="200">
+<img src="/frame_19.jpg" width="300" height="200">
+<img src="/frame_8.jpg" width="300" height="200">
+<img src="/frame_12.jpg" width="300" height="200">
+<img src="/frame_16.jpg" width="300" height="200">
+<img src="/frame_17.jpg" width="300" height="200">
+<img src="/frame_23.jpg" width="300" height="200">
+<img src="/frame_21.jpg" width="300" height="200">
+<img src="/frame_7.jpg" width="300" height="200">
+<img src="/frame_20.jpg" width="300" height="200">
+<img src="/frame_2.jpg" width="300" height="200">
+<img src="/frame_13.jpg" width="300" height="200">
+<img src="/frame_6.jpg" width="300" height="200">
+<img src="/frame_19.jpg" width="300" height="200">
+<img src="/frame_9.jpg" width="300" height="200">
+<img src="/frame_8.jpg" width="300" height="200">
 
 </div>
 <div id="home-text-box">
@@ -79,14 +79,14 @@ get '/start/:page' do
   output = ""
   output = "<html><head>"
   output += '<title>Start Page</title>' 
-  output += '<link rel="stylesheet" type="text/css" href="/~mae383/sinatra/final/public/final.css"/>'
+  output += '<link rel="stylesheet" type="text/css" href="/final.css"/>'
   output +='</head>'
   output +='<body>'
   output +='<div class="header">'
-  output +='<a href="http://itp.nyu.edu/~mae383/sinatra/final">&#62Home</a>'
-  output +='<a href="http://itp.nyu.edu/~mae383/sinatra/final/start/1">&#62Database</a>'
-  output +='<a href="http://itp.nyu.edu/~mae383/sinatra/final/about">&#62About</a>'
-  output +='<a href="http://itp.nyu.edu/~mae383/sinatra/final/contact">&#62Contact</a>'
+  output +='<a href="/">&#62Home</a>'
+  output +='<a href="/start/1">&#62Database</a>'
+  output +='<a href="/about">&#62About</a>'
+  output +='<a href="/contact">&#62Contact</a>'
   output +='</div>'
   output +='<div class="start-instructions">'
   output +='<p>Click on an image to view/edit the record. Complete records appear transparent.</p>'
@@ -99,7 +99,7 @@ get '/start/:page' do
   cans = Can.all(:limit => 50, :offset => offset)
   for this in cans
 
-    output += "<a href='http://itp.nyu.edu/~mae383/sinatra/final/display_record/#{this.id}'"
+    output += "<a href='/display_record/#{this.id}'"
     if(this.fullTrans=="yes")
       output += " class='completed'>"
     else
@@ -114,10 +114,10 @@ get '/start/:page' do
   (1..19).each do |i|
     if params[:page]== "#{i}"
       output +="<span class='page-number-gray'>"
-      output +="<a id='this' href='http://itp.nyu.edu/~mae383/sinatra/final/start/#{i}'>#{i}</a>"
+      output +="<a id='this' href='/start/#{i}'>#{i}</a>"
       output +="</span>"
     elsif
-    output += "<a href='http://itp.nyu.edu/~mae383/sinatra/final/start/#{i}'>#{i}</a>"
+    output += "<a href='/start/#{i}'>#{i}</a>"
   end
   end
   output +="</p>"
@@ -131,13 +131,13 @@ get '/admin' do
   output = ""
   output += "<html>"
   output += "<head><title>Admin Edit Page</title></head>"
-  output += "<a href='http://itp.nyu.edu/~mae383/sinatra/final/createRecord'> Create a New Record </a>"
+  output += "<a href='/createRecord'> Create a New Record </a>"
   output += "</br></br>"
 
   cans = Can.all
   for this in cans
 
-    output += "<a href='http://itp.nyu.edu/~mae383/sinatra/final/edit_record/#{this.id}'>Can #{this.canNum}</a>"
+    output += "<a href='/edit_record/#{this.id}'>Can #{this.canNum}</a>"
     output += "</br>"
     output += "</html>"
   end
@@ -149,12 +149,12 @@ end
 get '/createRecord' do
   form = ''
   form +='<html><head>'
-  form +='<link rel="stylesheet" type="text/css" href="/~mae383/sinatra/final/public/final.css"/>'
+  form +='<link rel="stylesheet" type="text/css" href="/final.css"/>'
   form += '<title>Canister Database</title>' 
   form +='</head>'
   form +='<body>'
   form +='<p><h2>Admin Record Creation Form</h2></p></hr>'
-  form +='<form action="/~mae383/sinatra/final/create_records" method="post">'
+  form +='<form action="/create_records" method="post">'
   form +='<p><label>Album URL</label></br> <input type="text" name="albumURL" size="80" value="-"/><p>'
   form +='<p><label>Image URL</label></br> <input type="text" name="imageURL" size="80" value="-"/><p>'
   form +='<p><label>Is this translation as complete as it can be? </label><br /><input type="radio" name="fullTrans" value="yes" /> Yes'
@@ -210,25 +210,13 @@ post '/create_records' do
   c.imageURL =  params[:imageURL].to_s
   c.albumURL = params[:albumURL].to_s
   c.save
-#   if c.save
-# output = ""
-# output += "yes, it saved"
-#   end
-
-#   output = ""
-#   s=Can.all
-#     for can in s
-#     output += "</br> #{can.id}"
-#     output += "</br> #{can.imageURL}"
-# end
-  
 
 output =""
 output +="<p>Can # #{c.canNum} saved successfully!</p>"
-output +="<a href='http://itp.nyu.edu/~mae383/sinatra/final/createRecord'>Create Another Record</a></br>"
-output +="<a href='http://itp.nyu.edu/~mae383/sinatra/final/start/1'>Go to Start Page</a></br>"
-output +="<a href='http://itp.nyu.edu/~mae383/sinatra/final/display_record/#{c.id}'>See Record for Can # #{c.canNum}</a>"
-output +="<a href='http://itp.nyu.edu/~mae383/sinatra/final/admin'>Go to Admin List</a></br>"
+output +="<a href='/createRecord'>Create Another Record</a></br>"
+output +="<a href='/start/1'>Go to Start Page</a></br>"
+output +="<a href='/display_record/#{c.id}'>See Record for Can # #{c.canNum}</a>"
+output +="<a href='/admin'>Go to Admin List</a></br>"
 output
 end
 
@@ -238,28 +226,28 @@ get '/display_record/:id' do
 
   output = ""
   output +="<html><head>"
-  output +="<link rel='stylesheet' type='text/css' href='http://itp.nyu.edu/~mae383/sinatra/final/public/final.css'/>"
+  output +="<link rel='stylesheet' type='text/css' href='/final.css'/>"
   output += "<title>Canister Database</title>"
   output +="</head>"
   output +="<body>"
     output +="<div class='image-side'>"
 
   output +="<div class='header'>"
-  output +='<a href="http://itp.nyu.edu/~mae383/sinatra/final">&#62Home</a>'
-  output +='<a href="http://itp.nyu.edu/~mae383/sinatra/final/start/1">&#62Database</a>'
-  output +='<a href="http://itp.nyu.edu/~mae383/sinatra/final/about">&#62About</a>'
-  output +='<a href="http://itp.nyu.edu/~mae383/sinatra/final/contact">&#62Contact</a>'
+  output +='<a href="/">&#62Home</a>'
+  output +='<a href="/start/1">&#62Database</a>'
+  output +='<a href="/about">&#62About</a>'
+  output +='<a href="/contact">&#62Contact</a>'
   output +='</div>'
   output +="<div class='can-header'>"
   output +="<div class='green-tab'>Canister #{thisCan.canNum} Record</div>"
   output +="<span class='edit-header'>"
-  output +="<div id='gray-tab'><a href='http://itp.nyu.edu/~mae383/sinatra/final/edit_record/#{thisCan.id}'>&#62Edit</a></div>"
+  output +="<div id='gray-tab'><a href='/edit_record/#{thisCan.id}'>&#62Edit</a></div>"
   output +="</span>"
   output +="</div>"
   output +="<div class='large-img'>"
   output +="<p><img id='picture' src='#{thisCan.imageURL}'></p>"
-    output +="<script src='http://itp.nyu.edu/~mae383/sinatra/final/public/final.js'></script>"
-    output +="<script src='http://itp.nyu.edu/~mae383/sinatra/final/public/zoom_assets/jquery.smoothZoom.js'></script>"
+    output +="<script src='/final.js'></script>"
+    output +="<script src='/zoom_assets/jquery.smoothZoom.js'></script>"
     output +="<script>"
     output +="jQuery(function($){"
     output +="$('#picture').smoothZoom({"
@@ -304,27 +292,27 @@ thisEdit = Can.get(params[:id])
 
 form = ""
   form +="<html><head>"
-  form +="<link rel='stylesheet' type='text/css' href='/~mae383/sinatra/final/public/final.css'/>"
+  form +="<link rel='stylesheet' type='text/css' href='/final.css'/>"
   form += "<title>Canister Database</title>"
   form +="</head>"
   form +="<body>"
   form +="<div class='image-side'>"
   form +="<div class='header'>"
-  form +='<a href="http://itp.nyu.edu/~mae383/sinatra/final">&#62Home</a>'
-  form +='<a href="http://itp.nyu.edu/~mae383/sinatra/final/start/1">&#62Database</a>'
-  form +='<a href="http://itp.nyu.edu/~mae383/sinatra/final/about">&#62About</a>'
-  form +='<a href="http://itp.nyu.edu/~mae383/sinatra/final/contact">&#62Contact</a>'
+  form +='<a href="/">&#62Home</a>'
+  form +='<a href="/start/1">&#62Database</a>'
+  form +='<a href="/about">&#62About</a>'
+  form +='<a href="/contact">&#62Contact</a>'
   form +='</div>'
   form +="<div class='can-header'>"
   form +="<div class='green-tab'>Edit Form - Canister #{thisEdit.canNum}</div>"
   form +="<span class='cancel-header'>"
-  form +="<div id='gray-tab'><a href='http://itp.nyu.edu/~mae383/sinatra/final/display_record/#{thisEdit.id}'>&#62Cancel</a></div>"
+  form +="<div id='gray-tab'><a href='/display_record/#{thisEdit.id}'>&#62Cancel</a></div>"
   form +="</span>"
   form +="</div>"
   form +="<div class='large-img'>"
   form +="<p><img id='picture' src='#{thisEdit.imageURL}'></p>"
-    form +="<script src='http://itp.nyu.edu/~mae383/sinatra/final/public/final.js'></script>"
-    form +="<script src='http://itp.nyu.edu/~mae383/sinatra/final/public/zoom_assets/jquery.smoothZoom.js'></script>"
+    form +="<script src='/final.js'></script>"
+    form +="<script src='/zoom_assets/jquery.smoothZoom.js'></script>"
     form +="<script>"
     form +="jQuery(function($){"
     form +="$('#picture').smoothZoom({"
@@ -339,7 +327,7 @@ form = ""
   form +="</div>"
   form +="</div>"
   form +="<div class='form-side'>"
-  form +="<form action='/~mae383/sinatra/final/update_record/#{thisEdit.id}' method='post'>"
+  form +="<form action='/update_record/#{thisEdit.id}' method='post'>"
   form +="<p style='font-style:italic'>&#126 Scroll down for &#34Submit&#34 button &#126</p><br />"
   form +="<p><label style='color:red'>Is this translation as complete as it can be? </label><br /><input type='radio' name='fullTrans' value='yes'/> Yes"
   form +="<br /><input type='radio' name='fullTrans' value='no' checked/> No</p>"
@@ -388,19 +376,19 @@ thisUpdate.save
 output =""
 output +="<html>"
   output +="<head>"
-  output +="<link rel='stylesheet' type='text/css' href='/~mae383/sinatra/final/public/final.css'/>"
+  output +="<link rel='stylesheet' type='text/css' href='/final.css'/>"
   output += "<title>Record Updated!</title>"
   output +="</head>"
   output +='<div class="header">'
-  output +='<a href="http://itp.nyu.edu/~mae383/sinatra/final">&#62Home</a>'
-  output +='<a href="http://itp.nyu.edu/~mae383/sinatra/final/start/1">&#62Database</a>'
-  output +='<a href="http://itp.nyu.edu/~mae383/sinatra/final/about">&#62About</a>'
-  output +='<a href="http://itp.nyu.edu/~mae383/sinatra/final/contact">&#62Contact</a>'
+  output +='<a href="/">&#62Home</a>'
+  output +='<a href="/start/1">&#62Database</a>'
+  output +='<a href="/about">&#62About</a>'
+  output +='<a href="/contact">&#62Contact</a>'
   output +='</div>'
   output +='<div class="image-side">'
 output +="<p><h2>Record updated successfully!</p></h2>"
-output +="<a href='http://itp.nyu.edu/~mae383/sinatra/final/start/1'>&#62Database</a></br>"
-output +="<a href='http://itp.nyu.edu/~mae383/sinatra/final/display_record/#{thisUpdate.id}'>&#62Can # #{thisUpdate.canNum}</a>"
+output +="<a href='/start/1'>&#62Database</a></br>"
+output +="<a href='/display_record/#{thisUpdate.id}'>&#62Can # #{thisUpdate.canNum}</a>"
 output +="</div>"
 output
 end
@@ -414,10 +402,10 @@ get '/about' do
 </head>
 <body>
 <div class="header">
-<a href="http://itp.nyu.edu/~mae383/sinatra/final">&#62Home</a>
-<a href="http://itp.nyu.edu/~mae383/sinatra/final/start/1">&#62Database</a>
-<a href="http://itp.nyu.edu/~mae383/sinatra/final/about">&#62About</a>
-<a href="http://itp.nyu.edu/~mae383/sinatra/final/contact">&#62Contact</a>
+<a href="/">&#62Home</a>
+<a href="/start/1">&#62Database</a>
+<a href="/about">&#62About</a>
+<a href="/contact">&#62Contact</a>
 </div>
 <div class='about-header'>
 <div class='green-tab'>About</div>
@@ -436,10 +424,10 @@ In 2009, over 850 canisters of film were discovered in Amman, Jordan. We are ask
 <li>Russian feature films ranging from the 1920s to the 1980s, including at least one Tarkovsky title. 
 </ul></p>
 <p>If we can get these labels translated, we will be in a much better position to assess the collection and plan accordingly how to proceed. Eventually, we hope to digitize as much as we can and make the films available via an interactive database.</p>
-<p> We're happy you found us and hope you'll contribute by taking a few moments to explore the collection and translating anything you can. If you can't translate but still want to be involved, please <a href="http://itp.nyu.edu/~mae383/sinatra/final/contact">contact us!</a>
+<p> We're happy you found us and hope you'll contribute by taking a few moments to explore the collection and translating anything you can. If you can't translate but still want to be involved, please <a href="/contact">contact us!</a>
 </div>
 <div class="about-img">
-<img src="http://itp.nyu.edu/~mae383/sinatra/final/public/frame_1.jpg" width="600"><br />The collection as found in Amman, Jordan in early 2010.
+<img src="/frame_1.jpg" width="600"><br />The collection as found in Amman, Jordan in early 2010.
 <p><h2>Supporters</h2><p>
 <p>Temp Text</p>
 </div>
@@ -457,10 +445,10 @@ get '/contact' do
 </head>
 <body>
 <div class="header">
-<a href="http://itp.nyu.edu/~mae383/sinatra/final">&#62Home</a>
-<a href="http://itp.nyu.edu/~mae383/sinatra/final/start/1">&#62Database</a>
-<a href="http://itp.nyu.edu/~mae383/sinatra/final/about">&#62About</a>
-<a href="http://itp.nyu.edu/~mae383/sinatra/final/contact">&#62Contact</a>
+<a href="/">&#62Home</a>
+<a href="/start/1">&#62Database</a>
+<a href="/about">&#62About</a>
+<a href="/contact">&#62Contact</a>
 </div>
 <div class='about-header'>
 <div class='green-tab'>Contact</div>
