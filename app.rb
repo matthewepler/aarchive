@@ -470,3 +470,5 @@ get '/contact' do
 </div>
 HTML
 end
+
+end
