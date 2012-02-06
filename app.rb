@@ -429,10 +429,10 @@ In 2009, over 850 canisters of film were discovered in Amman, Jordan. We are ask
 <p>Fusing cutting-edge preservation techniques with Do-It-Yourself inspired crowd-sourcing, this project aims to create a collaborative community of experts, enthusiasts and general public who believe this collection of films is of significant value to Jordan, the region, and the international community.</p>
 <p>Thus far, we have only been able to digitize 10 of these reels. In this small sample, significant discoveries were made, including: </p>
 <p><ul id="about-text-ul">
+<li>A documentary made in 1968 titled "The Palestinian Right," directed by Mustapha Abu Ali. 
 HTML
 end
 __END__
-<li>A documentary made in 1968 titled "The Palestinian Right," directed by Mustapha Abu Ali. 
 <li>Footage of His Majesty King Hussein in 1968 addressing the United Nations in the aftermath of the Six Day War.
 <li>Documentary footage of Jerusalem in 1968 and its aftermath.
 <li>Unidentified agit-prop films from Vietnam from the 1960’s and 70’s.
