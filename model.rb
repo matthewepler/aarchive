@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'dm-core'
 
-DataMapper::setup(:default, {:adapter => 'yaml', :path => 'db'})
+DataMapper::setup(:default, ENV['DATABASE_URL'] || {:adapter => 'yaml', :path => 'db'})
 
 class Can
   include DataMapper::Resource
