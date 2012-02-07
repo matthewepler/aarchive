@@ -5,15 +5,15 @@ require 'dm-sqlite-adapter'
 require 'picasa'
 require './model.rb'
 
-USERNAME = "118319050543607777197"
+username = "118319050543607777197"
 
-albums = Picasa.albums :google_user => USERNAME # goes over the internet
+albums = Picasa.albums :google_user => username # goes over the internet
 
 albums.each do |album|
   puts
-  puts "found album: #{album[:id]}"
-  puts "=========================="
-  puts
+  # puts "found album: #{album[:id]}"
+  # puts "=========================="
+  puts album[:title]
 
   a = Can.new
   
@@ -24,7 +24,7 @@ albums.each do |album|
   a.save
   #puts a.inspect
 
-  result = Picasa.photos(:google_user => USERNAME, :album_id => album[:id])  # goes over the internet
+  result = Picasa.photos(:google_user => username, :album_id => album[:id])  # goes over the internet
   
     # assume the first photo is the can label
     photo = result[:photos][0]
@@ -34,7 +34,7 @@ albums.each do |album|
     url = parts.join("/")
     a.imageURL = url
     a.save
-    puts "photo url: #{url}"
+    # puts "photo url: #{url}"
     
 
 end
