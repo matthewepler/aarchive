@@ -1,7 +1,7 @@
 require 'bundler'
 Bundler.require
 require './model.rb'
-require '.data.db'
+require './data.db'
 
 get '/' do
   <<-HTML
