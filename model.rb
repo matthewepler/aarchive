@@ -24,6 +24,6 @@ class Can
   property :link3, String
   property :notesGen, String
   property :fullTrans, String
-  property :imageURL, Text
+  property :imageURL, String
 end
 DataMapper.finalize
