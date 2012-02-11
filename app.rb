@@ -93,6 +93,9 @@ get '/start/:page' do
   output +='<p>Click on an image to view/edit the record. Complete records appear transparent.</p>'
   offset = (params[:page].to_i - 1) * 45
   output +='</div>'
+  output +='<div class = "list-view">'
+  output +='<a href:"/list">List View</a>'
+  output +='</div>'
   output +='<div class="page-number-heading">'
   output +="Page #: #{params[:page]}"
   output +="</div>" 
@@ -128,11 +131,10 @@ get '/start/:page' do
   end
 
 
-get '/admin' do
+get '/list' do
   output = ""
   output += "<html>"
-  output += "<head><title>Admin Edit Page</title></head>"
-  output += "<a href='/createRecord'> Create a New Record </a>"
+  output += "<head><title>List View</title></head>"
   output += "</br></br>"
 
   cans = Can.all
@@ -429,8 +431,6 @@ In 2009, over 850 canisters of film were discovered in Amman, Jordan. We are ask
 </div>
 <div class="about-img">
 <img src="/frame_1.jpg" width="600"><br />The collection as found in Amman, Jordan in early 2010.
-<p><h2>Supporters</h2><p>
-<p>Temp Text</p>
 </div>
 </body>
 HTML
