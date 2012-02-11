@@ -6,6 +6,7 @@ class Can
   property :id, Serial
   property :canNum, Integer
   property :canType, String
+  property :hasLanguage, String
   property :titleEnglish, String
   property :titleRussian, String
   property :titleArabic, String
