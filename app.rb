@@ -93,9 +93,6 @@ get '/start/:page' do
   output +='<p>Click on an image to view/edit the record. Complete records appear transparent.</p>'
   offset = (params[:page].to_i - 1) * 45
   output +='</div>'
-  output +='<div class = "list-view">'
-  output +='<a href:"/list">List View</a>'
-  output +='</div>'
   output +='<div class="page-number-heading">'
   output +="Page #: #{params[:page]}"
   output +="</div>" 
@@ -124,6 +121,7 @@ get '/start/:page' do
     output += "<a href='/start/#{i}'>#{i}</a>"
   end
   end
+  output +='<p><a href:"/list">List View</a></p>'
   output +="</p>"
   output +="</div>"
   output += "</body></html>"
