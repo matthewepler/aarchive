@@ -168,9 +168,9 @@ margin:auto;
 }
 
 #home-text-box{
-	position:absolute;
-	margin-top:150px;
-	margin-left:750px;
+	position:fixed
+	top:20%;
+	left:25%;
 	background-color:#F2F2F3;
 	opacity:0.97;	
 	width:650px;
@@ -189,6 +189,11 @@ margin:auto;
 	text-align:justify;
 	padding-left:95px;
 	margin-bottom:40px;
+}
+
+.black{
+	
+	background-color:#000000;
 }
 
 .black #home-links{

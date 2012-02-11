@@ -25,6 +25,6 @@ class Can
   property :notesGen, String
   property :fullTrans, String
   property :imageURL, Text
-  property :albumURL, String
+  property :albumURL, Text
 end
 DataMapper.finalize
