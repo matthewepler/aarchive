@@ -121,7 +121,7 @@ get '/start/:page' do
     output += "<a href='/start/#{i}'>#{i}</a>"
   end
   end
-  output +='<p><a href:"/list">List View</a></p>'
+  output +="<p><a href:'/list'>List View</a></p>"
   output +="</p>"
   output +="</div>"
   output += "</body></html>"
