@@ -25,12 +25,5 @@ class Can
   property :link3, String
   property :notesGen, String
   property :fullTrans, String
-<<<<<<< HEAD
-  property :imageURL, Text
-  property :albumURL, Text
-=======
-  property :imageURL, String
-  property :albumURL, String
->>>>>>> parent of a4a9a8e... changed model
 end
 DataMapper.finalize
