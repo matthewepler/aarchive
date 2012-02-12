@@ -1,7 +1,6 @@
 require 'bundler'
 Bundler.require
 require './model.rb'
-require 'data_mapper'
 
 get '/' do
   <<-HTML
