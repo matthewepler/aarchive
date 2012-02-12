@@ -32,7 +32,7 @@ input {
 
 p{
 	font-family:Tahoma;
-	font-size:18px;
+	font-size:14px;
 }
 
 a{
@@ -168,9 +168,9 @@ margin:auto;
 }
 
 #home-text-box{
-	position:absolute;
-	margin-top:150px;
-	margin-left:750px;
+	position:fixed;
+	top:20%;
+	left:25%;
 	background-color:#F2F2F3;
 	opacity:0.97;	
 	width:650px;
@@ -189,6 +189,11 @@ margin:auto;
 	text-align:justify;
 	padding-left:95px;
 	margin-bottom:40px;
+}
+
+.black{
+	
+	background-color:#000000;
 }
 
 .black #home-links{
@@ -239,7 +244,7 @@ margin:auto;
 .can-header .green-tab{
 	position:absolute;
 	font-family:Nilland;
-	font-size:52px;
+	font-size:42px;
 	color:#ffffff;
 	text-align:center;
 	padding-left:30px;
@@ -255,8 +260,9 @@ margin:auto;
 	border-bottom-left-radius:10px;
 	border-bottom-right-radius:10px;
 	width:180px;
-	height:77px;
+	height:67px;
 		box-shadow: 5px 8px 15px 0px #888;
+		padding-top:5px;
 }
 
 .can-header .cancel-header {
@@ -493,6 +499,7 @@ margin:auto;
 	left: 0;
 	z-index: 10;
 }
+
 	
 
 

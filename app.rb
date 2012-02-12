@@ -122,17 +122,18 @@ get '/start/:page' do
   end
   end
   output +="</p>"
+    # output +="<p><a href='/list'>List View</a></p>"
+
   output +="</div>"
   output += "</body></html>"
   output
   end
 
 
-get '/admin' do
+get '/list' do
   output = ""
   output += "<html>"
-  output += "<head><title>Admin Edit Page</title></head>"
-  output += "<a href='/createRecord'> Create a New Record </a>"
+  output += "<head><title>List View</title></head>"
   output += "</br></br>"
 
   cans = Can.all
@@ -190,6 +191,7 @@ post '/create_records' do
 # raise params.inspect
   c = Can.new
   c.canNum = params[:canNum].to_i
+  c.hasLanguage = params[:hasLanguage].to_s
   c.titleEnglish =  params[:titleEnglish].to_s
   c.titleRussian =  params[:titleRussian].to_s
   c.titleArabic =  params[:titleArabic].to_s
@@ -259,7 +261,7 @@ get '/display_record/:id' do
     output +="</script>"
   output +="</div>"
   output +="<div id='image-footer'>"
-  output +="<p>Click the image to zoom in/out.</p>"
+  output +="<p></p>"
   output +="</div>"
   output +="</div>"
   output +="<div class='form-side'>"
@@ -270,6 +272,7 @@ get '/display_record/:id' do
 else
   output +="<p><label>Has all visible info been translated? </label></br><span class='input-red'>No</span></p>"  
 end
+  output +="<p><label>Languages to be Translated</label></br> #{thisCan.hasLanguage}</p>"
   output +="<p><label>English Title</label></br> #{thisCan.titleEnglish}</p>"
   output +="<p><label>Russian Title</label></br> #{thisCan.titleRussian}</p>"
   output +="<p><label>Arabic Title</label></br> #{thisCan.titleArabic}</p>"
@@ -324,7 +327,7 @@ form = ""
     form +="</script>"
   form +="</div>"
   form +="<div id='image-footer'>"
-  form +="<p>Click the image to zoom in/out.</p>"
+  form +="<p></p>"
   form +="</div>"
   form +="</div>"
   form +="<div class='form-side'>"
@@ -332,6 +335,7 @@ form = ""
   form +="<p style='font-style:italic'>&#126 Scroll down for &#34Submit&#34 button &#126</p><br />"
   form +="<p><label style='color:red'>Is this translation as complete as it can be? </label><br /><input type='radio' name='fullTrans' value='yes'/> Yes"
   form +="<br /><input type='radio' name='fullTrans' value='no' checked/> No</p>"
+  form +="<p><label>Languages to be Translated</label><select name='hasLanguage' value='#{thisEdit.hasLanguage}'><option value='arabic'>Arabic</option><option value='russian'>Russian</option><option value='both'>Both</option></select></p>"
   form +="<p><label>English Title</label><br /> <input type='text' name='titleEnglish' size='55' value='#{thisEdit.titleEnglish}'/></p>"
   form +="<p><label>Russian Title</label><br /> <input type='text' name='titleRussian' size='55' value='#{thisEdit.titleRussian}'/></p>"
   form +="<p><label>Arabic Title</label><br /> <input type='text' name='titleArabic' size='55' value='#{thisEdit.titleArabic}'/></p>"
@@ -352,6 +356,7 @@ end
 
 post '/update_record/:id' do
 thisUpdate = Can.get(params[:id])
+thisUpdate.update(:hasLanguage => params[:hasLanguage].to_s)
 thisUpdate.update(:titleEnglish => params[:titleEnglish].to_s)
 thisUpdate.update(:titleArabic => params[:titleArabic].to_s)
 thisUpdate.update(:titleRussian => params[:titleRussian].to_s)
@@ -429,8 +434,6 @@ In 2009, over 850 canisters of film were discovered in Amman, Jordan. We are ask
 </div>
 <div class="about-img">
 <img src="/frame_1.jpg" width="600"><br />The collection as found in Amman, Jordan in early 2010.
-<p><h2>Supporters</h2><p>
-<p>Temp Text</p>
 </div>
 </body>
 HTML

@@ -1,4 +1,4 @@
-DataMapper::setup(:default, ENV['DATABASE_URL'] || 'sqlite:data.db')
+DataMapper::setup(:default, ENV['DATABASE_URL'] || 'sqlite://data.db')
 
 class Can
   include DataMapper::Resource
@@ -6,6 +6,7 @@ class Can
   property :id, Serial
   property :canNum, Integer
   property :canType, String
+  property :hasLanguage, String
   property :titleEnglish, String
   property :titleRussian, String
   property :titleArabic, String
@@ -24,7 +25,12 @@ class Can
   property :link3, String
   property :notesGen, String
   property :fullTrans, String
+<<<<<<< HEAD
   property :imageURL, Text
+  property :albumURL, Text
+=======
+  property :imageURL, String
   property :albumURL, String
+>>>>>>> parent of a4a9a8e... changed model
 end
 DataMapper.finalize
