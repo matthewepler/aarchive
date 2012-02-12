@@ -1,4 +1,4 @@
-DataMapper::setup(:default, ENV['DATABASE_URL'] || 'd')
+DataMapper::setup(:default, ENV['DATABASE_URL'] || 'sqlite://data.db')
 
 class Can
   include DataMapper::Resource
