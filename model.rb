@@ -1,4 +1,4 @@
-DataMapper::setup(:default, ENV['DATABASE_URL'] || 'sqlite://data.db')
+DataMapper::setup(:default, ENV['DATABASE_URL'] || "sqlite:///Users/matthewepler/Documents/RFC film Project Summary/Website Files Archive/final/data.db")
 
 class Can
   include DataMapper::Resource
@@ -28,4 +28,5 @@ class Can
   property :imageURL, Text
   property :albumURL, Text
 end
+
 DataMapper.finalize

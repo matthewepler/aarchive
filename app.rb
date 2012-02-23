@@ -1,5 +1,6 @@
 require 'bundler'
 Bundler.require
+require 'rubygems'
 require './model.rb'
 
 get '/' do
