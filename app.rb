@@ -408,7 +408,6 @@ output +="<a href='/display_record/"
   nextpage = (params[:id].to_i + 1)
   output += "#{nextpage}"
   output += ">&#60Next Record</a>"
-  output += "<p> hello dork</p>"
 output +="</div>"
 output
 end
