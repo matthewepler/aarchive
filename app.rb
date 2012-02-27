@@ -243,7 +243,7 @@ get '/display_record/:id' do
   output +='<a href="/contact">&#62Contact</a>'
   output +='<a style="text-align:right;position:relative;left:750" href="/display_record/'
   nextpage =  (params[:page].to_i + 1)
-  output += nextpage
+  output += 'nextpage'
   output += '">&#62Next</a>'
   output +='</div>'
   output +="<div class='can-header'>"
