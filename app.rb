@@ -403,7 +403,7 @@ output +="<html>"
   output +='<div class="image-side">'
 output +="<p><h2>Record updated successfully!</p></h2>"
 output +="<a href='/start/1'>&#62Database</a></br>"
-output +="<a href='/display_record/#{thisUpdate.id}'>&#62Can # #{thisUpdate.canNum}</a>"
+output +="<a href='/display_record/#{thisUpdate.id}'>&#62Can # #{thisUpdate.canNum}</a></br>"
 output +="<a href='/display_record/"
   nextpage = (params[:id].to_i + 1)
   output += "#{nextpage}"
