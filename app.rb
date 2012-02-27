@@ -241,7 +241,6 @@ get '/display_record/:id' do
   output +='<a href="/start/1">&#62Database</a>'
   output +='<a href="/about">&#62About</a>'
   output +='<a href="/contact">&#62Contact</a>'
-  output +='<a href="/display_record/#{params[:id]+1}>&#62Next</a>'
   output +='</div>'
   output +="<div class='can-header'>"
   output +="<div class='green-tab'>Canister #{thisCan.canNum} Record</div>"
