@@ -241,7 +241,11 @@ get '/display_record/:id' do
   output +='<a href="/start/1">&#62Database</a>'
   output +='<a href="/about">&#62About</a>'
   output +='<a href="/contact">&#62Contact</a>'
-  output +='<a style="text-align:right;position:relative;left:750" href="/display_record/'
+  output +='<a style="position:relative;left:600" href="/display_record/'
+  prevpage = (params[:id].to_i -1)
+  output += "#{prevpage}"
+  output += '">&#60Prev</a>'
+  output +='<a style="text-align:right;position:relative;left:150" href="/display_record/'
   nextpage =  (params[:id].to_i + 1)
   output += "#{nextpage}"
   output += '">&#62Next</a>'
