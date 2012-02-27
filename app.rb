@@ -465,13 +465,6 @@ get '/contact' do
 HTML
 end
 
-get '/searchCanNum/:canNum' do
-cans = Can.all
-for this in cans
-  if(this.canNum == params[:canNum])
-    '/display_record/#{this.id}'
-end
-
 
 get '/parser' do
   username = "118319050543607777197"
