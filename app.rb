@@ -407,7 +407,7 @@ output +="<a href='/display_record/#{thisUpdate.id}'>&#62Can # #{thisUpdate.canN
 output +="<a href='/display_record/"
   nextpage = (params[:id].to_i + 1)
   output += "#{nextpage}'"
-  output += ">&#60Next Record</a>"
+  output += ">&#62Next Record</a>"
 output +="</div>"
 output
 end
