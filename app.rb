@@ -495,10 +495,11 @@ get '/search' do
   form +='</div>'
   form +='</div>'
   form +='<div class = "search-area">'
-  form +='<form action="/search/#{thisSearch} method="get">'
-  form +='<p><label>Search By </label></br>'
-  form +='<select name="searchList"><option value = "canNum">Can Number</option><option value="tansStatus">Translation Status</option><option value="language">Language</option><option value="titleEnglish">Title (English only)</option><option value="country">Country</option></select></p>'
-  form +='<p><input type="text" name="thisSearch" size="55"/></p>'
+  form +='<form action="/displaySearch/#{thisSearch} method="get">'
+  form +='<p><label>Search By </label></p>'
+  form +='<p>Fully Translated?'
+  form +='<select name="translated"><option value = "yes">Yes</option><option value="no">No</option></select></p>'
+  # form +='<p><input type="text" name="thisSearch" size="55"/></p>'
   form +='<p><input class="submit-button" type="submit" value="&#62Submit"/><p>'
   form +='</form>'
   form +='</div>'
@@ -507,6 +508,14 @@ get '/search' do
   form +='</html>'
   form
 end
+
+get 'displaySearch/:thisSearch' do
+  @cans = nil
+  if params[:fullTrans]
+    @cans = Can.all(:fullTrans => params[:fullTrans])
+  elsif
+    asdflkjasdflkjasd;flkjads;flkjasd;flkjasdf
+  end
 
 
 get '/parser' do
