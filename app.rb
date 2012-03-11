@@ -476,6 +476,37 @@ get '/contact' do
 HTML
 end
 
+get '/search' do
+ form = ""
+  form +="<html><head>"
+  form +="<link rel='stylesheet' type='text/css' href='/final.css'/>"
+  form += "<title>Canister Database</title>"
+  form +="</head>"
+  form +="<body>"
+  form +="<div class='image-side'>"
+  form +="<div class='header'>"
+  form +='<a href="/">&#62Home</a>'
+  form +='<a href="/start/1">&#62Database</a>'
+  form +='<a href="/about">&#62About</a>'
+  form +='<a href="/contact">&#62Contact</a>'
+  form +='</div>'
+  form +="<div class='can-header'>"
+  form +="<div class='green-tab'>Edit Form - Canister #{thisEdit.canNum}</div>"
+  form +="<span class='cancel-header'>"
+  form +="<div id='gray-tab'><a href='/display_record/#{thisEdit.id}'>&#62Cancel</a></div>"
+  form +="</span>"
+  form +="</div>"
+  form +="<form action='/search/#{thisSearch}' method='post'>"
+  form +="<p><label>Search By</label><select name='searchList'><option value = 'canNum'>Can Number</option><option value='tansStatus'>Translation Status</option><option value='language'>Language</option><option value='titleEnglish'>Title (English only)</option><option value='country'>Country</option></select></p>"
+  form +="<p><input type='text' name='thisSearch' size='55'/></p>"
+  form +="<p><input class='submit-button' type='submit' value='&#62Submit'/><p>"
+  form +="</form>"
+  form +="</div>"
+  form +="</body>"
+  form +="</html>"
+  form
+end
+
 
 get '/parser' do
   username = "118319050543607777197"
