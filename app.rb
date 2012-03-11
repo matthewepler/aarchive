@@ -495,18 +495,18 @@ get '/search' do
   form +='</div>'
   form +='</div>'
   form +='<div class = "search-area">'
-  form +='<form action="/displaySearch/#{thisSearch} method="get">'
-  form +='<p><label>Search By </label></p>'
+  form +='<form action="/displaysearch/#{thisSearch} method="get">'
+  form +='<p><label>Search By (choose one)</label></p>'
+   form +='<p>Language   '
+  form +='<select name="hasLanguages"><option value = "arabic">Arabic</option><option value="russian">Russian</option></select>'
+  form +='<input class="search-go" type="submit" value="&#62go"/><p>'
   form +='<p>Fully Translated?   '
   form +='<select name="fullTrans"><option value = "yes">Yes</option><option value="no">No</option></select>'
   form +='<input class="search-go" type="submit" value="&#62go"/><p>'
   form +='<p>Canister Number   '
   form +='<input type="text" name="canNum" size="4" />'
   form +='<input class="search-go" type="submit" value="&#62go"/><p>'
-   form +='<p>Language   '
-  form +='<select name="hasLanguages"><option value = "arabic">Arabic</option><option value="russian">Russian</option></select>'
-  form +='<input class="search-go" type="submit" value="&#62go"/><p>'
-   form +='<p>Country   '
+  form +='<p>Country   '
   form +='<input type="text" name="country" size="14" />'
   form +='<input class="search-go" type="submit" value="&#62go"/><p>'
   form +='</form>'
@@ -517,13 +517,16 @@ get '/search' do
   form
 end
 
-# get 'displaySearch/:thisSearch' do
-#   @cans = nil
-#   if params[:fullTrans]
-#     @cans = Can.all(:fullTrans => params[:fullTrans])
-#   elsif
-#     asdflkjasdflkjasd;flkjads;flkjasd;flkjasdf
-#   end
+get '/displaysearch' do
+  <<-HTML
+  <p>Hello World!</p>
+  HTML
+  # @cans = nil
+  # if params[:hasLanguages]
+  #   @cans = Can.all(:fullTrans => params[:fullTrans])
+  # elsif
+  #   asdflkjasdflkjasd;flkjads;flkjasd;flkjasdf
+  end
 
 
 get '/parser' do
