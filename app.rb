@@ -532,7 +532,7 @@ get '/displaysearch' do
   # elsif
   #   asdflkjasdflkjasd;flkjads;flkjasd;flkjasdf
   end
-
+end
 
 get '/parser' do
   username = "118319050543607777197"
