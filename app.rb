@@ -524,7 +524,8 @@ get '/displaysearch' do
     @cans = Can.all(:hasLanguages => params[:hasLanguages])
     @cans.each do |can|
     output +='<p><a href="#{can.id}">&#62#{can.id}</>'  
-  # end 
+  end 
+end
 # end elsif
 #     output +=''
 #   end
