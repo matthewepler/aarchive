@@ -518,7 +518,7 @@ get '/search' do
 end
 
 get '/displaysearch' do
-  output ="<p>Hello World</p>"
+  output =""
   @cans = nil
   if params[:hasLanguages]
     @cans = Can.all(:hasLanguages => params[:hasLanguages])
@@ -527,7 +527,6 @@ get '/displaysearch' do
   elsif
     output +=''
   end
-end
   output
   # elsif
   #   asdflkjasdflkjasd;flkjads;flkjasd;flkjasdf
