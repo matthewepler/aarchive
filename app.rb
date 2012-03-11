@@ -521,7 +521,7 @@ get '/displaysearch' do
   output =""
   @cans = nil
   if params[:hasLanguages]
-    @cans = Can.all(:hasLanguages => params[:hasLanguges])
+    @cans = Can.all(:hasLanguages => params[:hasLanguages])
     cans.each do |can|
     output +='<p><a href="#{can.id}">&#62#{can.id}</>'  
   elsif
@@ -566,4 +566,5 @@ albums.each do |album|
     puts "photo url: #{url}"
     
 "Done!"
+end
 end
