@@ -529,7 +529,18 @@ get '/displaysearch' do
     @cans = Can.all(:fullTrans => params[:fullTrans])
     @cans.each do |can|
       output +="<p><a href='display_record/#{can.id}'>&#62 #{can.id}</a></p>"
-    end  
+    end 
+  elsif params[:country] !=nil
+    @cans = Can.all(:country => params[:country])
+    @cans.each do |can|
+      output +="<p><a href='display_record/#{can.id}'>&#62 #{can.id}</a>Country = '#{can.country}'</p>"
+    end 
+  elseif params[:canNum] !=nil
+    @cans = Can.all(:canNum => params[:canNum])
+    @cans.each do |can|
+      # output +="<p><a href='display_record/#{can.id}'>&#62 #{can.id}</a>Format = '#{can.format}'</p>"
+    end 
+      
   end
   output
 end
