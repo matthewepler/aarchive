@@ -526,15 +526,16 @@ get '/displaysearch' do
     # output +='<p><a href="#{can.id}">&#62#{can.id}</>'
     output +='<p>yo</p>'  
     end 
+    output
   end
 # end elsif
 #     output +=''
 #   end
-  output
+  
   # elsif
   #   asdflkjasdflkjasd;flkjads;flkjasd;flkjasdf
   
-end
+
 
 
 get '/parser' do
