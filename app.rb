@@ -497,7 +497,7 @@ get '/search' do
   form +='<div class = "search-area">'
   form +='<form action="/displaySearch/#{thisSearch} method="get">'
   form +='<p><label>Search By </label></p>'
-  form +='<p>Fully Translated?'
+  form +='<p>Fully Translated?   '
   form +='<select name="fullTrans"><option value = "yes">Yes</option><option value="no">No</option></select>'
   form +='<input class="search-go" type="submit" value="&#62go"/><p>'
   form +='</form>'

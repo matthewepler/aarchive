@@ -524,9 +524,11 @@ margin:auto;
 .search-go{
 	background-color:#406D2A;
 	color:#ffffff;
-	width:35px;
+	width:30px;
+	height:20px;
 	padding:10px;
 	text-align:center;
+	font-size:12px;
 	border:none;
 }
 
