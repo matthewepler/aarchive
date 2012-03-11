@@ -520,10 +520,10 @@ end
 get '/displaysearch' do
   output = ""
   cans = nil
-  if params[:hasLanguage] == "arabic"
-    cans = Can.all(:hasLanguage => "arabic")
-    for this in cans
-      output +='<p><a href="#{can.id}">&#62 #{can.id}</>'
+  if params[:hasLanguage]
+    @cans = Can.all(:hasLanguage => params[:hasLanguage])
+    @cans.each do |can|
+      output +='<p><a href="display_record/#{can.id}">&#62 #{can.id}</>'
     end
   end
   output
