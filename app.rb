@@ -480,7 +480,7 @@ get '/search' do
  form = ""
   form +="<html><head>"
   form +="<link rel='stylesheet' type='text/css' href='/final.css'/>"
-  form += "<title>Canister Database</title>"
+  form += "<title>Search</title>"
   form +="</head>"
   form +="<body>"
   form +="<div class='image-side'>"
