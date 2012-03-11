@@ -525,11 +525,12 @@ margin:auto;
 	background-color:#406D2A;
 	color:#ffffff;
 	width:30px;
-	height:20px;
-	padding:10px;
+	height:30px;
+	padding:0px;
 	text-align:center;
 	font-size:12px;
 	border:none;
+	vertical-align:center;
 }
 
 	
