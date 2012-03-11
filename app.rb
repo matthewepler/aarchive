@@ -490,10 +490,10 @@ get '/search' do
   form +='<a href="/about">&#62About</a>'
   form +='<a href="/contact">&#62Contact</a>'
   form +='</div>'
-  form +="<div class='can-header'>"
-  form +="<div class='green-tab'>Search Form</div>"
-  form +="</div>"
-  form +="</div>"
+  form +='<div class="about-header">'
+  form +='<div class="green-tab">Search</div>'
+  form +='</div>'
+  form +='</div>'
   # form +="<form action='/search/#{thisSearch}' method='post'>"
   # form +="<p><label>Search By</label><select name='searchList'><option value = 'canNum'>Can Number</option><option value='tansStatus'>Translation Status</option><option value='language'>Language</option><option value='titleEnglish'>Title (English only)</option><option value='country'>Country</option></select></p>"
   # form +="<p><input type='text' name='thisSearch' size='55'/></p>"
