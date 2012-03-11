@@ -520,6 +520,7 @@ end
 get '/displaysearch' do
   output =""
   @cans = nil
+end
   if params[:hasLanguages]
     @cans = Can.all(:hasLanguages => params[:hasLanguages])
     @cans.each do |can|
@@ -532,7 +533,7 @@ get '/displaysearch' do
   # elsif
   #   asdflkjasdflkjasd;flkjads;flkjasd;flkjasdf
   end
-end
+
 
 get '/parser' do
   username = "118319050543607777197"
