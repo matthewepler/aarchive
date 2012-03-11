@@ -523,12 +523,12 @@ get '/displaysearch' do
   if params[:hasLanguage] != "none"
     @cans = Can.all(:hasLanguage => params[:hasLanguage])
     @cans.each do |can|
-      output +="<p><a href='display_record/#{can.id}'>&#62 #{can.id}</a></p>"
+      output +="<p><a href='display_record/#{can.id}'>&#62Canister #{can.id}</a></p>"
     end
   elsif params[:fullTrans] != "none"
     @cans = Can.all(:fullTrans => params[:fullTrans])
     @cans.each do |can|
-      output +="<p><a href='display_record/#{can.id}'>&#62 #{can.id}</a></p>"
+      output +="<p><a href='display_record/#{can.id}'>&#62 Canister #{can.id}</a></p>"
     end 
   elsif params[:country] !=nil
     @cans = Can.all(:country => params[:country])
