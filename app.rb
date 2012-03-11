@@ -526,6 +526,7 @@ get '/displaysearch' do
     output +='<p><a href="#{can.id}">&#62#{can.id}</>'  
   end 
 end
+end
 # end elsif
 #     output +=''
 #   end
