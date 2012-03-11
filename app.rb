@@ -509,13 +509,13 @@ get '/search' do
   form
 end
 
-get 'displaySearch/:thisSearch' do
-  @cans = nil
-  if params[:fullTrans]
-    @cans = Can.all(:fullTrans => params[:fullTrans])
-  elsif
-    asdflkjasdflkjasd;flkjads;flkjasd;flkjasdf
-  end
+# get 'displaySearch/:thisSearch' do
+#   @cans = nil
+#   if params[:fullTrans]
+#     @cans = Can.all(:fullTrans => params[:fullTrans])
+#   elsif
+#     asdflkjasdflkjasd;flkjads;flkjasd;flkjasdf
+#   end
 
 
 get '/parser' do
