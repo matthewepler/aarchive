@@ -499,7 +499,7 @@ get '/search' do
   form +='<p><label>Search By </label></p>'
   form +='<p>Fully Translated?'
   form +='<select name="translated"><option value = "yes">Yes</option><option value="no">No</option></select></p>'
-  # form +='<p><input type="text" name="thisSearch" size="55"/></p>'
+  #  form +='<p><input type="text" name="thisSearch" size="55"/></p>'
   form +='<p><input class="submit-button" type="submit" value="&#62Submit"/><p>'
   form +='</form>'
   form +='</div>'
