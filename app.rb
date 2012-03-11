@@ -538,7 +538,7 @@ get '/displaysearch' do
   elseif params[:canNum] !=nil
     @cans = Can.all(:canNum => params[:canNum])
     @cans.each do |can|
-      # output +="<p><a href='display_record/#{can.id}'>&#62 #{can.id}</a>Format = '#{can.format}'</p>"
+      output +="<p><a href='display_record/#{can.id}'>&#62 #{can.id}</a>Format = '#{can.canType}'</p>"
     end 
       
   end
