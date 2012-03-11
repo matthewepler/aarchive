@@ -498,7 +498,7 @@ get '/search' do
   form +='<form action="/displaysearch" method="get">'
   form +='<p><label>Search is restricted to one category only</label></p>'
   form +='<p>Language   '
-  form +='<select name="hasLanguage"><option value="none">None</option><option value "arabic">Arabic</option><option value="russian">Russian</option></select>'
+  form +='<select name="hasLanguage"><option value="none">None</option><option value "arabic">Arabic</option><option value="russian">Russian</option><option value="both">Both</option></select>'
   form +='<input class="search-go" type="submit" value="&#62go"/><p>'
   form +='<p>Fully Translated?   '
   form +='<select name="fullTrans"><option value="none">None</option><option value = "yes">Yes</option><option value="no">No</option></select>'
@@ -523,7 +523,7 @@ get '/displaysearch' do
   if params[:hasLanguage]
     @cans = Can.all(:hasLanguage => params[:hasLanguage])
     @cans.each do |can|
-      output +='<p><a href="display_record/#{can.id}">&#62 #{can.id}</a></p>'
+      output +="<p><a href='display_record/#{can.id}'>&#62 #{can.id}</a></p>"
     end
   end
   output
