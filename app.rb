@@ -496,12 +496,12 @@ get '/search' do
   form +='</div>'
   form +='<div class = "search-area">'
   form +='<form action="/displaysearch" method="get">'
-  form +='<p><label>Search By (choose one)</label></p>'
+  form +='<p><label>Search is restricted to one category only</label></p>'
   form +='<p>Language   '
-  form +='<select name="hasLanguages"><option value="none">None Selected</option><option value = "arabic">Arabic</option><option value="russian">Russian</option></select>'
+  form +='<select name="hasLanguages"><option value="none">None</option><option value = "arabic">Arabic</option><option value="russian">Russian</option></select>'
   form +='<input class="search-go" type="submit" value="&#62go"/><p>'
   form +='<p>Fully Translated?   '
-  form +='<select name="fullTrans"><option value="none">None Selected</option><option value = "yes">Yes</option><option value="no">No</option></select>'
+  form +='<select name="fullTrans"><option value="none">None</option><option value = "yes">Yes</option><option value="no">No</option></select>'
   form +='<input class="search-go" type="submit" value="&#62go"/><p>'
   form +='<p>Canister Number   '
   form +='<input type="text" name="canNum" size="4" />'
@@ -518,12 +518,12 @@ get '/search' do
 end
 
 get '/displaysearch' do
-  <<-HTML
-  <p>Hello World!</p>
-  HTML
-  # @cans = nil
-  # if params[:hasLanguages]
-  #   @cans = Can.all(:fullTrans => params[:fullTrans])
+  output =""
+  @cans = nil
+  if params[:hasLanguages] == arabic
+    @cans = Can.all(:hasLanguages => params[:hasLanguges])
+    cans.each do 
+    output +='<p><a href="#{can.id}">&#62#{can.id}</>'  
   # elsif
   #   asdflkjasdflkjasd;flkjads;flkjasd;flkjasdf
   end
