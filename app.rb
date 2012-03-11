@@ -525,6 +525,11 @@ get '/displaysearch' do
     @cans.each do |can|
       output +="<p><a href='display_record/#{can.id}'>&#62 #{can.id}</a></p>"
     end
+  elsif params[:fullTrans]
+    @cans = Can.all(:fullTrans => params[:fullTrans])
+    @cans.each do |can|
+      output +="<p><a href='display_record/#{can.id}'>&#62 #{can.id}</a></p>"
+    end  
   end
   output
 end
