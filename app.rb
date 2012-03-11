@@ -498,7 +498,7 @@ get '/search' do
   form +='<form action="/displaysearch" method="get">'
   form +='<p><label>Search is restricted to one category only</label></p>'
   form +='<p>Language   '
-  form +='<select name="hasLanguages"><option value="none">None</option><option value = "arabic">Arabic</option><option value="russian">Russian</option></select>'
+  form +='<select name="hasLanguage"><option value="none">None</option><option value = "arabic">Arabic</option><option value="russian">Russian</option></select>'
   form +='<input class="search-go" type="submit" value="&#62go"/><p>'
   form +='<p>Fully Translated?   '
   form +='<select name="fullTrans"><option value="none">None</option><option value = "yes">Yes</option><option value="no">No</option></select>'
