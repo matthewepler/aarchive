@@ -229,6 +229,11 @@ margin:auto;
 	padding:30px;
 }
 
+.search-area{
+	position:relative;
+	left:100px;
+}
+
 .can-header{
 	background-color:#406D2A;
 	color:#ffffff;
