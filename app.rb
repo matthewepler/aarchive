@@ -519,12 +519,10 @@ end
 
 get '/displaysearch' do
   output = ""
-  if params[:hasLanguages] == "arabic"
-    cans = Can.all
-    for this in cans
-      if this.hasLanguages = arabic
-        output +="<p>yo</p>"
-      end
+  cans = Can.all
+  for this in cans
+    if this.hasLanguages == params[:hasLanguages]
+      output +="<p>yo</p>"
     end 
   end
   output
