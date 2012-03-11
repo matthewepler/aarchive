@@ -232,6 +232,7 @@ margin:auto;
 .search-area{
 	position:relative;
 	left:100px;
+	top:175px;
 }
 
 .can-header{
@@ -445,6 +446,8 @@ margin:auto;
 	height:70px;
 	width:260;
 	margin-left:20px;
+	font-family:Nilland;
+	font-size:52px;
 }
 
 .about-header .green-tab{
