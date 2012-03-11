@@ -491,10 +491,7 @@ get '/search' do
   form +='<a href="/contact">&#62Contact</a>'
   form +='</div>'
   form +="<div class='can-header'>"
-  form +="<div class='green-tab'>Edit Form - Canister #{thisEdit.canNum}</div>"
-  form +="<span class='cancel-header'>"
-  form +="<div id='gray-tab'><a href='/display_record/#{thisEdit.id}'>&#62Cancel</a></div>"
-  form +="</span>"
+  form +="<div class='green-tab'>Search Form</div>"
   form +="</div>"
   # form +="<form action='/search/#{thisSearch}' method='post'>"
   # form +="<p><label>Search By</label><select name='searchList'><option value = 'canNum'>Can Number</option><option value='tansStatus'>Translation Status</option><option value='language'>Language</option><option value='titleEnglish'>Title (English only)</option><option value='country'>Country</option></select></p>"
