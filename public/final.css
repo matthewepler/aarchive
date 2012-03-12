@@ -290,6 +290,7 @@ margin:auto;
 	font-size:52px;
 	color:#574e6c;
 	padding-left:25px;
+	z-index:1;
 }
 
 .form-side{
