@@ -383,7 +383,7 @@ thisUpdate.update(:link1 => params[:link1].to_s)
 thisUpdate.update(:link2 => params[:link2].to_s)
 thisUpdate.update(:link3 => params[:link3].to_s)
 thisUpdate.update(:notesGen => params[:notesGen].to_s)
-thisUpdate.update(:fullTrans => params[:fullTrans])
+thisUpdate.update(:fullTrans => params[:fullTrans].to_s)
 thisUpdate.update(:imageURL => params[:imageURL].to_s)
 thisUpdate.update(:albumURL => params[:albumURL].to_s)
 thisUpdate.save
@@ -544,7 +544,7 @@ get '/displaysearch' do
     @cans.each do |can|
       output +="<a href='/display_record/#{can.id}'"
       if(can.fullTrans=="yes")
-      output += " class='completed'>"
+      output += " id='completed'>"
     else
       output += ">"
     end
