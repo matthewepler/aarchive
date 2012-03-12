@@ -399,6 +399,10 @@ margin:auto;
 	position:relative;
 }
 
+.translated-counter{
+	position:relative;
+}
+
 .thumbs img{
 	border-style:solid;
 	border-width:1px;
