@@ -98,11 +98,6 @@ get '/start/:page' do
   output +='<div class="page-number-heading">'
   output +="Page #: #{params[:page]}"
   output +="</div>" 
-  output +="<div class='translated-counter>"
-  all_count = Can.all(:fullTrans => "yes")
-  full_count = all_count.count
-  output +="<p>#{full_count}&#32 of 850 records translated!</p>"
-  output +="</div>"
   output +='<div class="thumbs">'
   cans = Can.all(:limit => 50, :offset => offset)
   for this in cans
