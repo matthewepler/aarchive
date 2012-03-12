@@ -580,7 +580,7 @@ get '/displaysearch' do
       output +="<img src='#{can.imageURL}' width='100' height='75 /></a>"
       output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a></p>"
     end 
-  elsif params[:country].nil? 
+  unless params[:country].nil? 
     @cans = Can.all(:country => params[:country])
     @cans.each do |can|
       output +="<a href='/display_record/#{can.id}'"
@@ -592,9 +592,10 @@ get '/displaysearch' do
       output +="<img src='#{can.imageURL}' width='100' height='75 /></a>"
       output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>Country = '#{can.country}'</p>"
     end 
-  elsif params[:canNum].nil?
+  unless params[:canNum].nil?
     @cans = Can.all(:canNum => params[:canNum])
     @cans.each do |can|
+      output +="<p>#{@cans.count} records found</p>"
       output +="<a href='/display_record/#{can.id}'"
       if(can.fullTrans=="yes")
       output += " id='completed'>"
@@ -616,7 +617,7 @@ get '/displaysearch' do
       output += ">"
     end
       output +="<img src='#{can.imageURL}' width='100' height='75 /></a>"
-    output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 #{can.canType}</p>"
+    output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"
     end  
   output +="</div>"   
   end
