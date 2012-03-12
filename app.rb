@@ -523,7 +523,7 @@ get '/search' do
   form +='<input type="text" name="country" size="14" />'
   form +='<input class="search-go" type="submit" value="&#62go"/><p>'
   form +='<p>Can Size, Film Gauge   '
-  form +='<select name="canType"><option value="none">None</option><option value "35mm">35mm</option><option value="Small 16mm">Small 16mm</option><option value="Large 16mm">Large 16mm</option></select>'
+  form +='<select name="canType"><option value="none">None</option><option value "35mm">35mm</option><option value="16mm">Small 16mm</option><option value="Large 16mm">Large 16mm</option></select>'
   form +='<input class="search-go" type="submit" value="&#62go"/><p>'
   form +='</form>'
   form +='</div>'
@@ -584,10 +584,15 @@ get '/displaysearch' do
       output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>Format = '#{can.canType}'</p>"
     end 
   elsif params[:canType] !="none"
-    @cans = Can.all(:canType => params[:canType])
+    @cans = Can.all
     @cans.each do |can|
+      if params[:canType].include? '35'
       album_title = can.canType
-      can.size, can.gauge = album_string.split()
+      can.size, can.gauge = album_string.split("+")
+      output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>#{can.gauge}</p>"
+    elsif params[:canType].include? '16'
+      album_title = can.canType
+      can.size, can.gauge = album_string.split("+")
       output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>#{can.gauge}</p>"
     end   
   output +="</div>"   
