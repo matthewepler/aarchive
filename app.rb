@@ -630,6 +630,7 @@ get '/displaysearch' do
       output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"
   end  
   output +="</div>"   
+end
   output
 end
 
