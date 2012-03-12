@@ -580,7 +580,7 @@ get '/displaysearch' do
       output += ">"
     end
       output +="<img src='#{can.imageURL}' width='100' height='75 /></a>"
-      output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a></p>"
+      output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"
     end
   elsif !params[:canNum].nil?
     @cans = Can.all(:canNum => params[:canNum])
@@ -593,7 +593,7 @@ get '/displaysearch' do
       output += ">"
     end
       output +="<img src='#{can.imageURL}' width='100' height='75 /></a>"
-      output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>Format = '#{can.canType}'</p>"    
+      output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"    
     end    
   elsif !params[:country].nil? 
     @cans = Can.all(:country => params[:country])
@@ -606,7 +606,7 @@ get '/displaysearch' do
       output += ">"
     end
       output +="<img src='#{can.imageURL}' width='100' height='75 /></a>"
-      output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>Country = '#{can.country}'</p>"
+      output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"
     end 
   elsif params[:canType] != "none"
     name = params[:canType].split('+')
