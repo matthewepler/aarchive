@@ -591,6 +591,7 @@ get '/displaysearch' do
     end
       output +="<img src='#{can.imageURL}' width='100' height='75 /></a>"
       output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>Country = '#{can.country}'</p>"
+      exit
     end 
   unless params[:canNum].nil?
     @cans = Can.all(:canNum => params[:canNum])
@@ -604,6 +605,7 @@ get '/displaysearch' do
     end
       output +="<img src='#{can.imageURL}' width='100' height='75 /></a>"
       output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>Format = '#{can.canType}'</p>"
+      exit    
     end 
   elsif params[:canType] != "none"
     name = params[:canType].split('+')
