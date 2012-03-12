@@ -519,11 +519,11 @@ end
 
 get '/displaysearch' do
   output = ""
-  form +="<html><head>"
-  form +="<link rel='stylesheet' type='text/css' href='/final.css'/>"
-  form += "<title>Search</title>"
-  form +="</head>"
-  form +="<body>"
+  output +="<html><head>"
+  output +="<link rel='stylesheet' type='text/css' href='/final.css'/>"
+  output += "<title>Results</title>"
+  output +="</head>"
+  output +="<body>"
   output +="<div class='image-side'>"
   output +="<div class='header'>"
   output +='<a href="/">&#62Home</a>'
