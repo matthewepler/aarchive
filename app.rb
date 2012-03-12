@@ -406,12 +406,13 @@ output +="<html>"
   output +='</div>'
   output +='<div class="image-side">'
 output +="<p><h2>Record updated successfully!</p></h2>"
-output +="<a href='/start/1'>&#62Return to Database</a></br>"
 output +="<a href='/display_record/#{thisUpdate.id}'>&#62Review Your Changes</a></br>"
 output +="<a href='/edit_record/"
   nextpage = (params[:id].to_i + 1)
   output += "#{nextpage}'"
   output += ">&#62 View Next Record</a>"
+  output +="<a href='/start/1'>&#62Return to Database</a></br>"
+
 output +="</div>"
 output
 end
