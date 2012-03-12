@@ -552,6 +552,8 @@ margin:auto;
 .search-link{
 	float:right;
 	color:#3a3a3a;
+	margin-right:100;
+	text-decoration:underline;
 }
 
 
