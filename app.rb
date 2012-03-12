@@ -270,7 +270,7 @@ get '/display_record/:id' do
     output +="});"
     output +="});"
     output +="</script>"
-  output +="<p>Can Size & Film Gauge:&#32 #{thisCan.canType}</p>"
+  output +="<p>CAN SIZE, FILM GAUGE:&#32 #{thisCan.canType}</p>"
   output +="</div>"
   output +="<div id='image-footer'>"
   output +="<p></p>"
@@ -338,6 +338,7 @@ form = ""
     form +="});"
     form +="});"
     form +="</script>"
+  form +="<p>CAN SIZE, FILM GAUGE:&#32 #{thisCan.canType}</p>"
   form +="</div>"
   form +="<div id='image-footer'>"
   form +="<p></p>"
@@ -521,6 +522,9 @@ get '/search' do
   form +='<p>Country   '
   form +='<input type="text" name="country" size="14" />'
   form +='<input class="search-go" type="submit" value="&#62go"/><p>'
+  form +='<p>Can Size, Film Gauge   '
+  form +='<select name="canType"><option value="none">None</option><option value "35mm">35mm</option><option value="Small 16mm">Small 16mm</option><option value="Large 16mm">Large 16mm</option></select>'
+  form +='<input class="search-go" type="submit" value="&#62go"/><p>'
   form +='</form>'
   form +='</div>'
   form +='</div>'
@@ -579,6 +583,11 @@ get '/displaysearch' do
     @cans.each do |can|
       output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>Format = '#{can.canType}'</p>"
     end 
+  elsif params[:canType] !="none"
+    @cans = Can.all(:canType => params[:canType])
+    @cans.each do |can|
+      output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>Format = '#{can.canType}'</p>"
+    end   
   output +="</div>"   
   end
   output
