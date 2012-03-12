@@ -542,8 +542,8 @@ get '/displaysearch' do
   if params[:hasLanguage] != "none"
     @cans = Can.all(:hasLanguage => params[:hasLanguage])
     @cans.each do |can|
-      output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32(#{can.canType})"
-      output +="<img src='#{can.imageURL}' width='100' height='75'/></p>"
+      output +="<p><img src='#{can.imageURL}' width='100' height='75'/>"
+      output +="<a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32(#{can.canType})</p>"
     end
   elsif params[:fullTrans] != "none"
     @cans = Can.all(:fullTrans => params[:fullTrans])
