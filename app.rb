@@ -540,7 +540,7 @@ get '/displaysearch' do
 
   cans = nil
   if params[:hasLanguage] != "none"
-    @cans = Can.all(:hasLanguage => params[:hasLanguage])
+    @cans = Can.all(:hasLanguage => params[:hasLanguage]  :order => [:canType].desc)
     @cans.each do |can|
       output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32(#{can.canType})</p>"
     end
