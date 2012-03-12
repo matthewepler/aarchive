@@ -336,6 +336,10 @@ margin:auto;
   	opacity:0.25;
 }
 
+.search-area .completed{
+	opacity:0.25;
+}
+
 .start-instructions{
 	background-color:#406D2A;
 	width:800px;
