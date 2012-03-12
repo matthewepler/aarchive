@@ -586,7 +586,9 @@ get '/displaysearch' do
   elsif params[:canType] !="none"
     @cans = Can.all(:canType => params[:canType])
     @cans.each do |can|
-      output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>Format = '#{can.canType}'</p>"
+      album_title = can.canType
+      can.size, can.gauge = album_string.split()
+      output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>#{can.gauge}</p>"
     end   
   output +="</div>"   
   end
