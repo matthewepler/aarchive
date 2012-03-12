@@ -580,7 +580,7 @@ get '/displaysearch' do
       output +="<img src='#{can.imageURL}' width='100' height='75 /></a>"
       output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a></p>"
     end 
-  elsif params[:country].nil? = false
+  elsif params[:country].nil? == false
     @cans = Can.all(:country => params[:country])
     @cans.each do |can|
       output +="<a href='/display_record/#{can.id}'"
@@ -592,7 +592,7 @@ get '/displaysearch' do
       output +="<img src='#{can.imageURL}' width='100' height='75 /></a>"
       output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>Country = '#{can.country}'</p>"
     end 
-  elsif params[:canNum].nil? = false
+  elsif params[:canNum].nil? == false
     @cans = Can.all(:canNum => params[:canNum])
     @cans.each do |can|
       output +="<a href='/display_record/#{can.id}'"
