@@ -270,6 +270,7 @@ get '/display_record/:id' do
     output +="});"
     output +="});"
     output +="</script>"
+  output +="<p>Can Size & Film Gauge:&#32 #{thisCan.canType}</p>"
   output +="</div>"
   output +="<div id='image-footer'>"
   output +="<p></p>"
@@ -389,6 +390,7 @@ thisUpdate.update(:notesGen => params[:notesGen].to_s)
 thisUpdate.update(:fullTrans => params[:fullTrans].to_s)
 thisUpdate.update(:imageURL => params[:imageURL].to_s)
 thisUpdate.update(:albumURL => params[:albumURL].to_s)
+thisUpdate.update(:canType) => params[:canType].to_s)
 thisUpdate.save
 
 output =""
@@ -410,7 +412,7 @@ output +="<a href='/display_record/#{thisUpdate.id}'>&#62Review Your Changes</a>
 output +="<a href='/edit_record/"
   nextpage = (params[:id].to_i + 1)
   output += "#{nextpage}'"
-  output += ">&#62 View Next Record</a>"
+  output += ">&#62 View Next Record</a></br>"
   output +="<a href='/start/1'>&#62Return to Database</a></br>"
 
 output +="</div>"
