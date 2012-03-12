@@ -132,11 +132,6 @@ get '/start/:page' do
     # output +="<p><a href='/list'>List View</a></p>"
 
   output +="</div>"
-  output +='<div class="translated-counter">'
-  all_count = Can.all(:fullTrans => "yes")
-  full_count = all_count.count
-  output +="<p>#{full_count}&#32 of 850 records translated!</p>"
-  output +="</div>"
   output += "</body></html>"
   output
   end
