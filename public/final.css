@@ -550,7 +550,7 @@ margin:auto;
 }
 
 .search-link{
-	margin-left:570px;
+	float:right;
 	color:#3a3a3a;
 }
 

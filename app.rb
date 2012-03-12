@@ -364,6 +364,7 @@ form = ""
   form +="<p><label style='color:red'>Is this translation as complete as it can be? </label><br /><input type='radio' name='fullTrans' value='yes'/> Yes"
   form +="<br /><input type='radio' name='fullTrans' value='no' checked/> No</p>"
   form +="<input type='hidden' name='imageURL' value='#{thisEdit.imageURL}'>"
+  form +="<input type='hidden' name='canType' value='#{thisEdit.canType}'>"
   form +="<p><input class='submit-button' type='submit' value='&#62Submit'/><p>"
   form +="</form>"
   form +="</div>"
@@ -571,8 +572,8 @@ get '/displaysearch' do
     else
       output += ">"
     end
-      output +="<img src='#{can.imageURL}' width='100' height='75 /></a>"
-      output +="<a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32(#{can.canType})</p>"
+      output +="<img src='#{can.imageURL}' width='100' height='75 /></a>" 
+      output +="<a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"
     end
   elsif params[:fullTrans] != "none"
     @cans = Can.all(:fullTrans => params[:fullTrans])
