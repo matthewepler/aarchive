@@ -233,6 +233,7 @@ margin:auto;
 	position:relative;
 	left:50px;
 	top:175px;
+	z-index:-1;
 }
 
 .can-header{
@@ -296,9 +297,9 @@ margin:auto;
 	overflow:scroll;
 	top:160px;
 	left:870px;
-	height:612px;
 	width:620px;
     font-family:Tahoma;
+    z-index:-1;
 }
 
 #editButton {
