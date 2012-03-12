@@ -523,7 +523,20 @@ get '/displaysearch' do
   if params[:hasLanguage] != "none"
     @cans = Can.all(:hasLanguage => params[:hasLanguage])
     @cans.each do |can|
+      output +="<div class='image-side'>"
+      output +="<div class='header'>"
+      output +='<a href="/">&#62Home</a>'
+      output +='<a href="/start/1">&#62Database</a>'
+      output +='<a href="/about">&#62About</a>'
+      output +='<a href="/contact">&#62Contact</a>'
+      output +='</div>'
+      output +='<div class="search-header">'
+      output +='<div class="green-tab">Search</div>'
+      output +='</div>'
+      output +='</div>'
+      output +='<div class = "search-area">'
       output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a></p>"
+      output +="</div>"
     end
   elsif params[:fullTrans] != "none"
     @cans = Can.all(:fullTrans => params[:fullTrans])
