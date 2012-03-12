@@ -233,7 +233,7 @@ margin:auto;
 	position:relative;
 	left:50px;
 	top:175px;
-	z-index:-1;
+	z-index:0;
 }
 
 .can-header{
@@ -299,7 +299,7 @@ margin:auto;
 	left:870px;
 	width:620px;
     font-family:Tahoma;
-    z-index:-1;
+    z-index:0;
 }
 
 #editButton {
