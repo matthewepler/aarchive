@@ -549,9 +549,9 @@ margin:auto;
 	font-size:14px;
 }
 
-.search-link{
-	float: right;
-	margin-right: 100;
+.image-side .header .search-link{
+	margin-left:570px;
+	color:#3a3a3a;
 }
 
 
