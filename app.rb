@@ -595,7 +595,7 @@ get '/displaysearch' do
   elsif !params[:canNum].nil?
     @cans = Can.all(:canNum => params[:canNum])
     @cans.each do |can|
-      # output +="<p>'#{@cans.count}'' records found</p>"
+      output +="<p>'#{@cans.count}'' records found</p>"
       output +="<a href='/display_record/#{can.id}'"
       if(can.fullTrans=="yes")
       output += " id='completed'>"
