@@ -390,7 +390,7 @@ thisUpdate.update(:notesGen => params[:notesGen].to_s)
 thisUpdate.update(:fullTrans => params[:fullTrans].to_s)
 thisUpdate.update(:imageURL => params[:imageURL].to_s)
 thisUpdate.update(:albumURL => params[:albumURL].to_s)
-thisUpdate.update(:canType) => params[:canType].to_s)
+thisUpdate.update(:canType => params[:canType].to_s)
 thisUpdate.save
 
 output =""
