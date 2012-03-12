@@ -317,6 +317,7 @@ form = ""
   form +='<a href="/start/1">&#62Database</a>'
   form +='<a href="/about">&#62About</a>'
   form +='<a href="/contact">&#62Contact</a>'
+  form +='<span class="search-link"><a href="/search">&#62Search</a></span>'
   form +='</div>'
   form +="<div class='can-header'>"
   form +="<div class='green-tab'>Edit Form - Canister #{thisEdit.canNum}</div>"
@@ -401,6 +402,7 @@ output +="<html>"
   output +='<a href="/start/1">&#62Database</a>'
   output +='<a href="/about">&#62About</a>'
   output +='<a href="/contact">&#62Contact</a>'
+  output +='<span class="search-link"><a href="/search">&#62Search</a></span>'
   output +='</div>'
   output +='<div class="image-side">'
 output +="<p><h2>Record updated successfully!</p></h2>"
@@ -427,6 +429,8 @@ get '/about' do
 <a href="/start/1">&#62Database</a>
 <a href="/about">&#62About</a>
 <a href="/contact">&#62Contact</a>
+<span class="search-link"><a href="/search">&#62Search</a></span>
+
 </div>
 <div class='about-header'>
 <div class='green-tab'>About</div>
@@ -468,6 +472,8 @@ get '/contact' do
 <a href="/start/1">&#62Database</a>
 <a href="/about">&#62About</a>
 <a href="/contact">&#62Contact</a>
+<span class="search-link"><a href="/search">&#62Search</a></span>
+
 </div>
 <div class='about-header'>
 <div class='green-tab'>Contact</div>
@@ -491,6 +497,7 @@ get '/search' do
   form +='<a href="/start/1">&#62Database</a>'
   form +='<a href="/about">&#62About</a>'
   form +='<a href="/contact">&#62Contact</a>'
+  form +='<span class="search-link"><a href="/search">&#62Search</a></span>'
   form +='</div>'
   form +='<div class="search-header">'
   form +='<div class="green-tab">Search</div>'
@@ -532,6 +539,7 @@ get '/displaysearch' do
   output +='<a href="/start/1">&#62Database</a>'
   output +='<a href="/about">&#62About</a>'
   output +='<a href="/contact">&#62Contact</a>'
+  output +='<span class="search-link"><a href="/search">&#62Search</a></span>'
   output +='</div>'
   output +='<div class="search-header">'
   output +='<div class="green-tab">Results</div>'
