@@ -519,18 +519,24 @@ end
 
 get '/displaysearch' do
   output = ""
+  form +="<html><head>"
+  form +="<link rel='stylesheet' type='text/css' href='/final.css'/>"
+  form += "<title>Search</title>"
+  form +="</head>"
+  form +="<body>"
   output +="<div class='image-side'>"
-      output +="<div class='header'>"
-      output +='<a href="/">&#62Home</a>'
-      output +='<a href="/start/1">&#62Database</a>'
-      output +='<a href="/about">&#62About</a>'
-      output +='<a href="/contact">&#62Contact</a>'
-      output +='</div>'
-      output +='<div class="search-header">'
-      output +='<div class="green-tab">Search Results</div>'
-      output +='</div>'
-      output +='</div>'
-      output +='<div class = "search-area">'
+  output +="<div class='header'>"
+  output +='<a href="/">&#62Home</a>'
+  output +='<a href="/start/1">&#62Database</a>'
+  output +='<a href="/about">&#62About</a>'
+  output +='<a href="/contact">&#62Contact</a>'
+  output +='</div>'
+  output +='<div class="search-header">'
+  output +='<div class="green-tab">Search Results</div>'
+  output +='</div>'
+  output +='</div>'
+  output +='<div class = "search-area">'
+
   cans = nil
   if params[:hasLanguage] != "none"
     @cans = Can.all(:hasLanguage => params[:hasLanguage])
@@ -542,16 +548,19 @@ get '/displaysearch' do
     @cans = Can.all(:fullTrans => params[:fullTrans])
     @cans.each do |can|
       output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a></p>"
+      output +="</div>"
     end 
   elsif params[:country] !=nil
     @cans = Can.all(:country => params[:country])
     @cans.each do |can|
       output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>Country = '#{can.country}'</p>"
+      output +="</div>"
     end 
   elsif params[:canNum] !=nil
     @cans = Can.all(:canNum => params[:canNum])
     @cans.each do |can|
       output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>Format = '#{can.canType}'</p>"
+      output +="</div>"
     end 
       
   end
