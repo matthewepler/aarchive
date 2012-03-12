@@ -93,11 +93,6 @@ get '/start/:page' do
   output +='</div>'
   output +='<div class="start-instructions">'
   output +='<p>Click on an image to view/edit the record. Complete records appear transparent.'
-  output +='<span class="translated-counter">'
-  all_count = Can.all(:fullTrans => "yes")
-  full_count = all_count.count
-  output +="#{full_count}&#32 of 850 records translated!</p>"
-  output +="</span>"
   offset = (params[:page].to_i - 1) * 45
   output +='</div>'
   output +='<div class="page-number-heading">'
@@ -131,6 +126,11 @@ get '/start/:page' do
   output +="</p>"
     # output +="<p><a href='/list'>List View</a></p>"
 
+  output +="</div>"
+  output +='<div class="translated-counter">'
+  all_count = Can.all(:fullTrans => "yes")
+  full_count = all_count.count
+  output +="<p>#{full_count}&#32 of 850 records translated!</p>"
   output +="</div>"
   output += "</body></html>"
   output
