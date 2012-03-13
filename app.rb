@@ -575,14 +575,14 @@ get '/displaysearch' do
       if incoming.include? 'arabic' 
           if !current.nil?
             if current.include? 'arabic'
-            output +="<a href='/display_record/#{can.id}'"
+            output +="<a href='/display_record/#{this.id}'"
              if(can.fullTrans=="yes")
               output += " id='completed'>"
              else
               output += ">"
              end
-            output +="<img src='#{can.imageURL}' width='100' height='75 /></a>" 
-            output +="<a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"
+            output +="<img src='#{this.imageURL}' width='100' height='75 /></a>" 
+            output +="<a href='display_record/#{this.id}'>&#62 Can #{this.canNum}</a>&#32 (#{this.canType})</p>"
           end
         end
       end
