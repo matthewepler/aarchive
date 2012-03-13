@@ -380,7 +380,7 @@ post '/update_record/:id' do
 thisUpdate = Can.get(params[:id])
 arabic = params[:hasarabic]
 russian = params[:hasrussian]
-language = arabic + russian
+language = arabic + "," + russian
 thisUpdate.update(:hasLanguage => language)
 thisUpdate.update(:titleEnglish => params[:titleEnglish].to_s)
 thisUpdate.update(:titleArabic => params[:titleArabic].to_s)
