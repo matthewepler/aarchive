@@ -391,7 +391,8 @@ if !params[:hasrussian].nil?
   if !params[:hasarabic].nil?
     arabic = params[:hasarabic]
     language = arabic + "," + russian
-  
+  end
+end
 end
 
 thisUpdate.update(:hasLanguage => language)
