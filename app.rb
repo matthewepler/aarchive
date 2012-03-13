@@ -576,7 +576,7 @@ get '/displaysearch' do
           if !current.nil?
             if current.include? 'arabic'
             output +="<a href='/display_record/#{this.id}'"
-             if(can.fullTrans=="yes")
+             if(this.fullTrans=="yes")
               output += " id='completed'>"
              else
               output += ">"
