@@ -571,7 +571,8 @@ get '/displaysearch' do
     incoming = params[:hasLanguage]
     cans = Can.all
     for this in cans
-      if (incoming.include? 'arabic' and this.hasLanguage.include? 'arabic')
+      current = this.hasLanguage
+      if (incoming.include? 'arabic' && current.include? 'arabic')
         output +="<p>what up</p>"
       end
 
