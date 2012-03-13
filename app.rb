@@ -571,10 +571,10 @@ get '/displaysearch' do
     incoming = params[:hasLanguage]
     cans = Can.all
     for this in cans
-      if (incoming.include? 'arabic' && this.hasLanguage.include? 'arabic')
+      if (incoming.include? 'arabic' and this.hasLanguage.include? 'arabic')
         output +="<p>what up</p>"
       end
-      
+
     # @cans = Can.all(:hasLanguage => params[:hasLanguage])
     # output +="<p>#{@cans.count} records found</p>"
     # @cans.each do |can|
