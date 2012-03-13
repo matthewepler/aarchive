@@ -568,17 +568,24 @@ get '/displaysearch' do
 
   cans = nil
   if params[:hasLanguage] != "none"
-    @cans = Can.all(:hasLanguage => params[:hasLanguage])
-    output +="<p>#{@cans.count} records found</p>"
-    @cans.each do |can|
-      output +="<a href='/display_record/#{can.id}'"
-      if(can.fullTrans=="yes")
-        output += " id='completed'>"
-      else
-        output += ">"
+    incoming = params[:hasLanguage]
+    cans = Can.all
+    for this in cans
+      if (incoming.include? 'arabic' && this.hasLanguage.include? 'arabic')
+        output +="<p>what up</p>"
       end
-      output +="<img src='#{can.imageURL}' width='100' height='75 /></a>" 
-      output +="<a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"
+    end
+    # @cans = Can.all(:hasLanguage => params[:hasLanguage])
+    # output +="<p>#{@cans.count} records found</p>"
+    # @cans.each do |can|
+    #   output +="<a href='/display_record/#{can.id}'"
+    #   if(can.fullTrans=="yes")
+    #     output += " id='completed'>"
+    #   else
+    #     output += ">"
+    #   end
+    #   output +="<img src='#{can.imageURL}' width='100' height='75 /></a>" 
+    #   output +="<a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"
   end
   elsif params[:fullTrans] != "none"
     @cans = Can.all(:fullTrans => params[:fullTrans])
