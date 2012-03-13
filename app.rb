@@ -378,7 +378,7 @@ end
 
 post '/update_record/:id' do
 thisUpdate = Can.get(params[:id])
-
+language = " "
 if !params[:hasarabic].nil? 
   arabic = params[:hasarabic]
   if !params[:hasrussian.nil]?
