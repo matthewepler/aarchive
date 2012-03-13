@@ -381,7 +381,7 @@ thisUpdate = Can.get(params[:id])
 language = 'string'
 if !params[:hasarabic].nil? 
   arabic = params[:hasarabic]
-  if !params[:hasrussian.nil]?
+  if !params[:hasrussian].nil?
     russian = params[:hasrussian]
     language = arabic + "," + russian
   end
