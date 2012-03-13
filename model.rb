@@ -7,6 +7,8 @@ class Can
   property :canNum, Integer
   property :canType, String
   property :hasLanguage, String
+  property :hasArabic, String
+  property :hasRussian, String
   property :titleEnglish, String
   property :titleRussian, String
   property :titleArabic, String
