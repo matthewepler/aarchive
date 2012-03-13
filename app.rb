@@ -573,8 +573,10 @@ get '/displaysearch' do
     for this in cans
       current = this.hasLanguage
       if incoming.include? 'arabic' 
-        if current.include? 'arabic'
-        output +="<p>what up</p>"
+          if !current.nil?
+            if current.include? 'arabic'
+            output +="<p>what up</p>"
+          end
         end
       end
     end
