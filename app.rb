@@ -353,8 +353,8 @@ form = ""
   form +="<form action='/update_record/#{thisEdit.id}' method='post'>"
   form +="<p style='font-style:italic'>&#126 Scroll down for &#34Submit&#34 button &#126</p><br />"
   form +="<p><label>Languages to be Translated</label><br />"
-  form +="<input type = 'checkbox' name='hasLanguage' value='arabic' /> Arabic<br />"
-  form +="<input type = 'checkbox' name='hasLanguage' value='russian' /> Russian<br />"
+  form +="<input type = 'checkbox' name='hasarabic' value='arabic' /> Arabic<br />"
+  form +="<input type = 'checkbox' name='hasrussian' value='russian' /> Russian<br />"
   form +="<p><label>English Title</label><br /> <input type='text' name='titleEnglish' size='55' value='#{thisEdit.titleEnglish}'/></p>"
   form +="<p><label>Russian Title</label><br /> <input type='text' name='titleRussian' size='55' value='#{thisEdit.titleRussian}'/></p>"
   form +="<p><label>Arabic Title</label><br /> <input type='text' name='titleArabic' size='55' value='#{thisEdit.titleArabic}'/></p>"
@@ -378,7 +378,10 @@ end
 
 post '/update_record/:id' do
 thisUpdate = Can.get(params[:id])
-thisUpdate.update(:hasLanguage => params[:hasLanguage].to_s)
+arabic = params[:hasarabic]
+russian = params[:hasrussian]
+language = arabic + russian
+thisUpdate.update(:hasLanguage => language)
 thisUpdate.update(:titleEnglish => params[:titleEnglish].to_s)
 thisUpdate.update(:titleArabic => params[:titleArabic].to_s)
 thisUpdate.update(:titleRussian => params[:titleRussian].to_s)
