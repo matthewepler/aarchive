@@ -597,21 +597,6 @@ get '/displaysearch' do
           output +="<a href='display_record/#{this.id}'>&#62 Can #{this.canNum}</a>&#32 (#{this.canType})</p>"
       end
     end
-
-    
-
-
-    # @cans = Can.all(:hasLanguage => params[:hasLanguage])
-    # output +="<p>#{@cans.count} records found</p>"
-    # @cans.each do |can|
-    #   output +="<a href='/display_record/#{can.id}'"
-    #   if(can.fullTrans=="yes")
-    #     output += " id='completed'>"
-    #   else
-    #     output += ">"
-    #   end
-    #   output +="<img src='#{can.imageURL}' width='100' height='75 /></a>" 
-    #   output +="<a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"
   
   elsif params[:fullTrans] != "none"
     @cans = Can.all(:fullTrans => params[:fullTrans])
@@ -626,7 +611,6 @@ get '/displaysearch' do
       output +="<img src='#{can.imageURL}' width='100' height='75 /></a>"
       output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"
     end
-  end
 
   elsif !params[:canNum].nil?
     @cans = Can.all(:canNum => params[:canNum])
@@ -641,7 +625,7 @@ get '/displaysearch' do
       output +="<img src='#{can.imageURL}' width='100' height='75 /></a>"
       output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"   
     end 
-  end    
+    
   elsif !params[:country].nil? 
     @cans = Can.all(:country => params[:country])
     output +="<p>#{@cans.count} records found</p>"
