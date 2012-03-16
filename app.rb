@@ -626,6 +626,7 @@ get '/displaysearch' do
       output +="<img src='#{can.imageURL}' width='100' height='75 /></a>"
       output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"
   end
+end
   elsif !params[:canNum].nil?
     @cans = Can.all(:canNum => params[:canNum])
     output +="<p>#{@cans.count} records found</p>"
