@@ -599,7 +599,7 @@ get '/displaysearch' do
         end
       end
     end
-  end
+    
 
     # @cans = Can.all(:hasLanguage => params[:hasLanguage])
     # output +="<p>#{@cans.count} records found</p>"
