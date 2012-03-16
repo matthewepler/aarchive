@@ -586,15 +586,17 @@ get '/displaysearch' do
     cans = Can.all
     for this in cans
       current = this.hasLanguage
-      if current.include? incoming 
-          output +="<a href='/display_record/#{this.id}'"
-            if(this.fullTrans=="yes")
-              output += " id='completed'>"
-            else
-              output += ">"
-            end
-          output +="<img src='#{this.imageURL}' width='100' height='75 /></a>" 
-          output +="<a href='display_record/#{this.id}'>&#62 Can #{this.canNum}</a>&#32 (#{this.canType})</p>"
+      if !current.nil?
+        if current.include? incoming 
+            output +="<a href='/display_record/#{this.id}'"
+              if(this.fullTrans=="yes")
+                output += " id='completed'>"
+              else
+                output += ">"
+              end
+            output +="<img src='#{this.imageURL}' width='100' height='75 /></a>" 
+            output +="<a href='display_record/#{this.id}'>&#62 Can #{this.canNum}</a>&#32 (#{this.canType})</p>"
+        end
       end
     end
   
