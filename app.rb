@@ -587,17 +587,17 @@ get '/displaysearch' do
     for this in cans
       current = this.hasLanguage
       if current.include? incoming 
-            output +="<a href='/display_record/#{this.id}'"
-             if(this.fullTrans=="yes")
+          output +="<a href='/display_record/#{this.id}'"
+            if(this.fullTrans=="yes")
               output += " id='completed'>"
-             else
+            else
               output += ">"
-             end
-            output +="<img src='#{this.imageURL}' width='100' height='75 /></a>" 
-            output +="<a href='display_record/#{this.id}'>&#62 Can #{this.canNum}</a>&#32 (#{this.canType})</p>"
-          end
-        end
+            end
+          output +="<img src='#{this.imageURL}' width='100' height='75 /></a>" 
+          output +="<a href='display_record/#{this.id}'>&#62 Can #{this.canNum}</a>&#32 (#{this.canType})</p>"
       end
+    end
+
     
 
 
@@ -625,8 +625,9 @@ get '/displaysearch' do
       end
       output +="<img src='#{can.imageURL}' width='100' height='75 /></a>"
       output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"
+    end
   end
-end
+
   elsif !params[:canNum].nil?
     @cans = Can.all(:canNum => params[:canNum])
     output +="<p>#{@cans.count} records found</p>"
@@ -638,7 +639,8 @@ end
         output += ">"
       end
       output +="<img src='#{can.imageURL}' width='100' height='75 /></a>"
-      output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"    
+      output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"   
+    end 
   end    
   # elsif !params[:country].nil? 
   #   @cans = Can.all(:country => params[:country])
