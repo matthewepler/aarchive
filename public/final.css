@@ -139,6 +139,7 @@ text-decoration:none;*/
 	margin-top:-15px;
 	margin-left:-10px;
 	box-shadow: 1px 1px 33px 1px #999;
+	z-index:2;
 }
 
 .header a{

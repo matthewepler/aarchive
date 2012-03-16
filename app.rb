@@ -586,9 +586,7 @@ get '/displaysearch' do
     cans = Can.all
     for this in cans
       current = this.hasLanguage
-      if incoming.include? 'arabic' 
-          if !current.nil?
-            if current.include? 'arabic'
+      if current.include? incoming 
             output +="<a href='/display_record/#{this.id}'"
              if(this.fullTrans=="yes")
               output += " id='completed'>"
