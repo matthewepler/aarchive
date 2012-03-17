@@ -327,7 +327,7 @@ form = ""
   prevpage = (params[:id].to_i - 1)
   form += "#{prevpage}"
   form += '">Prev&#60</a>'
-  form +='<a style="text-align:right;position:relative;left:530" href="/display_record/'
+  form +='<a style="text-align:right;position:relative;left:600" href="/display_record/'
   nextpage =  (params[:id].to_i + 1)
   form += "#{nextpage}"
   form += '">&#62Next</a>'
