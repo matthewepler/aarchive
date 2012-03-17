@@ -329,8 +329,8 @@ form = ""
   form += '">Prev&#60</a>'
   form +='<a style="text-align:right;position:relative;left:530" href="/display_record/'
   nextpage =  (params[:id].to_i + 1)
-  output += "#{nextpage}"
-  output += '">&#62Next</a>'
+  form += "#{nextpage}"
+  form += '">&#62Next</a>'
   form +='</div>'
   form +="<div class='can-header'>"
   form +="<div class='green-tab'>Edit Form - Canister #{thisEdit.canNum}</div>"
