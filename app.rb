@@ -382,7 +382,7 @@ form = ""
 end
 
 
-post '/update_record/:id' do
+post '/update_record/:id' do 
 thisUpdate = Can.get(params[:id])
 language = 'string'
 if !params[:hasarabic].nil? 
