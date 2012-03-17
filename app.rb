@@ -248,11 +248,11 @@ get '/display_record/:id' do
   output +='<a href="/about">&#62About</a>'
   output +='<a href="/contact">&#62Contact</a>'
   output +='<span class="search-link"><a href="/search">&#62Search</a></span>'
-  output +='<a style="position:relative;left:450" href="/display_record/'
+  output +='<a style="position:relative;left:350" href="/display_record/'
   prevpage = (params[:id].to_i - 1)
   output += "#{prevpage}"
   output += '">Prev&#60</a>'
-  output +='<a style="text-align:right;position:relative;left:615" href="/display_record/'
+  output +='<a style="text-align:right;position:relative;left:530" href="/display_record/'
   nextpage =  (params[:id].to_i + 1)
   output += "#{nextpage}"
   output += '">&#62Next</a>'
@@ -323,6 +323,14 @@ form = ""
   form +='<a href="/about">&#62About</a>'
   form +='<a href="/contact">&#62Contact</a>'
   form +='<span class="search-link"><a href="/search">&#62Search</a></span>'
+  form +='<a style="position:relative;left:350" href="/display_record/'
+  prevpage = (params[:id].to_i - 1)
+  form += "#{prevpage}"
+  form += '">Prev&#60</a>'
+  form +='<a style="text-align:right;position:relative;left:530" href="/display_record/'
+  nextpage =  (params[:id].to_i + 1)
+  output += "#{nextpage}"
+  output += '">&#62Next</a>'
   form +='</div>'
   form +="<div class='can-header'>"
   form +="<div class='green-tab'>Edit Form - Canister #{thisEdit.canNum}</div>"
