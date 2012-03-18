@@ -650,18 +650,20 @@ get '/displaysearch' do
     @cans = Can.all
     output +="<p>#{@cans.count} records found</p>"
     @cans.each do |can|
-      title = can.titleEnglish
-      search = params[:titleEnglish].to_s
-      if title.include? params[:titleEnglish]
-        output +="<a href='/display_record/#{can.id}'"
-        if(can.fullTrans=="yes")
-          output += " id='completed'>"
-       else
-          output += ">"
-        end
-        output +="<img src='#{can.imageURL}' width='100' height='75 /></a>"
-        output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"   
-      end
+      if !can.titleEnglish.nil?
+        title = can.titleEnglish
+        search = params[:titleEnglish].to_s
+        if title.include? params[:titleEnglish]
+          output +="<a href='/display_record/#{can.id}'"
+         if(can.fullTrans=="yes")
+           output += " id='completed'>"
+        else
+           output += ">"
+         end
+         output +="<img src='#{can.imageURL}' width='100' height='75 /></a>"
+         output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"   
+       end
+     end
     end 
     
   end
