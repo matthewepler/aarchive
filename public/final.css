@@ -226,7 +226,7 @@ margin:auto;
 }
 
 .image-side{
-	position:fixed;
+	position:absolute;
 	padding:30px;
 	z-index:1;
 }
