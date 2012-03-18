@@ -643,9 +643,10 @@ get '/parser' do
   username = "118319050543607777197"
 
 albums = Picasa.albums :google_user => username # goes over the internet
+counter = 1
 
 albums.each do |album|
-  puts
+  puts counter
   puts "found album: #{album[:id]}"
   puts "=========================="
   puts
@@ -670,7 +671,8 @@ albums.each do |album|
     a.imageURL = url
     a.save
     puts "photo url: #{url}"
+    counter = counter + 1
     
-"Done!"
 end
+puts "Done!"
 end
