@@ -367,7 +367,6 @@ form = ""
   # form +="<p><label>Languages to be Translated</label><br />"
   # form +="<input type = 'checkbox' name='hasarabic' value='arabic' /> Arabic<br />"
   # form +="<input type = 'checkbox' name='hasrussian' value='russian' /> Russian<br />"
-  form +="<input type='hidden' name='hasLanguage' value='#{thisEdit.hasLanguage}'>"
   form +="<p><label>English Title</label><br /> <input type='text' name='titleEnglish' size='50' value='#{thisEdit.titleEnglish}'/></p>"
   form +="<p><label>Russian Title</label><br /> <input type='text' name='titleRussian' size='50' value='#{thisEdit.titleRussian}'/></p>"
   form +="<p><label>Arabic Title</label><br /> <input type='text' name='titleArabic' size='50' value='#{thisEdit.titleArabic}'/></p>"
@@ -379,6 +378,7 @@ form = ""
   form +="<br /><input type='radio' name='fullTrans' value='no' checked/> No</p>"
   form +="<input type='hidden' name='imageURL' value='#{thisEdit.imageURL}'>"
   form +="<input type='hidden' name='canType' value='#{thisEdit.canType}'>"
+  form +="<input type='hidden' name='hasLanguage' value='#{thisEdit.hasLanguage}'>"
   form +="<p><input class='submit-button' type='submit' value='&#62Submit'/><p>"
   form +="</form>"
   form +="</div>"
@@ -390,26 +390,26 @@ end
 
 post '/update_record/:id' do
 thisUpdate = Can.get(params[:id])
-language = 'string'
-if !params[:hasarabic].nil? 
-  language = 'arabic'
-  arabic = params[:hasarabic]
-  if !params[:hasrussian].nil?
-    russian = params[:hasrussian]
-    language = arabic + "," + russian
-  end
-elsif
-if !params[:hasrussian].nil?
-  language = 'russian'
-  russian = params[:hasrussian]
-  if !params[:hasarabic].nil?
-    arabic = params[:hasarabic]
-    language = arabic + "," + russian
-  end
-end
-end
+# language = 'string'
+# if !params[:hasarabic].nil? 
+#   language = 'arabic'
+#   arabic = params[:hasarabic]
+#   if !params[:hasrussian].nil?
+#     russian = params[:hasrussian]
+#     language = arabic + "," + russian
+#   end
+# elsif
+# if !params[:hasrussian].nil?
+#   language = 'russian'
+#   russian = params[:hasrussian]
+#   if !params[:hasarabic].nil?
+#     arabic = params[:hasarabic]
+#     language = arabic + "," + russian
+#   end
+# end
+# end
 
-thisUpdate.update(:hasLanguage => language)
+thisUpdate.update(:hasLanguage => params[:hasLanguage].to_s)
 thisUpdate.update(:titleEnglish => params[:titleEnglish].to_s)
 thisUpdate.update(:titleArabic => params[:titleArabic].to_s)
 thisUpdate.update(:titleRussian => params[:titleRussian].to_s)
@@ -587,6 +587,7 @@ get '/displaysearch' do
   output +='</div>'
   output +='</div>'
   output +='<div class = "search-area">'
+  output +='<p>&#126 Completed records will appear transparent &#126</p>'
 
   cans = nil
   if params[:hasLanguage] != "none"
