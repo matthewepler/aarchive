@@ -652,7 +652,9 @@ get '/displaysearch' do
     @cans.each do |can|
       if !can.titleEnglish.nil?
         title = can.titleEnglish
+        output +='<p>title = #{title}</p>'
         search = params[:titleEnglish].to_s
+        output +='<p> search = #{search}</p>'
         if title.include? params[:titleEnglish]
           output +="<a href='/display_record/#{can.id}'"
          if(can.fullTrans=="yes")
