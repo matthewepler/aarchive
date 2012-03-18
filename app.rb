@@ -333,7 +333,7 @@ form = ""
   form += '">&#62Next</a>'
   form +='</div>'
   form +="<div class='can-header'>"
-  form +="<div class='green-tab'>Edit Form - Canister #{thisEdit.canNum} (#{thisCan.canType})</div>"
+  form +="<div class='green-tab'>Edit Form - Canister #{thisEdit.canNum} (#{thisEdit.canType})</div>"
   form +="<span class='cancel-header'>"
   form +="<div id='gray-tab'><a href='/display_record/#{thisEdit.id}'>&#62Cancel</a></div>"
   form +="</span>"
