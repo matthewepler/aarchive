@@ -678,6 +678,7 @@ HTML
   form +='<div class = "search-area">'
   form +='<form action="/displaysearch" method="get">'
   form +='<p><label>Search is restricted to one category only</label></p>'
+  form +='<p><label>You must clear all text fields and set drop-downs to "None" before beginning a new search.</label></p> '
   form +='<p>Language   '
   form +='<select name="hasLanguage"><option value="none">None</option><option value="arabic">Arabic</option><option value="russian">Russian</option><option value="both">Both</option></select>'
   form +='<input class="search-go" type="submit" value="&#62go"/><p>'
