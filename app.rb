@@ -298,6 +298,10 @@ end
   output +=" of: #{thisCan.reelsTotal}</p>"
   output +="<p><label>Log/Notes (contact us if necessary): </label></br> #{thisCan.notesGen}</label></p>"
   output +="</div>"
+
+  output +='<div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...</div>'
+  output +='<link rel="stylesheet" type="text/css" href="http://www.htmlcommentbox.com/static/skins/simple/skin.css" />'
+ output +='<script type="text/javascript" language="javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={  };} (function(){s=document.createElement("script");s.setAttribute("type","text/javascript");s.setAttribute("src", "http://www.htmlcommentbox.com/jread?page="+escape((window.hcb_user && hcb_user.PAGE)||(""+window.location)).replace("+","%2B")+"&opts=470&num=10");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>'
   output +="</body>"
   output +="</html>"
   output
