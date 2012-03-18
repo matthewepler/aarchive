@@ -616,15 +616,11 @@ get '/displaysearch' do
             output +="<a href='display_record/#{this.id}'>&#62 Can #{this.canNum}</a>&#32 (#{this.canType})</p>"
         end
       end
-          output +="<p>hasLanguage</p>"
-
     end
   
   elsif params[:fullTrans] != "none"
     @cans = Can.all(:fullTrans => params[:fullTrans])
     output +="<p>#{@cans.count} records found</p>"
-        output +="<p>fullTrans</p>"
-
     @cans.each do |can|
       output +="<a href='/display_record/#{can.id}'"
       if(can.fullTrans=="yes")
@@ -639,7 +635,6 @@ get '/displaysearch' do
   elsif !params[:canNum].nil?
     @cans = Can.all(:canNum => params[:canNum])
     output +="<p>#{@cans.count} records found</p>"
-    output +="<p>canNum</p>"
     @cans.each do |can|
       output +="<a href='/display_record/#{can.id}'"
       if(can.fullTrans=="yes")
@@ -651,7 +646,7 @@ get '/displaysearch' do
       output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"   
     end 
 
-  elsif !params[:titleEnglish].nil?
+  elsif !params[:titleEnglish].valid?
     output += "<p> yo </p>"
     # incoming = params[:titleEnglish]
     # cans = Can.all
