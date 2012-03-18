@@ -565,7 +565,7 @@ get '/search' do
   form +='<input class="search-go" type="submit" value="&#62go"/><p>'
   form +='<p><label>OR</label></p>'
   form +='<p>Title (English)   '
-  form +='<input type="text" name="titleEnglish" size="4" />'
+  form +='<input type="text" name="titleEnglish" size="14" />'
   form +='<input class="search-go" type="submit" value="&#62go"/><p>'
   form +='</form>'
   form +='</div>'
@@ -647,17 +647,21 @@ get '/displaysearch' do
     end 
 
   elsif !params[:titleEnglish].nil?
-    @cans = Can.all(:titleEnglish => params[:titleEnglish])
+    @cans = Can.all
     output +="<p>#{@cans.count} records found</p>"
     @cans.each do |can|
-      output +="<a href='/display_record/#{can.id}'"
-      if(can.fullTrans=="yes")
-        output += " id='completed'>"
-      else
-        output += ">"
+      title = can.titleEnglish
+      search = params[:titleEnglish]
+      if title.include? search
+        output +="<a href='/display_record/#{can.id}'"
+        if(can.fullTrans=="yes")
+          output += " id='completed'>"
+       else
+          output += ">"
+        end
+        output +="<img src='#{can.imageURL}' width='100' height='75 /></a>"
+        output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"   
       end
-      output +="<img src='#{can.imageURL}' width='100' height='75 /></a>"
-      output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"   
     end 
     
   end
