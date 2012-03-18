@@ -6,6 +6,22 @@ require './model.rb'
 get '/' do
   <<-HTML
 <link rel="stylesheet" type="text/css" href="/final.css"/>
+<head>
+  <!-- Google Analytics -->
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30138184-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
 <body class="black">
 <div id="home-images">
 <img src="/frame_16.jpg" width="300" height="200">
@@ -82,6 +98,22 @@ get '/start/:page' do
   output = "<html><head>"
   output += '<title>Start Page</title>' 
   output += '<link rel="stylesheet" type="text/css" href="/final.css"/>'
+  <<-HTML
+   <!-- Google Analytics -->
+  <script type="text/javascript">
+
+  'var _gaq = _gaq || [];
+  '_gaq.push(['_setAccount', 'UA-30138184-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+HTML
   output +='</head>'
   output +='<body>'
   output +='<div class="header">'
@@ -238,6 +270,22 @@ get '/display_record/:id' do
   output +="<html><head>"
   output +="<link rel='stylesheet' type='text/css' href='/final.css'/>"
   output += "<title>Canister Database</title>"
+    <<-HTML
+   <!-- Google Analytics -->
+  <script type="text/javascript">
+
+  'var _gaq = _gaq || [];
+  '_gaq.push(['_setAccount', 'UA-30138184-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+HTML
   output +="</head>"
   output +="<body>"
     output +="<div class='image-side'>"
@@ -320,6 +368,22 @@ form = ""
   form +="<html><head>"
   form +="<link rel='stylesheet' type='text/css' href='/final.css'/>"
   form += "<title>Canister Database</title>"
+    <<-HTML
+   <!-- Google Analytics -->
+  <script type="text/javascript">
+
+  'var _gaq = _gaq || [];
+  '_gaq.push(['_setAccount', 'UA-30138184-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+HTML
   form +="</head>"
   form +="<body>"
   form +="<div class='image-side'>"
@@ -441,6 +505,22 @@ output +="<html>"
   output +="<head>"
   output +="<link rel='stylesheet' type='text/css' href='/final.css'/>"
   output += "<title>Record Updated!</title>"
+    <<-HTML
+   <!-- Google Analytics -->
+  <script type="text/javascript">
+
+  'var _gaq = _gaq || [];
+  '_gaq.push(['_setAccount', 'UA-30138184-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+HTML
   output +="</head>"
   output +='<div class="header">'
   output +='<a href="/">&#62Home</a>'
@@ -468,6 +548,21 @@ get '/about' do
 <head>
 <link rel="stylesheet" type="text/css" href="/final.css"/>
 <title>About</title>
+   <!-- Google Analytics -->
+  <script type="text/javascript">
+
+  'var _gaq = _gaq || [];
+  '_gaq.push(['_setAccount', 'UA-30138184-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
 </head>
 <body>
 <div class="header">
@@ -511,6 +606,21 @@ get '/contact' do
 <head>
 <link rel="stylesheet" type="text/css" href="/final.css"/>
 <title>About</title>
+   <!-- Google Analytics -->
+  <script type="text/javascript">
+
+  'var _gaq = _gaq || [];
+  '_gaq.push(['_setAccount', 'UA-30138184-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
 </head>
 <body>
 <div class="header">
@@ -535,6 +645,22 @@ get '/search' do
   form +="<html><head>"
   form +="<link rel='stylesheet' type='text/css' href='/final.css'/>"
   form += "<title>Search</title>"
+    <<-HTML
+   <!-- Google Analytics -->
+  <script type="text/javascript">
+
+  'var _gaq = _gaq || [];
+  '_gaq.push(['_setAccount', 'UA-30138184-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+HTML
   form +="</head>"
   form +="<body>"
   form +="<div class='image-side'>"
@@ -580,6 +706,22 @@ get '/displaysearch' do
   output +="<html><head>"
   output +="<link rel='stylesheet' type='text/css' href='/final.css'/>"
   output += "<title>Results</title>"
+    <<-HTML
+   <!-- Google Analytics -->
+  <script type="text/javascript">
+
+  'var _gaq = _gaq || [];
+  '_gaq.push(['_setAccount', 'UA-30138184-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+HTML
   output +="</head>"
   output +="<body>"
   output +="<div class='image-side'>"
