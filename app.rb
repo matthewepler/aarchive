@@ -258,7 +258,7 @@ get '/display_record/:id' do
   output += '">&#62Next</a>'
   output +='</div>'
   output +="<div class='can-header'>"
-  output +="<div class='green-tab'>Canister #{thisCan.canNum} Record (#{thisCan.canType})</div>"
+  output +="<div class='green-tab'>Canister #{thisCan.canNum} Record)</div>"
   output +="<span class='edit-header'>"
   output +="<div id='gray-tab'><a href='/edit_record/#{thisCan.id}'>&#62Edit</a></div>"
   output +="</span>"
@@ -339,7 +339,7 @@ form = ""
   form += '">&#62Next</a>'
   form +='</div>'
   form +="<div class='can-header'>"
-  form +="<div class='green-tab'>Edit Form - Canister #{thisEdit.canNum} (#{thisEdit.canType})</div>"
+  form +="<div class='green-tab'>Edit Form - Canister #{thisEdit.canNum}</div>"
   form +="<span class='cancel-header'>"
   form +="<div id='gray-tab'><a href='/display_record/#{thisEdit.id}'>&#62Cancel</a></div>"
   form +="</span>"
