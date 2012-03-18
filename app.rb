@@ -555,11 +555,17 @@ get '/search' do
   form +='<p>Language   '
   form +='<select name="hasLanguage"><option value="none">None</option><option value="arabic">Arabic</option><option value="russian">Russian</option><option value="both">Both</option></select>'
   form +='<input class="search-go" type="submit" value="&#62go"/><p>'
+  form +='<p><label>OR</label></p>'
   form +='<p>Fully Translated?   '
   form +='<select name="fullTrans"><option value="none">None</option><option value = "yes">Yes</option><option value="no">No</option></select>'
   form +='<input class="search-go" type="submit" value="&#62go"/><p>'
+  form +='<p><label>OR</label></p>'
   form +='<p>Canister Number   '
   form +='<input type="text" name="canNum" size="4" />'
+  form +='<input class="search-go" type="submit" value="&#62go"/><p>'
+  form +='<p><label>OR</label></p>'
+  form +='<p>Title (English)   '
+  form +='<input type="text" name="titleEnglish" size="4" />'
   form +='<input class="search-go" type="submit" value="&#62go"/><p>'
   form +='</form>'
   form +='</div>'
@@ -628,6 +634,20 @@ get '/displaysearch' do
 
   elsif !params[:canNum].nil?
     @cans = Can.all(:canNum => params[:canNum])
+    output +="<p>#{@cans.count} records found</p>"
+    @cans.each do |can|
+      output +="<a href='/display_record/#{can.id}'"
+      if(can.fullTrans=="yes")
+        output += " id='completed'>"
+      else
+        output += ">"
+      end
+      output +="<img src='#{can.imageURL}' width='100' height='75 /></a>"
+      output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"   
+    end 
+
+  elsif !params[:titleEnglish].nil?
+    @cans = Can.all(:titleEnglish => params[:titleEnglish])
     output +="<p>#{@cans.count} records found</p>"
     @cans.each do |can|
       output +="<a href='/display_record/#{can.id}'"
