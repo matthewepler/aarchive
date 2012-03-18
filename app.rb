@@ -647,7 +647,7 @@ get '/displaysearch' do
     end 
 
   elsif !params[:titleEnglish].nil?
-    @cans = Can.all(:titleEnglish.like => params[:titleEnglish])
+    @cans = Can.all(:titleEnglish.include? => params[:titleEnglish])
     output +="<p>#{@cans.count} records found</p>"
     @cans.each do |can|
       # if !can.titleEnglish.nil?
