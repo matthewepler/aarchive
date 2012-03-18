@@ -185,7 +185,7 @@ get '/createRecord' do
   form +='<p><label>External Link 1:</label><br /> <input type="text" name="link1" size="80" value="-"/></p>'
   form +='<p><label>External Link 2:</label><br /> <input type="text" name="link2"size="80" value="-"/></p>'
   form +='<p><label>External Link 3:</label><br /> <input type="text" name="link3"size="80" value="-"/></p>'
-  form +='<p><label>General Notes:</label><br /> <textarea name="notesGen" cols="100" rows="20"> Include your comments here. If possible, please include your name and contact info.</textarea></p>'
+  form +='<p><label>General Notes:</label><br /> <textarea name="notesGen" cols="100" rows="20" wrap="hard"> Include your comments here. If possible, please include your name and contact info.</textarea></p>'
   form +='<p><input type="submit" value="Submit"/><p>'
   form +='</form>'
   form +='</body>'
@@ -368,7 +368,7 @@ form = ""
   form +="<p><label>Year</label><br /> <input type='integer' name='year' size='4' value='#{thisEdit.year}'/></p>"
   form +="<p><label>Reel Number</label><br /> <input type='integer' name='reelNumber' size='2' value='#{thisEdit.reelNumber}'/>"
   form +="<label> of:</label> <input type='integer' name='reelsTotal' size='2' value='#{thisEdit.reelsTotal}'/></p>"
-  form +="<p><label>Log/Notes (your name, date, comments): </label><br /> <textarea name='notesGen' cols='40' rows='10'>#{thisEdit.notesGen}</textarea></p>"
+  form +="<p><label>Log/Notes (your name, date, comments): </label><br /> <textarea name='notesGen' cols='40' rows='10' wrap='hard'>#{thisEdit.notesGen}</textarea></p>"
   form +="<p><label style='color:red'>Is this translation as complete as it can be? </label><br /><input type='radio' name='fullTrans' value='yes'/> Yes"
   form +="<br /><input type='radio' name='fullTrans' value='no' checked/> No</p>"
   form +="<input type='hidden' name='imageURL' value='#{thisEdit.imageURL}'>"
