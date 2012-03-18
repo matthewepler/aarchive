@@ -647,9 +647,9 @@ get '/displaysearch' do
     end 
 
   elsif !params[:titleEnglish].nil?
-    @cans = Can.all
+    allcans = Can.all
     output +="<p>#{@cans.count} records found</p>"
-    @cans.each do |can|
+    for can in allcans
       if !can.titleEnglish.nil?
         title = can.titleEnglish
         output +='<p>title = #{title}</p>'
