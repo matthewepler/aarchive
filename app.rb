@@ -447,9 +447,9 @@ output +="<html>"
   output +='<span class="search-link"><a href="/search">&#62Search</a></span>'
   output +='</div>'
   output +='<div class="image-side">'
-output +="<p><h2>Record updated successfully!</p></h2>"
-output +="<a href='/display_record/#{thisUpdate.id}'>&#62Review Your Changes</a></br>"
-output +="<a href='/edit_record/"
+  output +="<p><h2>Record updated successfully!</p></h2>"
+  output +="<a href='/display_record/#{thisUpdate.id}'>&#62Review Your Changes</a></br>"
+output +="<a href='/display_record/"
   nextpage = (params[:id].to_i + 1)
   output += "#{nextpage}'"
   output += ">&#62View Next Record</a></br>"
