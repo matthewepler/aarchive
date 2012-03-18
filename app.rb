@@ -647,15 +647,13 @@ get '/displaysearch' do
     end 
 
   elsif !params[:titleEnglish].nil?
-    allcans = Can.all
+    @cans = Can.all(:titleEnglish.like => params[:titleEnglish])
     output +="<p>#{@cans.count} records found</p>"
-    for can in allcans
-      if !can.titleEnglish.nil?
-        title = can.titleEnglish
-        output +='<p>title = #{title}</p>'
-        search = params[:titleEnglish].to_s
-        output +='<p> search = #{search}</p>'
-        if title.include? params[:titleEnglish]
+    @cans.each do |can|
+      # if !can.titleEnglish.nil?
+      #   title = can.titleEnglish
+      #   search = params[:titleEnglish].to_s
+      #   if title.include? params[:titleEnglish]
           output +="<a href='/display_record/#{can.id}'"
          if(can.fullTrans=="yes")
            output += " id='completed'>"
@@ -664,8 +662,8 @@ get '/displaysearch' do
          end
          output +="<img src='#{can.imageURL}' width='100' height='75 /></a>"
          output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"   
-       end
-     end
+     #   end
+     # end
     end 
     
   end
