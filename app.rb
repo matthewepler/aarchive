@@ -632,7 +632,7 @@ get '/displaysearch' do
       output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"
     end
 
-  elsif !params[:canNum].valid?
+  elsif params[:canNum] != ""
     @cans = Can.all(:canNum => params[:canNum])
     output +="<p>#{@cans.count} records found</p>"
     @cans.each do |can|
@@ -646,7 +646,7 @@ get '/displaysearch' do
       output +="<p><a href='display_record/#{can.id}'>&#62 Can #{can.canNum}</a>&#32 (#{can.canType})</p>"   
     end 
 
-  elsif !params[:titleEnglish].valid?
+  elsif params[:titleEnglish] != ""
     output += "<p> yo </p>"
     # incoming = params[:titleEnglish]
     # cans = Can.all
