@@ -743,15 +743,12 @@ HTML
 
   cans = nil
   if params[:hasLanguage] != "none"
-    @cans = Can.all(:hasLanguage => params[:hasLanguage])
-    output +="<p>#{@cans.count} records found</p>"
-    @cans.each do |this|
-    # incoming = params[:hasLanguage]
-    # cans = Can.all
-    # for this in cans
-    #   current = this.hasLanguage
-    #   if !current.nil?
-    #     if current.include? incoming 
+    incoming = params[:hasLanguage]
+    cans = Can.all
+    for this in cans
+      current = this.hasLanguage
+      if !current.nil?
+        if current.include? incoming 
             output +="<a href='/display_record/#{this.id}'"
               if(this.fullTrans=="yes")
                 output += " id='completed'>"
@@ -760,8 +757,8 @@ HTML
               end
             output +="<img src='#{this.imageURL}' width='100' height='75 /></a>" 
             output +="<a href='display_record/#{this.id}'>&#62 Can #{this.canNum}</a>&#32 (#{this.canType})</p>"
-        # end
-      # end
+        end
+      end
     end
   
   elsif params[:fullTrans] != "none"
