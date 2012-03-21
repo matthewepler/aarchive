@@ -743,7 +743,7 @@ HTML
 
   cans = nil
   if params[:hasLanguage] != "none"
-    @cans = Can.all(:hasLanguage.include? params[:hasLanguage])
+    @cans = Can.all(:hasLanguage => params[:hasLanguage])
     output +="<p>#{@cans.count} records found</p>"
     @cans.each do |this|
     # incoming = params[:hasLanguage]
