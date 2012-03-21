@@ -760,8 +760,8 @@ HTML
               end
             output +="<img src='#{this.imageURL}' width='100' height='75 /></a>" 
             output +="<a href='display_record/#{this.id}'>&#62 Can #{this.canNum}</a>&#32 (#{this.canType})</p>"
-        end
-      end
+        # end
+      # end
     end
   
   elsif params[:fullTrans] != "none"
