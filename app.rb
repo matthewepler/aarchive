@@ -743,12 +743,15 @@ HTML
 
   cans = nil
   if params[:hasLanguage] != "none"
-    incoming = params[:hasLanguage]
-    cans = Can.all
-    for this in cans
-      current = this.hasLanguage
-      if !current.nil?
-        if current.include? incoming 
+    @cans = Can.all(:hasLanguage.include? params[:hasLanguage])
+    output +="<p>#{@cans.count} records found</p>"
+    @cans.each do |this|
+    # incoming = params[:hasLanguage]
+    # cans = Can.all
+    # for this in cans
+    #   current = this.hasLanguage
+    #   if !current.nil?
+    #     if current.include? incoming 
             output +="<a href='/display_record/#{this.id}'"
               if(this.fullTrans=="yes")
                 output += " id='completed'>"
