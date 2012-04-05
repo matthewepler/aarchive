@@ -2,7 +2,6 @@ GEM
   remote: http://rubygems.org/
   specs:
     addressable (2.2.7)
-    dalli (1.0.5)
     data_objects (0.10.8)
       addressable (~> 2.1)
     dm-core (1.2.0)
@@ -38,7 +37,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  dalli (~> 1.0.5)
   dm-core
   dm-migrations
   dm-postgres-adapter
