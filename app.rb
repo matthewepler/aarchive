@@ -3,7 +3,6 @@ Bundler.require
 require 'rubygems'
 require './model.rb'
 
-set :cache, Dalli::Client.new
 
 get '/' do
   <<-HTML
