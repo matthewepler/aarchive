@@ -479,7 +479,7 @@ thisUpdate = Can.get(params[:id])
 # end
 
 thisUpdate.update(:hasLanguage => params[:hasLanguage].to_s)
-thisUpdate.update(:titleEnglish => params[:titleEnglish].to_s)
+thisUpdate.update(:titleEnglish => params[:titleEnglish])
 thisUpdate.update(:titleArabic => params[:titleArabic].to_s)
 thisUpdate.update(:titleRussian => params[:titleRussian].to_s)
 thisUpdate.update(:year => params[:year].to_i)
