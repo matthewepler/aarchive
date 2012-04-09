@@ -502,7 +502,7 @@ thisUpdate.update(:albumURL => params[:albumURL].to_s)
 thisUpdate.update(:canType => params[:canType].to_s)
 thisUpdate.save
 
-output =""
+output = ""
 output +="<html>"
   output +="<head>"
   output +="<link rel='stylesheet' type='text/css' href='/final.css'/>"

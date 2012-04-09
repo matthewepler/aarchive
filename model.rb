@@ -30,3 +30,16 @@ class Can
 end
 
 DataMapper.finalize
+
+
+require 'dm-migrations/migration_runner'
+
+migration 1, :make_title_english_text do
+  up do
+    modify_table :cans do
+      change_column :titleEnglish, 'text'
+    end
+  end
+end
+
+migrate_up!
