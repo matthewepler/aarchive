@@ -7,9 +7,9 @@ class Can
   property :canNum, Integer
   property :canType, String
   property :hasLanguage, String
-  property :titleEnglish, String
-  property :titleRussian, String
-  property :titleArabic, String
+  property :titleEnglish, Text
+  property :titleRussian, Text
+  property :titleArabic, Text
   property :year, Integer
   property :reelNumber, Integer
   property :reelsTotal, Integer

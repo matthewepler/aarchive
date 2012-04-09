@@ -479,9 +479,9 @@ thisUpdate = Can.get(params[:id])
 # end
 
 thisUpdate.update(:hasLanguage => params[:hasLanguage].to_s)
-thisUpdate.update(:titleEnglish => params[:titleEnglish].to_s)
-thisUpdate.update(:titleArabic => params[:titleArabic].to_s)
-thisUpdate.update(:titleRussian => params[:titleRussian].to_s)
+thisUpdate.update(:titleEnglish => params[:titleEnglish]
+thisUpdate.update(:titleArabic => params[:titleArabic]
+thisUpdate.update(:titleRussian => params[:titleRussian]
 thisUpdate.update(:year => params[:year].to_i)
 thisUpdate.update(:reelNumber => params[:reelNumber].to_i)
 thisUpdate.update(:reelsTotal => params[:reelsTotal].to_i)
@@ -497,8 +497,8 @@ thisUpdate.update(:link2 => params[:link2].to_s)
 thisUpdate.update(:link3 => params[:link3].to_s)
 thisUpdate.update(:notesGen => params[:notesGen].to_s)
 thisUpdate.update(:fullTrans => params[:fullTrans].to_s)
-thisUpdate.update(:imageURL => params[:imageURL].to_s)
-thisUpdate.update(:albumURL => params[:albumURL].to_s)
+thisUpdate.update(:imageURL => params[:imageURL]
+thisUpdate.update(:albumURL => params[:albumURL]
 thisUpdate.update(:canType => params[:canType].to_s)
 thisUpdate.save
 
