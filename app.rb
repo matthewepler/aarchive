@@ -344,6 +344,7 @@ else
   output +="<p><label>Has all visible info been translated? </label></br><span class='input-red'>No</span></p>"  
 end
   # output +="<p><label>Languages to be Translated</label></br> #{thisCan.hasLanguage}</p>"
+  output +="<p><label>Album URL</label></br> #{thisCan.albumURL}</p>"
   output +="<p><label>English Title</label></br> #{thisCan.titleEnglish}</p>"
   output +="<p><label>Russian Title</label></br> #{thisCan.titleRussian}</p>"
   output +="<p><label>Arabic Title</label></br> #{thisCan.titleArabic}</p>"
