@@ -870,12 +870,13 @@ end
 require 'dm-migrations/migration_runner'
 
 get "/migrate" do
-  migration 1, :make_desc_text do
+  migration 1, :change_english_type do
     up do
       modify_table :cans do
-        change_column :desc, Text
+        change_column :titleEnglish, Text
       end
     end
   end
   migrate_up!
+  "Done!"
 end
