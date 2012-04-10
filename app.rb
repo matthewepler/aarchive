@@ -866,3 +866,7 @@ albums.each do |album|
 end
 puts "Done!"
 end
+
+get "/migrate" do
+
+end
