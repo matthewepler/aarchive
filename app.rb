@@ -867,13 +867,16 @@ end
 puts "Done!"
 end
 
+# THIS IS BEYOND ALL CRAZINESS IN THE WORLD!!!!
+# WE PUT IN 'TYPE' BEFORE NAME TO FIX dm-migrations PG PROBLEM
 require 'dm-migrations/migration_runner'
 
 get "/migrate" do
-  migration 1, :change_english_type do
+  migration 2, :change_english_type do
     up do
       modify_table :cans do
-        change_column 'title_english', 'TYPE text'
+        change_column 'title_arabic', 'TYPE text'
+        change_column 'title_russian', 'TYPE text'
       end
     end
   end
