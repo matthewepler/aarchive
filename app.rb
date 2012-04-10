@@ -165,6 +165,8 @@ HTML
     # output +="<p><a href='/list'>List View</a></p>"
 
   output +="</div>"
+    output += "<div class='input-red><p>Note: 35mm Canisters 1-120 have close-ups of the actual film stock. They can be found</p><span><a href ='https://picasaweb.google.com/118319050543607777197?showall=true'>HERE</span>"
+
   output += "</body></html>"
   output
   end
@@ -183,7 +185,6 @@ get '/list' do
     output += "</br>"
     output += "</html>"
   end
-  output += "<div class='input-red><p>Note: 35mm Canisters 1-120 have close-ups of the actual film stock. They can be found</p><span><a href ='https://picasaweb.google.com/118319050543607777197?showall=true'>HERE</span>"
   output
 end
 
