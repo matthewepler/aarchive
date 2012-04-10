@@ -873,7 +873,7 @@ get "/migrate" do
   migration 1, :change_english_type do
     up do
       modify_table :cans do
-        change_column 'title_english', 'text'
+        change_column 'title_english', 'TYPE text'
       end
     end
   end
