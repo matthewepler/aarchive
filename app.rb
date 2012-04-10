@@ -869,7 +869,7 @@ end
 
 # THIS IS BEYOND ALL CRAZINESS IN THE WORLD!!!!
 # WE PUT IN 'TYPE' BEFORE NAME TO FIX dm-migrations PG PROBLEM
-# require 'dm-migrations/migration_runner'
+require 'dm-migrations/migration_runner'
 
 get "/migrate" do
   migration 2, :change_language_type do
