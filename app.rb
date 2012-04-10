@@ -867,6 +867,15 @@ end
 puts "Done!"
 end
 
-get "/migrate" do
+require 'dm-migrations/migration_runner'
 
+get "/migrate" do
+  migration 1, :make_desc_text do
+    up do
+      modify_table :cans do
+        change_column :desc, Text
+      end
+    end
+  end
+  migrate_up!
 end
