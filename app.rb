@@ -594,7 +594,7 @@ In 2009, over 850 canisters of film were discovered in Amman, Jordan. We are ask
 </p>
 <p>Thus far, we have only been able to digitize 10 of these reels. In this small sample, significant discoveries were made, including: </p>
 <p><ul id="about-text-ul">
-<li>A documentary confirmed to be part of the  PLO Film Archive, lost since 1985. 
+<li>A documentary confirmed to be part of the PLO film archive, lost in 1985.
 <li>Footage of HM King Hussein in 1968 addressing the United Nations in the aftermath of the Six Day War.
 <li>Documentary footage of Jerusalem in 1968 and its aftermath.
 <li>Unidentified propaganda films from Vietnam made to highlight relations between Vietnam, Russia, and political struggles in the Middle East in the 1960’s and 70’s.
