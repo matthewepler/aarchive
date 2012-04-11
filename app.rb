@@ -583,7 +583,7 @@ get '/about' do
 </div>
 
 <!-- about_text.rtf -->
-<div align="center">
+<div>
 <h2>This is DIY archiving</h2>
 <p><i>A truly collaborative project with no ownership by any one person or institution.</i></p>
 </div>
