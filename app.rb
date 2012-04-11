@@ -604,6 +604,13 @@ In 2009, over 850 canisters of film were discovered in Amman, Jordan. We are ask
 </div>
 
 
+<div class="about-img">
+<img src="/frame_1.jpg" width="600"><br />The collection as found in Amman, Jordan in early 2010.
+</div>
+</body>
+HTML
+end
+
 
 
 get '/contact' do
