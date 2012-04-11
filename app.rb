@@ -584,8 +584,8 @@ get '/about' do
 
 <!-- about_text.rtf -->
 <div>
-<h2>This is DIY archiving</h2>
-<p><i>A truly collaborative project with no ownership by any one person or institution.</i></p>
+<h2 style="margin-left:170px">This is DIY archiving</h2>
+<p style="margin-left:90px"><i>A truly collaborative project with no ownership by any one person or institution.</i></p>
 </div>
 <div class='about-text'>
 <p>
