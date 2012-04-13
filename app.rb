@@ -88,11 +88,11 @@ A crowd-sourced treasure hunt.</p>
 <a href="/contact">&#62Contact</a>
 </div>
 </div>
-<div class="facebook"
+<!-- <div class="facebook"
 <iframe src="http://www.facebook.com/plugins/like.php?href=http://afilmarchive.net"
         scrolling="no" frameborder="0"
         style="border:none; width:450px; height:80px"></iframe>
-      </div>
+      </div> -->
 </body>
 HTML
 end
@@ -611,6 +611,8 @@ In 2009, over 850 canisters of film were discovered in Amman, Jordan. We are ask
 
 <div class="about-img">
 <img src="/frame_1.jpg" width="600"><br />The collection as found in Amman, Jordan in early 2010.
+<p><a href="http://www.facebook.com/afilmarchive">Add us on Facebook</a>
+<p><a href="https://twitter.com/#!/aFilmArchiveNet">Follow us on Twitter</a>
 </div>
 </body>
 HTML
