@@ -3,6 +3,7 @@ Bundler.require
 require 'rubygems'
 require './model.rb'
 
+set :protection, :except => :frame_options
 
 get '/' do
   <<-HTML
