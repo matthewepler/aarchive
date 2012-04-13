@@ -558,8 +558,9 @@ margin:auto;
 
 .facebook{
 	position:fixed;
-	top:1500px;
-	left:600px;
+	top:80%;
+	left:80%;
+	z-index:10;
 }
 
 
