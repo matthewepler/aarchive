@@ -3,7 +3,7 @@ Bundler.require
 require 'rubygems'
 require './model.rb'
 
-set :protection, :except => :frame_options
+# set :protection, :except => :frame_options
 
 get '/' do
   <<-HTML
@@ -88,11 +88,11 @@ A crowd-sourced treasure hunt.</p>
 <a href="/about">&#62About</a>
 <a href="/contact">&#62Contact</a>
 </div>
-<div class="facebook"
+<!-- <div class="facebook"
 <iframe src="http://www.facebook.com/plugins/like.php?href=http://afilmarchive.net"
         scrolling="no" frameborder="0"
         style="border:none; width:450px; height:80px"></iframe>
-      </div>
+      </div> -->
 </div>
 </body>
 HTML
