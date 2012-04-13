@@ -88,9 +88,11 @@ A crowd-sourced treasure hunt.</p>
 <a href="/contact">&#62Contact</a>
 </div>
 </div>
+<div class="facebook"
 <iframe src="http://www.facebook.com/plugins/like.php?href=http://afilmarchive.net"
         scrolling="no" frameborder="0"
         style="border:none; width:450px; height:80px"></iframe>
+      </div>
 </body>
 HTML
 end
