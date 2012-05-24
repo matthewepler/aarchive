@@ -129,6 +129,7 @@ HTML
   output +='<a href="/about">&#62About</a>'
   output +='<a href="/contact">&#62Contact</a>'
   output +='<span class="search-link"><a href="/search">&#62Search</a></span>'
+  output +='<a style="color: red" href="vimeo.com/">&#62How to use this database (video)</a>'
   output +='</div>'
   output +='<div class="start-instructions">'
   output +='<p>Click on an image to view/edit the record. Complete records appear transparent.'
