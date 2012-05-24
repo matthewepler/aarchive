@@ -613,7 +613,7 @@ In 2009, over 850 canisters of film were discovered in Amman, Jordan. We are ask
 <div class="about-img">
 <img src="/frame_1.jpg" width="600"><br />The collection as found in Amman, Jordan in early 2010.
 <p><h2>Press</h2></p>
-<p><a href="http://english.al-akhbar.com/content/unearthing-jordan%E2%80%99s-soviet-cinema">"Al-Alkhbar English: Unearthing Jordan's Soviet Cinema"</a></p>
+<p><a href="http://english.al-akhbar.com/content/unearthing-jordan%E2%80%99s-soviet-cinema">Al-Alkhbar English: "Unearthing Jordan's Soviet Cinema"</a></p>
 <p><a href="http://www.facebook.com/afilmarchive">&#62Add us on Facebook</a>
 <p><a href="https://twitter.com/#!/aFilmArchiveNet">&#62Follow us on Twitter</a>
 </div>
