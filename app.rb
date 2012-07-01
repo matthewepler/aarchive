@@ -150,10 +150,12 @@ HTML
     link_name = nil
     #file_name = this.canNum.to_s + " " + this.canType 
     #find the corresponding filename
-    name_array = Dir.entries("/Users/matthewepler/Documents/RFC film Project Summary/Website Files Archive/final/thumb_images/")
+    name_array = Dir.entries("/Users/matthewepler/Documents/RFC film Project Summary/Website Files Archive/final/thumb_images")
     name_array.each do |file|
       if file.include? this.canNum.to_s && this.canType
         link_name = file
+      else
+        link_name = nil
       end
     end
     output += "<a href='/display_record/#{this.id}'"
