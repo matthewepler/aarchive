@@ -7,7 +7,7 @@ require './model.rb'
 
 username = "118319050543607777197"
 
-albums = Picasa.albums :google_user => username # goes over the internet
+ # goes over the internet
 
 albums.each do |album|
   puts

@@ -153,7 +153,7 @@ HTML
     else
       output += ">"
     end
-    output += "<img src='#{this.imageURL}' width='100' height='75'/></a>"
+    output += "<img src='#{this.link1}' width='100' height='75'/></a>"
   end
   output +="</div>"
 
