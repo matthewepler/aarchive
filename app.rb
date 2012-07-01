@@ -145,9 +145,8 @@ HTML
   output +="</div>" 
   output +='<div class="thumbs">'
   cans = Can.all(:limit => 50, :offset => offset)
-  link_name = nil
   for this in cans
-    
+    link_name = nil
     #file_name = this.canNum.to_s + " " + this.canType 
     #find the corresponding filename
     name_array = Dir.entries('thumb_images')
@@ -157,7 +156,7 @@ HTML
       else
         link_name = nil
       end
-    end
+
     output += "<a href='/display_record/#{this.id}'"
     
     if(this.fullTrans=="yes")
@@ -167,6 +166,7 @@ HTML
     end
     output += "<img src='thumb_images/#{link_name}' width='100' height='75'/></a>"
   end
+end
   output +="</div>"
 
   output +="<div class='page-numbers'>" 
