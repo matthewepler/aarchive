@@ -152,7 +152,7 @@ HTML
     name_array = Dir.entries('thumb_images')
     name_array.each do |file|
       if file.include? this.canNum.to_s && this.canType
-        link_name = file
+        link_name = "<img src='thumb_images/#{file}' width='100' height='75'/></a>"
       else
         link_name = nil
       end
@@ -164,7 +164,7 @@ HTML
     else
       output += ">"
     end
-    output += "<img src='thumb_images/#{link_name}' width='100' height='75'/></a>"
+    output += link_name
   end
   output +="</div>"
 
