@@ -149,7 +149,7 @@ HTML
     link_name = nil
     #file_name = this.canNum.to_s + " " + this.canType 
     #find the corresponding filename
-    name_array = Dir.entries('../thumb_images')
+    name_array = Dir.entries('thumb_images')
     name_array.each do |file|
       if file.include? this.canNum.to_s && this.canType
         link_name = file
