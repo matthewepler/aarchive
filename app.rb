@@ -1,5 +1,6 @@
 require 'bundler'
 Bundler.require
+require 'bundler/setup'
 require 'rubygems'
 require './model.rb'
 
@@ -146,14 +147,23 @@ HTML
   output +='<div class="thumbs">'
   cans = Can.all(:limit => 50, :offset => offset)
   for this in cans
-
+    link_name = nil
+    #file_name = this.canNum.to_s + " " + this.canType 
+    #find the corresponding filename
+    name_array = Dir.entries("/Users/matthewepler/Documents/RFC film Project Summary/Website Files Archive/final/thumb_images/")
+    name_array.each do |file|
+      if file.include? this.canNum.to_s && this.canType
+        link_name = file
+      end
+    end
     output += "<a href='/display_record/#{this.id}'"
+    
     if(this.fullTrans=="yes")
       output += " class='completed'>"
     else
       output += ">"
     end
-    output += "<img src='#{this.link1}' width='100' height='75'/></a>"
+    output += "<img src='/thumb_images/#{link_name}' width='100' height='75'/></a>"
   end
   output +="</div>"
 
