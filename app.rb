@@ -145,8 +145,9 @@ HTML
   output +="</div>" 
   output +='<div class="thumbs">'
   cans = Can.all(:limit => 50, :offset => offset)
+  link_name = nil
   for this in cans
-    link_name = nil
+    
     #file_name = this.canNum.to_s + " " + this.canType 
     #find the corresponding filename
     name_array = Dir.entries('thumb_images')
