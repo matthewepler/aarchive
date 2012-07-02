@@ -18,7 +18,7 @@ albums.each do |album|
   a = Can.new
   
   album_string = album[:title]
-  a.canType, a.canNum = album_string.split(" #") # ["Samll 16mm", "2"]
+  a.canType, a.canNum = album_string.split(" #") # ["Small 16mm", "2"]
   
   a.albumURL = album[:slideshow].split("#")[0]
   a.save
