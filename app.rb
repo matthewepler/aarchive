@@ -148,7 +148,7 @@ HTML
   #for each can
   for this in cans
     link_name = " "
-    name_array = Dir.entries('thumb_images')
+    name_array = Dir.entries('/thumb_images')
 
     #go through the name array and find the matching filename
     for name_string in name_array
