@@ -150,16 +150,14 @@ HTML
     #file_name = this.canNum.to_s + " " + this.canType 
     #find the corresponding filename
     name_array = Dir.entries('thumb_images')
-    name_array.each do |file|
-      if file.include? this.canNum.to_s && this.canType
-        link_name = file.chomp(".jpg")
-        link_name << ".jpg"
-
+    name_array.each do |name_string|
+      if name_string.include? this.canNum.to_s && this.canType
+        link_name = name_string
       else
-        link_name = name_array[0]
+        link_name = name_array[10]
       end
-    end
-    output += "<a href='/display_record/#{this.id}'"
+
+      output += "<a href='/display_record/#{this.id}'"
     
     if(this.fullTrans=="yes")
       output += " class='completed'>"
@@ -168,6 +166,8 @@ HTML
     end
     output += "<img src='thumb_images/#{link_name}' width='100' height='75'/></a>"
   end
+    end
+    
   output +="</div>"
 
   output +="<div class='page-numbers'>" 
