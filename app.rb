@@ -168,7 +168,7 @@ HTML
       output += ">"
     end
 
-    output += "<img src='/#{link_name}' width='100' height='75'/></a>"
+    output += "<img src='#{link_name}' width='100' height='75'/></a>"
   end
     
   output +="</div>"
