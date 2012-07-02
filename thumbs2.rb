@@ -49,7 +49,7 @@ albums.each do |album|
 	end
 
 
-	Dir.chdir("/Users/matthewepler/Documents/RFC film Project Summary/Website Files Archive/final/thumb_images")
+	Dir.chdir("/Users/matthewepler/Documents/RFC film Project Summary/Website Files Archive/final/public/thumb_images")
 	open(thumb) {|f|
    		File.open(album_string + ".jpg", "wb") do |file|
     	file.puts f.read
