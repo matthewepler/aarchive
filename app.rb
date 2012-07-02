@@ -152,7 +152,8 @@ HTML
     name_array = Dir.entries('thumb_images')
     name_array.each do |file|
       if file.include? this.canNum.to_s && this.canType
-        link_name = file.to_s
+        link_name = file.chomp(".jpg")
+        link_name << ".jpg"
 
       else
         link_name = name_array[0]
