@@ -148,7 +148,7 @@ HTML
   #for each can
   for this in cans
     link_name = " "
-    name_array = Dir.entries('public/thumb_images')
+    name_array = Dir.entries('thumb_images')
 
     #go through the name array and find the matching filename
     for name_string in name_array
@@ -168,7 +168,7 @@ HTML
       output += ">"
     end
 
-    output += "<img src='public/thumb_images/#{link_name}' width='100' height='75'/></a>"
+    output += "<img src='/thumb_images/#{link_name}' width='100' height='75'/></a>"
   end
     
   output +="</div>"
