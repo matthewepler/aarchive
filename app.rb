@@ -147,18 +147,18 @@ HTML
   cans = Can.all(:limit => 50, :offset => offset)
   #for each can
   for this in cans
-    link_name = " "
-    name_array = Dir.entries("/thumb_images")
+    link_name = this.canType + " #" + this.canNum + ".jpg"
+    # name_array = Dir.entries("/thumb_images")
 
     #go through the name array and find the matching filename
-    for name_string in name_array
-      if name_string.include? this.canNum.to_s && this.canType
-        link_name = name_string
-        break
-      else
-        link_name = link_name
-      end
-    end
+    # for name_string in name_array
+    #   if name_string.include? this.canNum.to_s && this.canType
+    #     link_name = name_string
+    #     break
+    #   else
+    #     link_name = link_name
+    #   end
+    # end
 
     output += "<a href='/display_record/#{this.id}'"
     
@@ -168,7 +168,7 @@ HTML
       output += ">"
     end
 
-    output += "<img src='/thumb_images/#{link_name}' width='100' height='75'/></a>"
+    output += "<img src='#{link_name}' width='100' height='75'/></a>"
   end
     
   output +="</div>"

@@ -1,3 +1,2 @@
 ---
 BUNDLE_BIN: bin
-root = ::File.dirname(__FILE__)
