@@ -170,7 +170,7 @@ HTML
       output += ">"
     end
 
-    output += "<img src='http://afilmarchiv.net/public/thumb_images/#{link_name}' width='100' height='75'/></a>"
+    output += "<img src='http://afilmarchive.net/public/thumb_images/#{link_name}' width='100' height='75'/></a>"
   end
     
   output +="</div>"
