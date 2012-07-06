@@ -154,7 +154,7 @@ HTML
     #go through the name array and find the matching filename
     for name_string in name_array
       if name_string.include? this.canNum.to_s && this.canType
-        link_name = this.canType << this.canNum
+        link_name = this.canType.to_s << this.canNum.to_s
         link_name.strip
         break
       else
