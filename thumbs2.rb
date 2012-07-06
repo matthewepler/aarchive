@@ -24,12 +24,12 @@ albums.each do |album|
     
 	begin 
 		if album[:title].include? "mm" 
-			album_string = " "
+			album_string = album[:title]
 			thumb = album[:thumbnail]
 			can_type, can_num = album_string.split(" #")
 			album_string = can_type << can_num
 
-			thisCan = Can.first(:canNum => can_num.to_i, :canType => can_type)
+			# thisCan = Can.first(:canNum => can_num.to_i, :canType => can_type)
 
 	   		puts "processing thumbnail for #{thisCan.canNum}"
 			puts "URL = #{album[:thumbnail]}"
@@ -51,7 +51,6 @@ albums.each do |album|
     	file.puts f.read
    		end
 	} 	 
-	puts "Image Downloaded Successfully!"
 	puts "======================================"
 
 end
