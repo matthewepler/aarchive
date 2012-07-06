@@ -155,6 +155,7 @@ HTML
     for name_string in name_array
       if name_string.include? this.canNum.to_s && this.canType
         link_name = this.canType << this.canNum
+        link_name.strip
         break
       else
         link_name = "title_error"
