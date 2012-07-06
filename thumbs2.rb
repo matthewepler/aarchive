@@ -28,6 +28,7 @@ albums.each do |album|
 	begin 
 		if album[:title].include? "mm" 
 			album_string = album[:title]
+			album_string.chomp(" ", "#")
 			thumb = album[:thumbnail]
 			can_type, can_num = album_string.split(" #")
 
@@ -35,7 +36,6 @@ albums.each do |album|
 
 	   		puts "processing thumbnail for #{thisCan.canNum}"
 			puts "URL = #{album[:thumbnail]}"
-			puts "======================================"
 	    
 	    	thisCan.update(:link1 => thumb)
 			thisCan.save
@@ -48,14 +48,15 @@ albums.each do |album|
 
 	end
 
-
 	Dir.chdir("/Users/matthewepler/Documents/RFC film Project Summary/Website Files Archive/final/public/thumb_images")
 	open(thumb) {|f|
    		File.open(album_string + ".jpg", "wb") do |file|
     	file.puts f.read
    		end
 	} 	 
-	puts "we did it, dude!"
+	puts "Image Downloaded Successfully!"
+	puts "======================================"
+
 end
 
  #    diff = albums.size - total
