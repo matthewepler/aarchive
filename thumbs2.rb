@@ -24,10 +24,10 @@ albums.each do |album|
     
 	begin 
 		if album[:title].include? "mm" 
-			album_string = album[:title]
-			# album_string.chomp(" ", "#")
+
 			thumb = album[:thumbnail]
 			can_type, can_num = album_string.split(" #")
+			album_string = can_type << can_num
 
 			thisCan = Can.first(:canNum => can_num.to_i, :canType => can_type)
 
