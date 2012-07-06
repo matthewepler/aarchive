@@ -149,7 +149,7 @@ HTML
   cans = Can.all(:limit => 50, :offset => offset)
   #for each can
   for this in cans
-    link_name = " "
+    link_name = this.canType << this.canNum
     name_array = Dir.entries("./public/thumb_images")
 
     #go through the name array and find the matching filename
