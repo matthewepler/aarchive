@@ -30,12 +30,13 @@ albums.each do |album|
 			album_string = can_type << can_num
 
 			# thisCan = Can.first(:canNum => can_num.to_i, :canType => can_type)
+	  		# thisCan.update(:link1 => thumb)
+			# thisCan.save
 
 	   		puts "processing thumbnail for #{thisCan.canNum}"
 			puts "URL = #{album[:thumbnail]}"
 	    
-	    	thisCan.update(:link1 => thumb)
-			thisCan.save
+
 			total = total + 1
 		end
 
