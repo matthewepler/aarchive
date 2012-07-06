@@ -24,7 +24,7 @@ albums.each do |album|
     
 	begin 
 		if album[:title].include? "mm" 
-
+			album_string = " "
 			thumb = album[:thumbnail]
 			can_type, can_num = album_string.split(" #")
 			album_string = can_type << can_num
