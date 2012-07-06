@@ -149,16 +149,15 @@ HTML
   cans = Can.all(:limit => 50, :offset => offset)
   #for each can
   for this in cans
-    link_name = this.canType << this.canNum
     name_array = Dir.entries("./public/thumb_images")
 
     #go through the name array and find the matching filename
     for name_string in name_array
       if name_string.include? this.canNum.to_s && this.canType
-        link_name = name_string
+        link_name = this.canType << this.canNum
         break
       else
-        link_name = link_name
+        link_name = "title_error"
       end
     end
 
