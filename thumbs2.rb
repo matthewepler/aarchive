@@ -15,20 +15,17 @@ puts "Contacting Picasa..."
 total = 0
 
 albums = Picasa.albums :google_user => username
-# FileUtils.mkdir ("thumb_images")
 
 albums.each do |album|
 
 	#get the thumbnail, save it
 	#get the albumbURL
 	#find the Can with a matching albumURL
-	#update it's :line1 field with the thumbnail address
-	#save the Can
     
 	begin 
 		if album[:title].include? "mm" 
 			album_string = album[:title]
-			album_string.chomp(" ", "#")
+			# album_string.chomp(" ", "#")
 			thumb = album[:thumbnail]
 			can_type, can_num = album_string.split(" #")
 
@@ -43,7 +40,7 @@ albums.each do |album|
 		end
 
 	rescue Exception=>e
-		puts album[:title] + "__*****ERROR*******"
+		puts album[:title] + "  *****ERROR*******"
 		puts e
 
 	end
