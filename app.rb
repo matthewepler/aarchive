@@ -142,7 +142,8 @@ HTML
   output +='<span class="translated-counter">'
   all_count = Can.all(:fullTrans => "yes")
   full_count = all_count.count
-  output +="<p>#{full_count}&#32 of 850 records translated!</p>"
+  output +="<p>#{full_count}&#32 of 850 records translated!"
+  output +="<a href='/report'> See List of Translated Titles</a></p>"
   output +="</span>"
   output +="</div>" 
   output +='<div class="thumbs">'
