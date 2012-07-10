@@ -922,8 +922,8 @@ get "/migrate" do
 end
 
 get '/report' do
-  cans = Can.all
-  cans.each do |this|
+  @cans = Can.all
+  @cans.each do |this|
     output += "<p><a href='/display_record/#{this.id}'> #{this.canType} #{this.canNum} - #{this.titleEnglish}</a></p>"
   end
   output
