@@ -923,9 +923,11 @@ end
 
 get "/report" do
   output = "<html><body>"
-  @cans = Can.all(:order => [:titleEnglish.desc])
+  @cans = Can.all(:order => [:titleEnglish.asc])
   @cans.each do |this|
-    output +="<p><a href='display_record/#{this.id}'>#{this.titleEnglish} - #{this.canType} #{this.canNum}</a></p>"
+    if !this.titleEnglish.nil?
+     output +="<p><a href='display_record/#{this.id}'>#{this.titleEnglish} - #{this.canType} #{this.canNum}</a></p>"
+   end
   end
   output +="</body></html>"
   output
