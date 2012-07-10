@@ -924,8 +924,7 @@ end
 get '/report' do
   cans = Can.all
   cans.each do |this|
-  <<-HTML
-    <a href='/display_record/#{this.id}'> #{this.canType} #{this.canNum} - #{this.titleEnglish}</a>
-    HTML
+    output += "<p><a href='/display_record/#{this.id}'> #{this.canType} #{this.canNum} - #{this.titleEnglish}</a></p>"
   end
+  output
 end
