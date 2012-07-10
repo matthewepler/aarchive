@@ -922,6 +922,7 @@ get "/migrate" do
 end
 
 get "/report" do
+  list = Array.new
   output = "<html><body>"
   @cans = Can.all
   @cans.each do |this|
