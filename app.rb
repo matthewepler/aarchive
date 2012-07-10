@@ -922,19 +922,10 @@ get "/migrate" do
 end
 
 get "/report" do
-  class Title 
-    def initialize(title_string, title_id)
-      @name=title_string
-      @id=title_id
-   end
-  end
-
-  list = Array.new
   output = "<html><body>"
-  @cans = Can.all
+  @cans = Can.all(:order => [:titleEnglish.desc])
   @cans.each do |this|
-    thisTitle = Title.new("#{this.canType} #{this.canNum} - #{this.titleEnglish}", "#{this.id}")
-    output += "<p><#{thisTitle}</p>"
+    output +="<p><a href='display_record/#{this.id}'>#{this.titleEnglish} - #{this.canType} #{this.canNum}</a></p>"
   end
   output +="</body></html>"
   output
