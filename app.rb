@@ -920,3 +920,12 @@ get "/migrate" do
   migrate_up!
   "Done!"
 end
+
+get '/report' do
+  cans = Can.all
+  cans.each do |this|
+  <<-HTML
+    <a href='/display_record/#{this.id}'> #{this.canType} #{this.canNum} - #{this.titleEnglish}</a>
+    HTML
+  end
+end
