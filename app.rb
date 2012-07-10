@@ -921,10 +921,12 @@ get "/migrate" do
   "Done!"
 end
 
-get '/report' do
+get "/report" do
+  output = "<html><body>"
   @cans = Can.all
   @cans.each do |this|
     output += "<p><a href='/display_record/#{this.id}'> #{this.canType} #{this.canNum} - #{this.titleEnglish}</a></p>"
   end
+  output +="</body></html>"
   output
 end
