@@ -926,7 +926,7 @@ get "/report" do
   @cans = Can.all(:order => [:titleEnglish.asc])
   @cans.each do |this|
     if (this.titleEnglish.length > 2)
-     output +="<p><a href='display_record/#{this.id}'>#{this.titleEnglish} - #{this.canType} #{this.canNum}</a></p>"
+     output +="<p><a href='display_record/#{this.id}'> \"#{this.titleEnglish}\" - #{this.canType} \# #{this.canNum}</a></p>"
    end
   end
   output +="</body></html>"
