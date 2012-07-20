@@ -129,7 +129,7 @@ HTML
   output +='<body>'
   output +='<div class="header">'
   output +='<a href="/">&#62Home</a>'
-  output +='<a href="/start/#{startpage}">&#62Database</a>'
+  output +="<a href='/start/#{startpage}'>&#62Database</a>"
   output +='<a href="/about">&#62About</a>'
   output +='<a href="/contact">&#62Contact</a>'
   output +='<span class="search-link"><a href="/search">&#62Search</a></span>'
