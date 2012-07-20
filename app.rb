@@ -86,7 +86,7 @@ Welcome to</br>'A Film Archive' </br>Project.
 A crowd-sourced treasure hunt.</p>
 </div>
 <div id="home-links">
-<a href="/start/1">&#62Database</a>
+<a href="/start/2">&#62Database</a>
 <a href="/about">&#62About</a>
 <a href="/contact">&#62Contact</a>
 </div>
@@ -127,7 +127,7 @@ HTML
   output +='<body>'
   output +='<div class="header">'
   output +='<a href="/">&#62Home</a>'
-  output +='<a href="/start/1">&#62Database</a>'
+  output +='<a href="/start/2">&#62Database</a>'
   output +='<a href="/about">&#62About</a>'
   output +='<a href="/contact">&#62Contact</a>'
   output +='<span class="search-link"><a href="/search">&#62Search</a></span>'
@@ -321,7 +321,7 @@ HTML
 
   output +="<div class='header'>"
   output +='<a href="/">&#62Home</a>'
-  output +='<a href="/start/1">&#62Database</a>'
+  output +='<a href="/start/2">&#62Database</a>'
   output +='<a href="/about">&#62About</a>'
   output +='<a href="/contact">&#62Contact</a>'
   output +='<span class="search-link"><a href="/search">&#62Search</a></span>'
@@ -419,7 +419,7 @@ HTML
   form +="<div class='image-side'>"
   form +="<div class='header'>"
   form +='<a href="/">&#62Home</a>'
-  form +='<a href="/start/1">&#62Database</a>'
+  form +='<a href="/start/2">&#62Database</a>'
   form +='<a href="/about">&#62About</a>'
   form +='<a href="/contact">&#62Contact</a>'
   form +='<span class="search-link"><a href="/search">&#62Search</a></span>'
@@ -554,7 +554,7 @@ HTML
   output +="</head>"
   output +='<div class="header">'
   output +='<a href="/">&#62Home</a>'
-  output +='<a href="/start/1">&#62Database</a>'
+  output +='<a href="/start/2">&#62Database</a>'
   output +='<a href="/about">&#62About</a>'
   output +='<a href="/contact">&#62Contact</a>'
   output +='<span class="search-link"><a href="/search">&#62Search</a></span>'
@@ -597,7 +597,7 @@ get '/about' do
 <body>
 <div class="header">
 <a href="/">&#62Home</a>
-<a href="/start/1">&#62Database</a>
+<a href="/start/2">&#62Database</a>
 <a href="/about">&#62About</a>
 <a href="/contact">&#62Contact</a>
 <span class="search-link"><a href="/search">&#62Search</a></span>
@@ -667,7 +667,7 @@ get '/contact' do
 <body>
 <div class="header">
 <a href="/">&#62Home</a>
-<a href="/start/1">&#62Database</a>
+<a href="/start/2">&#62Database</a>
 <a href="/about">&#62About</a>
 <a href="/contact">&#62Contact</a>
 <span class="search-link"><a href="/search">&#62Search</a></span>
@@ -708,7 +708,7 @@ HTML
   form +="<div class='image-side'>"
   form +="<div class='header'>"
   form +='<a href="/">&#62Home</a>'
-  form +='<a href="/start/1">&#62Database</a>'
+  form +='<a href="/start/2">&#62Database</a>'
   form +='<a href="/about">&#62About</a>'
   form +='<a href="/contact">&#62Contact</a>'
   form +='<span class="search-link"><a href="/search">&#62Search</a></span>'
@@ -770,7 +770,7 @@ HTML
   output +="<div class='image-side'>"
   output +="<div class='header'>"
   output +='<a href="/">&#62Home</a>'
-  output +='<a href="/start/1">&#62Database</a>'
+  output +='<a href="/start/2">&#62Database</a>'
   output +='<a href="/about">&#62About</a>'
   output +='<a href="/contact">&#62Contact</a>'
   output +='<span class="search-link"><a href="/search">&#62Search</a></span>'
