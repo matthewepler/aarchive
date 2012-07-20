@@ -6,6 +6,8 @@ require './model.rb'
 # set :protection, :except => :frame_options
 # set :public_folder, '/public'
 
+startpage = 3
+
 
 get '/' do
   <<-HTML
@@ -86,7 +88,7 @@ Welcome to</br>'A Film Archive' </br>Project.
 A crowd-sourced treasure hunt.</p>
 </div>
 <div id="home-links">
-<a href="/start/2">&#62Database</a>
+<a href="/start/#{startpage}">&#62Database</a>
 <a href="/about">&#62About</a>
 <a href="/contact">&#62Contact</a>
 </div>
