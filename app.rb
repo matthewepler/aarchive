@@ -3,8 +3,7 @@ Bundler.require
 require 'bundler/setup'
 require 'rubygems'
 require './model.rb'
-# set :protection, :except => :frame_options
-# set :public_folder, '/public'
+
 
 startpage = 3
 
