@@ -870,11 +870,25 @@ get '/films' do  # this is where we will keep the digitized films hosted on YouT
   <head>
     <title> Films </title>
     </head>
+        <body>
+          <div class='image-side'>
+          <div class='header'>
+           <a href="/">&#62Home</a>
+           <a href='/start/#{startpage}'>&#62Database</a>
+           <a href="/about">&#62About</a>
+           <a href="/contact">&#62Contact</a>
+           <span class="search-link"><a href="/search">&#62Search</a></span>
+          </div>
+          <div class="search-header">
+          <div class="green-tab">Search</div>
+          </div>
+          </div>
 
-    <body>
-      <div align="center" background-color:"#f2f2f3">
-<iframe width="420" height="315" src="http://www.youtube.com/embed/9GFXGQAivlM" frameborder="0" allowfullscreen></iframe>
+         <div align="center" background-color:"#f2f2f3">
+  <iframe width="420" height="315" src="http://www.youtube.com/embed/9GFXGQAivlM" frameborder="0" allowfullscreen></iframe>
+  <p>King Hussein in Russia (feat. Queen Rania) - 35mm </p>
 <iframe width="420" height="315" src="http://www.youtube.com/embed/KCaxWgzAtQI" frameborder="0" allowfullscreen></iframe>
+<p>"Jordanian Report" - 35mm</p>
 </div>
 </body>
 
