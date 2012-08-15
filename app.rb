@@ -615,6 +615,9 @@ get '/about' do
 </div>
 </div>
 
+<p><a href="http://www.facebook.com/afilmarchive">&#62Add us on Facebook</a>
+<p><a href="https://twitter.com/#!/aFilmArchiveNet">&#62Follow us on Twitter</a>
+
 <!-- about_text.rtf -->
 <div>
 <h2 style="margin-left:170px">This is DIY archiving</h2>
@@ -642,9 +645,6 @@ In 2009, over 850 canisters of film were discovered in Amman, Jordan. We are ask
 <p><h2>Press</h2></p>
 <p><a href="http://english.al-akhbar.com/content/unearthing-jordan%E2%80%99s-soviet-cinema">Al-Alkhbar English: "Unearthing Jordan's Soviet Cinema"</a></p>
 <p><a href="http://www.movingimagearchivenews.org/work-continues-on-a-film-trove-in-jordan/">Moving Image Archive News: "Work Continues on a Film Trove in Jordan"</a></p>
-</br>
-<p><a href="http://www.facebook.com/afilmarchive">&#62Add us on Facebook</a>
-<p><a href="https://twitter.com/#!/aFilmArchiveNet">&#62Follow us on Twitter</a>
 </div>
 </body>
 HTML
