@@ -86,7 +86,7 @@ Welcome to</br>'A Film Archive' </br>Project.
 <div id="home-body">
 A crowd-sourced treasure hunt.</p>
 </div>
-<div id="home-links">
+<div class="home-links">
 <a href="/start/#{startpage}">&#62Database</a>
 <a href="/about">&#62About</a>
 <a href="/contact">&#62Contact</a>
