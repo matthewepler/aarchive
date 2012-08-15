@@ -880,6 +880,7 @@ get '/films' do  # this is where we will keep the digitized films hosted on YouT
            <a href="/contact">&#62Contact</a>
            <span class="search-link"><a href="/search">&#62Search</a></span>
           </div>
+        </div>
 
          <div class="films">
   <iframe width="420" height="315" src="http://www.youtube.com/embed/9GFXGQAivlM" frameborder="0" allowfullscreen></iframe>
