@@ -205,6 +205,12 @@ margin:auto;
 	margin-bottom:40px;
 }
 
+#home-links {
+	padding-top:55px;
+	padding-left:95px;
+	word-spacing:60px;
+}
+
 .black{
 	
 	background-color:#000000;
@@ -216,12 +222,6 @@ margin:auto;
 */
 
 
-}
-
-#home-links a {
-	padding-top:55px;
-	padding-left:95px;
-	word-spacing:60px;
 }
 
 #image-footer p{
