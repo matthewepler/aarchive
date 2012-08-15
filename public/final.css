@@ -189,6 +189,12 @@ margin:auto;
 	text-align:center;  
 }
 
+.films-intro{
+
+	position:fixed;
+	left:10%;
+}
+
 #home-body{
 	font-family:Tahoma;
 	font-size:14px;
