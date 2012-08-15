@@ -90,6 +90,7 @@ A crowd-sourced treasure hunt.</p>
 <a href="/start/#{startpage}">&#62Database</a>
 <a href="/about">&#62About</a>
 <a href="/contact">&#62Contact</a>
+<a href="/films">&#62Clips</a>
 </div>
 <!-- <div class="facebook"
 <iframe src="http://www.facebook.com/plugins/like.php?href=http://afilmarchive.net"
@@ -131,6 +132,7 @@ HTML
   output +="<a href='/start/#{startpage}'>&#62Database</a>"
   output +='<a href="/about">&#62About</a>'
   output +='<a href="/contact">&#62Contact</a>'
+  output +='<a href="/films">&#62Clips</a>'
   output +='<span class="search-link"><a href="/search">&#62Search</a></span>'
   output +='<a style="color: red" href="http://itp.nyu.edu/~mae383/aFilmArchive_HowTo.mov">&#62How to use this database (video)</a>'
   output +='</div>'
@@ -325,6 +327,7 @@ HTML
   output +="<a href='/start/#{startpage}'>&#62Database</a>"
   output +='<a href="/about">&#62About</a>'
   output +='<a href="/contact">&#62Contact</a>'
+  output +='<a href="/films">&#62Clips</a>'
   output +='<span class="search-link"><a href="/search">&#62Search</a></span>'
   output +='<a style="position:relative;left:350" href="/display_record/'
   prevpage = (params[:id].to_i - 1)
@@ -423,6 +426,7 @@ HTML
   form +="<a href='/start/#{startpage}'>&#62Database</a>"
   form +='<a href="/about">&#62About</a>'
   form +='<a href="/contact">&#62Contact</a>'
+  form +='<a href="/films">&#62Clips</a>'
   form +='<span class="search-link"><a href="/search">&#62Search</a></span>'
   form +='<a style="position:relative;left:350" href="/display_record/'
   prevpage = (params[:id].to_i - 1)
@@ -558,6 +562,7 @@ HTML
   output +="<a href='/start/#{startpage}'>&#62Database</a>"
   output +='<a href="/about">&#62About</a>'
   output +='<a href="/contact">&#62Contact</a>'
+  output +='<a href="/films">&#62Clips</a>'
   output +='<span class="search-link"><a href="/search">&#62Search</a></span>'
   output +='</div>'
   output +='<div class="image-side">'
@@ -601,6 +606,7 @@ get '/about' do
 <a href="/start/#{startpage}">&#62Database</a>
 <a href="/about">&#62About</a>
 <a href="/contact">&#62Contact</a>
+<a href="/films">&#62Clips</a>
 <span class="search-link"><a href="/search">&#62Search</a></span>
 
 </div>
@@ -671,6 +677,7 @@ get '/contact' do
 <a href="/start/#{startpage}">&#62Database</a>
 <a href="/about">&#62About</a>
 <a href="/contact">&#62Contact</a>
+<a href="/films">&#62Clips</a>
 <span class="search-link"><a href="/search">&#62Search</a></span>
 
 </div>
@@ -712,6 +719,7 @@ HTML
   form +="<a href='/start/#{startpage}'>&#62Database</a>"
   form +='<a href="/about">&#62About</a>'
   form +='<a href="/contact">&#62Contact</a>'
+  form +='<a href="/films">&#62Clips</a>'
   form +='<span class="search-link"><a href="/search">&#62Search</a></span>'
   form +='</div>'
   form +='<div class="search-header">'
@@ -774,6 +782,7 @@ HTML
   output +="<a href='/start/#{startpage}'>&#62Database</a>"
   output +='<a href="/about">&#62About</a>'
   output +='<a href="/contact">&#62Contact</a>'
+  output +='<a href="/films">&#62Clips</a>'
   output +='<span class="search-link"><a href="/search">&#62Search</a></span>'
   output +='</div>'
   output +='<div class="search-header">'
