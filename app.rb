@@ -612,8 +612,10 @@ get '/about' do
 
 <div class='about-header'>
 <div class='green-tab'>About
+<div class='facebook'>
 <a href="http://www.facebook.com/afilmarchive">&#62Add us on Facebook</a>
 <p><a href="https://twitter.com/#!/aFilmArchiveNet">&#62Follow us on Twitter</a></p>
+</div>
 </div>
 </div>
 
