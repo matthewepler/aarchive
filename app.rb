@@ -614,7 +614,7 @@ get '/about' do
 <div class='green-tab'>About
 <div class='facebook'>
 <a href="http://www.facebook.com/afilmarchive"><img src="http://www.niftybuttons.com/webtoolkit/48x48/facebook.png"></a>
-<span><a href="https://twitter.com/afilmarchivenet" style="padding-left:70px"><img src="http://www.niftybuttons.com/webtoolkit/48x48/twitter.png"></a></span>
+<span><a href="https://twitter.com/afilmarchivenet" style="padding-left:60px"><img src="http://www.niftybuttons.com/webtoolkit/48x48/twitter.png"></a></span>
 </div>
 </div>
 </div>
