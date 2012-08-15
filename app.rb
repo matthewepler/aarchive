@@ -868,7 +868,7 @@ end
 get '/films' do  # this is where we will keep the digitized films hosted on YouTube
   <<-HTML
   <head>
-    <title> Films <title>
+    <title> Films </title>
     </head>
 
     <body>
