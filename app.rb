@@ -602,19 +602,19 @@ get '/about' do
 </head>
 <body>
 <div class="header">
-<a href="/">&#62Home</a>
-<a href="/start/#{startpage}">&#62Database</a>
-<a href="/about">&#62About</a>
-<a href="/contact">&#62Contact</a>
-<a href="/films">&#62Clips</a>
-<span class="search-link"><a href="/search">&#62Search</a></span>
+  <a href="/">&#62Home</a>
+  <a href="/start/#{startpage}">&#62Database</a>
+  <a href="/about">&#62About</a>
+  <a href="/contact">&#62Contact</a>
+  <a href="/films">&#62Clips</a>
+  <span class="search-link"><a href="/search">&#62Search</a></span>
+</div>
 
-</div>
 <div class='about-header'>
-<div class='green-tab'>About</div>
-</div>
+<div class='green-tab'>About
 <a href="http://www.facebook.com/afilmarchive">&#62Add us on Facebook</a>
-<a href="https://twitter.com/#!/aFilmArchiveNet">&#62Follow us on Twitter</a>
+<p><a href="https://twitter.com/#!/aFilmArchiveNet">&#62Follow us on Twitter</a></p>
+</div>
 </div>
 
 <!-- about_text.rtf -->
