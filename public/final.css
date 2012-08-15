@@ -568,7 +568,7 @@ margin:auto;
 	position:relative;
 }
 
-.facebook{
+.facebook a {
 	position:fixed;
 	top:55px;
 	left:301px;
