@@ -882,6 +882,11 @@ get '/films' do  # this is where we will keep the digitized films hosted on YouT
           </div>
         </div>
 
+        <div class="home-body">
+          <p> These films were digitized at <span><a href="http://www.abc-taunusfilm.de">ABC & Tanus</a></span> in 
+            2011.
+        </div>
+
          <div class="films">
   <iframe width="420" height="315" src="http://www.youtube.com/embed/9GFXGQAivlM" frameborder="0" allowfullscreen></iframe>
   <p>King Hussein in Russia (feat. Queen Rania) - 35mm </p>
