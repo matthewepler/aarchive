@@ -867,12 +867,18 @@ end
 
 get '/films' do  # this is where we will keep the digitized films hosted on YouTube
   <<-HTML
-<iframe width="420" height="315" src="http://www.youtube.com/embed/9GFXGQAivlM" frameborder="0" allowfullscreen></iframe>
+  <head>
+    <title> Films <title>
+    </head>
 
+    <body>
+      <div align="center" background-color:"#f2f2f3">
+<iframe width="420" height="315" src="http://www.youtube.com/embed/9GFXGQAivlM" frameborder="0" allowfullscreen></iframe>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/KCaxWgzAtQI" frameborder="0" allowfullscreen></iframe>
+</div>
+</body>
 
 HTML
-
-
   end
 
   
