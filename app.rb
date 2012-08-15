@@ -881,7 +881,7 @@ get '/films' do  # this is where we will keep the digitized films hosted on YouT
            <span class="search-link"><a href="/search">&#62Search</a></span>
           </div>
 
-         <div align="center" background-color:"#f2f2f3" position="absolute; left:250px">
+         <div class="films">
   <iframe width="420" height="315" src="http://www.youtube.com/embed/9GFXGQAivlM" frameborder="0" allowfullscreen></iframe>
   <p>King Hussein in Russia (feat. Queen Rania) - 35mm </p>
 </br>

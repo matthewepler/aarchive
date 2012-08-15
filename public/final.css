@@ -182,6 +182,14 @@ margin:auto;
 	-webkit-gradient(linear, 330 150, 330 500, from(e4e5e3), to(#40423f))
 }
 
+.films{
+	background-color:"#f2f2f3";
+	position:fixed;
+	top:10%;
+	left:50%;
+	text-align:"center";  
+}
+
 #home-body{
 	font-family:Tahoma;
 	font-size:14px;
