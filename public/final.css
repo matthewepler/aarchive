@@ -570,9 +570,10 @@ margin:auto;
 
 .facebook{
 	position:fixed;
-	top:80%;
-	left:80%;
+	top:55px;
+	left:301px;
 	z-index:10;
+	color:red;
 }
 
 
