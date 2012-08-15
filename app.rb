@@ -882,7 +882,7 @@ get '/films' do  # this is where we will keep the digitized films hosted on YouT
           </div>
         </div>
 
-             <div class="films-into">
+             <div class="films-intro">
               <p> These films were digitized at <span><a href="http://www.abc-taunusfilm.de">ABC & Tanus</a></span> in 
               2011.
             </div>
