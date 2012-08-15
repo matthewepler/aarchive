@@ -218,8 +218,7 @@ margin:auto;
 
 }
 
-#home-links a {
-	font-size:18px;
+#home-links {
 	padding-top:55px;
 	padding-left:95px;
 	word-spacing:60px;
