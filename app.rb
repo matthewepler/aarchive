@@ -880,10 +880,6 @@ get '/films' do  # this is where we will keep the digitized films hosted on YouT
            <a href="/contact">&#62Contact</a>
            <span class="search-link"><a href="/search">&#62Search</a></span>
           </div>
-          <div class="search-header">
-          <div class="green-tab">Search</div>
-          </div>
-          </div>
 
          <div align="center" background-color:"#f2f2f3">
   <iframe width="420" height="315" src="http://www.youtube.com/embed/9GFXGQAivlM" frameborder="0" allowfullscreen></iframe>
@@ -895,6 +891,31 @@ get '/films' do  # this is where we will keep the digitized films hosted on YouT
 <iframe width="420" height="315" src="http://www.youtube.com/embed/13O0F4g5zMU" frameborder="0" allowfullscreen></iframe>
 <p>Russian Fiction Feature (MosFilm) - 35mm</p>
 </br>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/HwgFerTKleE" frameborder="0" allowfullscreen></iframe>
+<p>Russian Fiction Feature - 35mm</p>
+</br>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/Ly7HTPoZ0Pw" frameborder="0" allowfullscreen></iframe>
+<p>King Hussein in Russia (feat. Queen Rania) - 35mm</p>
+</br>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/B9RMjZUOQkk" frameborder="0" allowfullscreen></iframe>
+<p>Russian Fiction Feature - 35mm</p>
+</br>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/ulfGiF6jSwY" frameborder="0" allowfullscreen></iframe>
+<p>"The Palestinian Right" - 16mm</p>
+</br>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/Eef-I2pajVI" frameborder="0" allowfullscreen></iframe>
+<p>King Hussein in Russia (feat. Queen Rania) - 35mm</p>
+</br>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/NIP9B3EKcVU" frameborder="0" allowfullscreen></iframe>
+<p> "Exodus 1967" (feat. King Hussein) - 16mm</p>
+</br>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/n17EZtHqDlc" frameborder="0" allowfullscreen></iframe>
+<p>Unknown Vietnamese Communist Film (1970) - 16mm?</p>
+</br>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/p-HpWxpZ3bI" frameborder="0" allowfullscreen></iframe>
+<p> "Hanh, a Teacher" (Vietnam)  -16mm</p>
+</br>
+
 </div>
 </body>
 
