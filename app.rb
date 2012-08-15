@@ -878,8 +878,8 @@ get '/films' do  # this is where we will keep the digitized films hosted on YouT
            <a href='/start/#{startpage}'>&#62Database</a>
            <a href="/about">&#62About</a>
            <a href="/contact">&#62Contact</a>
-           <span class="search-link"><a href="/search">&#62Search</a>
-            <a href="/films">&#62Clips</a></span>
+           <a href="/films">&#62Clips</a>
+           <span class="search-link"><a href="/search">&#62Search</a></span>
           </div>
         </div>
 
