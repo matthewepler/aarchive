@@ -869,6 +869,7 @@ get '/films' do  # this is where we will keep the digitized films hosted on YouT
   <<-HTML
   <head>
     <title> Films </title>
+    <link rel='stylesheet' type='text/css' href='/final.css'/>
     </head>
         <body>
           <div class='image-side'>
@@ -887,8 +888,13 @@ get '/films' do  # this is where we will keep the digitized films hosted on YouT
          <div align="center" background-color:"#f2f2f3">
   <iframe width="420" height="315" src="http://www.youtube.com/embed/9GFXGQAivlM" frameborder="0" allowfullscreen></iframe>
   <p>King Hussein in Russia (feat. Queen Rania) - 35mm </p>
+</br>
 <iframe width="420" height="315" src="http://www.youtube.com/embed/KCaxWgzAtQI" frameborder="0" allowfullscreen></iframe>
 <p>"Jordanian Report" - 35mm</p>
+</br>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/13O0F4g5zMU" frameborder="0" allowfullscreen></iframe>
+<p>Russian Fiction Feature (MosFilm) - 35mm</p>
+</br>
 </div>
 </body>
 
