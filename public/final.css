@@ -183,11 +183,10 @@ margin:auto;
 }
 
 .films{
-	background-color:"#f2f2f3";
 	position:fixed;
-	top:10%;
-	left:50%;
-	text-align:"center";  
+	top:20%;
+	left:40%;
+	text-align:center;  
 }
 
 #home-body{
