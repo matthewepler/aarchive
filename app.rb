@@ -884,7 +884,7 @@ get '/films' do  # this is where we will keep the digitized films hosted on YouT
     <link rel='stylesheet' type='text/css' href='/final.css'/>
     </head>
         <body>
-          <div class='image-side'>
+<!--           <div class='image-side'> -->          
           <div class='header'>
            <a href="/">&#62Home</a>
            <a href='/start/#{startpage}'>&#62Database</a>
@@ -893,8 +893,7 @@ get '/films' do  # this is where we will keep the digitized films hosted on YouT
            <a href="/films">&#62Clips</a>
            <span class="search-link"><a href="/search">&#62Search</a></span>
           </div>
-        </div>
-
+<!--         </div> -->
              <div class="films-intro">
               <p> These reels were digitized at <span><a href="http://www.abc-taunusfilm.de">ABC & Tanus</a></span> in 
               2011.
