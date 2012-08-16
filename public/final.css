@@ -183,15 +183,13 @@ margin:auto;
 }
 
 .films{
-	position:fixed;
-	top:20%;
-	left:35%;
 	text-align:center;  
 }
 
 .films-intro{
-	margin-top:10%;
-	margin-left:5%;
+	position:fixed;
+	top:10%;
+	left:5%;
 
 }
 
