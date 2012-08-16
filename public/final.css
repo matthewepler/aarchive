@@ -190,9 +190,9 @@ margin:auto;
 }
 
 .films-intro{
-	position:fixed;
-	top:10%;
-	left:5%;
+	margin-top:10%;
+	margin-left:5%;
+
 }
 
 #home-body{
