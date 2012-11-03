@@ -902,7 +902,7 @@ get '/films' do  # this is where we will keep the digitized films hosted on YouT
 
          <div class="films">
               <iframe width="420" height="315" src="http://www.youtube.com/embed/9GFXGQAivlM" frameborder="0" allowfullscreen></iframe>
-              <p>King Hussein in Russia (feat. Queen Rania) - 35mm </p>
+              <p>King Hussein in Russia (feat. Queen Alia) - 35mm </p>
               </br>
               <iframe width="420" height="315" src="http://www.youtube.com/embed/KCaxWgzAtQI" frameborder="0" allowfullscreen></iframe>
               <p>"Jordanian Report" - 35mm</p>
@@ -914,7 +914,7 @@ get '/films' do  # this is where we will keep the digitized films hosted on YouT
               <p>Russian Fiction Feature - 35mm</p>
               </br>
               <iframe width="420" height="315" src="http://www.youtube.com/embed/Ly7HTPoZ0Pw" frameborder="0" allowfullscreen></iframe>
-              <p>King Hussein in Russia (feat. Queen Rania) - 35mm</p>
+              <p>King Hussein in Russia (feat. Queen Alia) - 35mm</p>
               </br>
               <iframe width="420" height="315" src="http://www.youtube.com/embed/B9RMjZUOQkk" frameborder="0" allowfullscreen></iframe>
               <p>Russian Fiction Feature - 35mm</p>
@@ -923,7 +923,7 @@ get '/films' do  # this is where we will keep the digitized films hosted on YouT
               <p>"The Palestinian Right" - 16mm</p>
               </br>
               <iframe width="420" height="315" src="http://www.youtube.com/embed/Eef-I2pajVI" frameborder="0" allowfullscreen></iframe>
-              <p>King Hussein in Russia (feat. Queen Rania) - 35mm</p>
+              <p>King Hussein in Russia (feat. Queen Alia) - 35mm</p>
               </br>
               <iframe width="420" height="315" src="http://www.youtube.com/embed/NIP9B3EKcVU" frameborder="0" allowfullscreen></iframe>
               <p> "Exodus 1967" (feat. King Hussein) - 16mm</p>
