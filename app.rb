@@ -85,9 +85,8 @@ Welcome to</br>'A Film Archive' </br>Project.
 </div>
 <div id="home-body">
 A crowd-sourced treasure hunt.</p>
-<p>
-We are in the process of improving the database, and it is unavailable at this time. Please visit our About or Contact page for more information.
-</p>
+<p>UPDATE: We are in the process of improving the database, and it is unavailable at this time.</p>
+<p>Please visit our About or Contact page for more information.</p>
 </div>
 <div id="home-links">
 <a href="/about">&#62About</a>
