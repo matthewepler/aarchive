@@ -1,2 +1,7 @@
 db/
 db-backup/
+.DS_Store
+*.gem
+*.rbc
+/tmp/
+.rvmrc
