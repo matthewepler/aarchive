@@ -26,6 +26,7 @@ GEM
       multi_xml (>= 0.5.2)
     json (1.8.3)
     multi_xml (0.5.5)
+    pg (0.18.3)
     picasa (0.9.1)
       httparty
     rack (1.6.4)
@@ -46,6 +47,7 @@ DEPENDENCIES
   dm-postgres-adapter
   dm-sqlite-adapter
   do_postgres
+  pg
   picasa
   sinatra
 
