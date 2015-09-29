@@ -109,8 +109,8 @@ get '/start/:page' do
    <!-- Google Analytics -->
   <script type="text/javascript">
 
-  'var _gaq = _gaq || [];
-  '_gaq.push(['_setAccount', 'UA-30138184-1']);
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30138184-1']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -302,8 +302,8 @@ get '/display_record/:id' do
    <!-- Google Analytics -->
   <script type="text/javascript">
 
-  'var _gaq = _gaq || [];
-  '_gaq.push(['_setAccount', 'UA-30138184-1']);
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30138184-1']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -402,8 +402,8 @@ form = ""
    <!-- Google Analytics -->
   <script type="text/javascript">
 
-  'var _gaq = _gaq || [];
-  '_gaq.push(['_setAccount', 'UA-30138184-1']);
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30138184-1']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -540,8 +540,8 @@ output +="<html>"
    <!-- Google Analytics -->
   <script type="text/javascript">
 
-  'var _gaq = _gaq || [];
-  '_gaq.push(['_setAccount', 'UA-30138184-1']);
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30138184-1']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -583,8 +583,8 @@ get '/about' do
    <!-- Google Analytics -->
   <script type="text/javascript">
 
-  'var _gaq = _gaq || [];
-  '_gaq.push(['_setAccount', 'UA-30138184-1']);
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30138184-1']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -657,8 +657,8 @@ get '/contact' do
    <!-- Google Analytics -->
   <script type="text/javascript">
 
-  'var _gaq = _gaq || [];
-  '_gaq.push(['_setAccount', 'UA-30138184-1']);
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30138184-1']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -698,8 +698,8 @@ get '/search' do
    <!-- Google Analytics -->
   <script type="text/javascript">
 
-  'var _gaq = _gaq || [];
-  '_gaq.push(['_setAccount', 'UA-30138184-1']);
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30138184-1']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -761,8 +761,8 @@ get '/displaysearch' do
    <!-- Google Analytics -->
   <script type="text/javascript">
 
-  'var _gaq = _gaq || [];
-  '_gaq.push(['_setAccount', 'UA-30138184-1']);
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30138184-1']);
   _gaq.push(['_trackPageview']);
 
   (function() {
