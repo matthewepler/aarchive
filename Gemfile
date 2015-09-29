@@ -5,6 +5,7 @@ gem 'sinatra'
 gem 'dm-core'
 gem 'dm-migrations'
 gem 'picasa'
+gem 'pg'
 
 group :development do
 	gem 'dm-sqlite-adapter'
