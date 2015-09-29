@@ -9,7 +9,7 @@ startpage = 3
 
 
 get '/' do
-  <<-HTML
+<<-HTML
 <link rel="stylesheet" type="text/css" href="/final.css"/>
 <head>
   <!-- Google Analytics -->
@@ -85,18 +85,14 @@ Welcome to</br>'A Film Archive' </br>Project.
 </div>
 <div id="home-body">
 A crowd-sourced treasure hunt.</p>
+
 </div>
 <div id="home-links">
-<a href="/start/#{startpage}">&#62Database</a>
+<a href="/start/4">&#62Database</a>
 <a href="/about">&#62About</a>
 <a href="/contact">&#62Contact</a>
 <a href="/films">&#62Clips</a>
-</div>
-<!-- <div class="facebook"
-<iframe src="http://www.facebook.com/plugins/like.php?href=http://afilmarchive.net"
-        scrolling="no" frameborder="0"
-        style="border:none; width:450px; height:80px"></iframe>
-      </div> -->
+
 </div>
 </body>
 HTML
@@ -123,8 +119,8 @@ get '/start/:page' do
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>
-HTML
+  </script>
+  HTML
   output +='</head>'
   output +='<body>'
   output +='<div class="header">'
@@ -416,8 +412,8 @@ form = ""
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>
-HTML
+  </script>
+  HTML
   form +="</head>"
   form +="<body>"
   form +="<div class='image-side'>"
