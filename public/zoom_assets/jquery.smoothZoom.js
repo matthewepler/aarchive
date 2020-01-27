@@ -41,7 +41,7 @@
 			button_COLOR			: '#FFFFFF',
 			button_BG_COLOR			: '#000000',
 			button_BG_TRANSPARENCY	: 55,
-			button_ICON_IMAGE		: 'http://itp.nyu.edu/~mae383/sinatra/final/public/zoom_assets/icons.png',
+			button_ICON_IMAGE		: 'https://afilmarchive-assets.s3.amazonaws.com/icons.png',
 			button_AUTO_HIDE		: 'NO',
 			button_AUTO_HIDE_DELAY	: 1,
 			button_ALIGN			: 'bottom right',
