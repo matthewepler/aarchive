@@ -1,4 +1,4 @@
-DataMapper::setup(:default, ENV['DATABASE_URL'] || "sqlite:///Users/matthewepler/Documents/RFC film Project Summary/Website Files Archive/final/data.db?encoding=UTF8")
+DataMapper::setup(:default, ENV['DATABASE_URL'] || "sqlite:///mnt/c/Users/Lenovo/Documents/dev/aarchive/data.db?encoding=UTF8")
 class Can
   include DataMapper::Resource
 

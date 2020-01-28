@@ -5,7 +5,7 @@ Site is deployed via Heroku with heroku postgres db
 bundle install  
 run server (bundle exec rackup -p 3000)
 Try the "Database" link
-If unable to connect, change the sqlite string at top of model.rb to your local db file  
+If unable to connect, change the sqlite string at top of model.rb to your local model.db file  
 
 Automatic backups are enabled by default on Heroku  
 
